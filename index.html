@@ -15,8 +15,33 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.1.1</b> · 2026-10-21<br>Corrections en série, journal des expulsions, vrais vestiaires, braquages animés<div class="sha">SHA-256 : fa920e06999a9398272c1207cfb771e0de3fc162e6ef2e02a67af59667857080</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.1.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.1.2</b> · 2026-10-21<br>Vendeurs derrière le comptoir, petits jobs pour chaque entreprise, vraie pêche, grand ménage, Coiffeur / barbier, bandea<div class="sha">SHA-256 : be12a34d882f7c4f495d960e463b5c5f7c42f5983df67f3c7edbed8ee1393e85</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.2.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
+<details class="card" open><summary><span class="n">52</span>Coiffeur / barbier, bandeau de démarrage</summary><div class="b"><ul>
+<li><b>Coiffeur / barbier</b> (nouveau type de magasin) : coupe, couleur et reflets, barbe, sourcils, poils du torse, maquillage des yeux, blush, rouge à lèvres, avec style, densité et teinte. Aperçu en direct sur le personnage, caméra sur le visage, « Tourner la tête » pour voir le profil. Le serveur ne modifie que les cheveux et ces détails (le reste du visage ne bouge pas), vérifie chaque valeur et encaisse le prix du passage (40 $ par défaut, modifiable dans Magasins).</li>
+</ul>
+<p>  - Builder › Commerces : « Coiffeur / barbier » (un salon où tu es) ou « Coiffeurs : les 7 salons de GTA d&#x27;un coup » (Herr Kutz, Beach Combover, O&#x27;Sheas…, blip ciseaux).</p>
+<p>  - Le salon peut être rattaché à l&#x27;entreprise « Coiffeur et barbier » comme les autres magasins (encaissement dans sa caisse).</p>
+<ul>
+<li><b>Bandeau au démarrage du serveur</b> : la console affiche la version installée, le <b>numéro et la date du dernier patch notes</b>, et l&#x27;<b>état de la licence</b> (valide : client, identifiant, expiration, fichier ou server.cfg ; verrouillée : raison et empreinte du serveur).</li>
+<li><b>Nouveautés du panel</b> : les patch notes 49 à 51 étaient dans le désordre (la 49 passait pour la plus récente) et les titres longs étaient coupés en plein mot. Corrigé.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">51</span>Vendeurs derrière le comptoir, petits jobs pour chaque entreprise, vraie pêche, grand ménage</summary><div class="b"><ul>
+<li><b>Vendeurs derrière le comptoir, partout</b> : dans les 19 supérettes de GTA (24/7, LTD, Rob&#x27;s Liquor), le vendeur du magasin et celui du braquage se placent tout seuls derrière la caisse, face aux clients. Pour un magasin ou un intérieur personnalisé : Builder › Commerces › « Magasin : position du vendeur » (et toujours « Braquage : position du vendeur »).</li>
+<li><b>Petits jobs pour chaque entreprise</b> (nouvelle ressource <code>wb_jobs</code>) : en service, touche <b>O</b> (ou /jobs). 12 types de missions adaptés au métier : livraisons, repas en scooter, courses de taxi, dépannages, patrouilles, appels de secours, chantiers, poubelles, reportages, transport, convoyage de voitures, service sur place. Véhicule de service fourni, PNJ (clients, passagers, blessés, automobilistes en panne), paie à chaque étape + bonus pour la caisse de l&#x27;entreprise. Réglages : Extensions › Petits jobs.</li>
+<li><b>Vraie pêche</b> (nouvelle ressource <code>wb_peche</code>) : pêche partout face à l&#x27;eau ou en bateau, 27 espèces en 5 raretés selon l&#x27;eau (mer, large, lac, rivière), 5 appâts et leurres de rareté croissante, 3 cannes, ferrage avec E dans la zone verte, trouvailles (coffre englouti, leurre doré), records du serveur. <b>Marché aux poissons vivant</b> : chaque vente fait baisser le cours de l&#x27;espèce, qui remonte avec le temps, et une « pêche du jour » est mieux payée. Points à poser : Builder › Pêche.</li>
+<li><b>Grand ménage</b> :</li>
+</ul>
+<p>  - joueur menotté : il ne peut plus lancer d&#x27;animations, de gestes ni de graffitis ;</p>
+<p>  - saisie d&#x27;un véhicule depuis le menu ALT : enfin inscrite au casier ;</p>
+<p>  - annonces en mode « chat » et commandes personnalisées : elles s&#x27;affichent maintenant dans le chat de la base (elles partaient vers le chat FiveM, absent) ;</p>
+<p>  - capture de territoire : la bannière prend bien la couleur du gang ;</p>
+<p>  - police et secours créés depuis le catalogue : le sergent / l&#x27;infirmier est répartiteur, comme dans les modèles de base ;</p>
+<p>  - canne à pêche utilisable depuis l&#x27;inventaire ;</p>
+<p>  - server.cfg : langue fr-FR et icône du serveur avec le logo Shadow Base (au lieu du logo ESX).</p>
+<ul>
+<li><b>Tests</b> : toutes les suites repassent au vert (4 691 + 2 357 vérifications, 0 échec), plus des tests pour les petits jobs et la pêche.</li>
+</ul></div></details>
 <details class="card" open><summary><span class="n">50</span>Corrections en série, journal des expulsions, vrais vestiaires, braquages animés</summary><div class="b"><ul>
 <li><b>Journal des expulsions et bans</b> (nouveau module « Expulsions et bans ») : chaque kick, ban, connexion refusée et départ est enregistré avec sa raison précise, son origine (anticheat, staff, licence, file d&#x27;attente, maintenance…), le détail technique, le ping et la position. Le joueur voit une <b>référence #</b> à donner au staff. Salon Discord dédié possible (<code>logs_kicks</code>).</li>
 <li><b>Anticheat : plus d&#x27;éjections sans raison.</b> Délai de battement relevé (90 s), marge à la connexion (3 min), un <code>restart</code> de ressource via txAdmin n&#x27;éjecte plus tout le monde, un jeton périmé ou une réponse en retard est redemandé au lieu de sanctionner.</li>
@@ -32,10 +57,10 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li>Nouveau logo partout (panel, bannière animée des menus, cartes) ; l&#x27;animation « le logo se dessine » suit le nouveau logo.</li>
 <li>Rien à refaire côté licences et réglages : les noms techniques (ressources <code>pb_panel</code>, <code>wframework</code>, <code>wb_*</code>, <code>wbase_license</code>, licences <code>WB1…</code>) ne changent pas.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">48</span>Écran de chargement</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">48</span>Écran de chargement</summary><div class="b"><ul>
 <li>Nouvelle ressource <code>wb_loading</code> (lancée par <code>ensure [w-base]</code>) : logo du serveur au centre (lueur qui respire), barre de progression du vrai chargement, bandeau de messages qui défile en bas. Messages, couleurs et vitesse se changent en haut de <code>wb_loading/index.html</code> ; le logo est <code>wb_loading/logo.png</code>.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">47</span>Agence immobilière, mises à jour gratuites</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">47</span>Agence immobilière, mises à jour gratuites</summary><div class="b"><ul>
 <li><b>Agence immobilière</b> (entreprise <code>realestate</code>, réglable dans Logements) : ses agents en service ont dans le menu ALT (Métier) : « Mettre en vente ici », « Mettre en location ici » (la porte est à leur position), « Définir l&#x27;intérieur ici », « Changer le prix », « Retirer de la vente », et sur un client « Faire visiter » (accès de 15 minutes à un logement libre). L&#x27;agence touche une commission sur chaque vente et chaque première location (5 %, réglable) ; nombre d&#x27;annonces limité (40 par défaut).</li>
 <li><b>Mises à jour</b> : Shadow Base vérifie toutes les 6 heures si une nouvelle version est publiée (fichier <code>latest.json</code> signé avec la clé de licence : une fausse mise à jour est refusée). Nouveau module <b>Mises à jour</b> (version installée, dernière version, patch notes, lien de téléchargement) et commande console <code>wbase_update</code>. Rien ne s&#x27;installe tout seul.</li>
 <li><b>Publication gratuite</b> : outil <code>W-Base/outils/publier.py</code> (zip sans secrets, empreinte SHA-256, signature, site des patch notes) à déposer sur GitHub (Releases + Pages, gratuit).</li>
