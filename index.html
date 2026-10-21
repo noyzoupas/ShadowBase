@@ -15,8 +15,22 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.1.3</b> · 2026-10-21<br>Moins de métiers, Builder plus rapide, Auto Exotic, packs d&#x27;organisation<div class="sha">SHA-256 : 7d364bb49085adca2daabfd21c16202fa75fd72a28d24b418fca5aa852ae96bd</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.3.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.1.4</b> · 2026-10-21<br>Grosse optimisation, confidentialité des noms et des ID<div class="sha">SHA-256 : 544ee72298860f6bd81d3169603cd5a0a75ac8c933b234100f20002d25b290fd</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.4.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
+<details class="card" open><summary><span class="n">54</span>Grosse optimisation, confidentialité des noms et des ID</summary><div class="b"><ul>
+<li><b>Noms, grades et ID réservés au staff</b> : les joueurs ne reçoivent plus aucune étiquette au-dessus des têtes (le réglage passe sur « staff seulement », appliqué une fois automatiquement). Menu ALT : la personne visée s&#x27;appelle « Une personne », sans ID (le staff voit le nom et l&#x27;ID). Inventaire : les joueurs proches s&#x27;affichent « Personne à 2 m », triés du plus proche au plus loin (le staff voit nom et ID).</li>
+<li><b>Optimisation client</b> :</li>
+</ul>
+<p>  - points d&#x27;entreprise et magasins : la liste proche est recalculée toutes les 0,5 s au lieu de parcourir tous les points à chaque image ;</p>
+<p>  - drapeaux de territoire : plus rien à chaque image quand aucun drapeau n&#x27;est à moins de 90 m ;</p>
+<p>  - braquage : le vendeur n&#x27;est plus cherché parmi tous les PNJ à chaque image (cache d&#x27;une seconde) ;</p>
+<p>  - densité des PNJ intégrée à la boucle unique « à chaque image » (un thread permanent de moins) ;</p>
+<p>  - HUD : la boussole n&#x27;envoie plus l&#x27;interface à chaque degré ; coffres animés recoloriés moins souvent ;</p>
+<p>  - activités, pêche et portes : plus d&#x27;appels à pb_panel à chaque image (marqueur et « libre ? » en local).</p>
+<ul>
+<li><b>Optimisation serveur</b> : les drapeaux de territoire ne renvoient plus leur état à tous les joueurs chaque seconde (le compte à rebours est fait par le client) ; les étiquettes ne sont plus calculées pour les joueurs qui n&#x27;en ont pas, ni du tout quand aucun staff n&#x27;est connecté.</li>
+<li><b>Correctif</b> : les blips des entreprises avaient perdu leur couleur, leur taille et leur portée courte (erreur du patch 53). Rétabli.</li>
+</ul></div></details>
 <details class="card" open><summary><span class="n">53</span>Moins de métiers, Builder plus rapide, Auto Exotic, packs d&#x27;organisation</summary><div class="b"><ul>
 <li><b>Moins de métiers</b> : le catalogue propose seulement 14 entreprises utiles (LSPD, EMS, justice, LS Customs, <b>Auto Exotic</b>, taxi, concession, Burger Shot, Bean Machine, Bahama Mamas, Vanilla Unicorn, agence immobilière, Weazel News, livraison). Au premier démarrage, les entreprises inutilisées (sans employé, sans point posé, caisse vide) sont retirées ; celles qui servent restent. Entreprises › Réglages › « Catalogue complet » réaffiche les 120 modèles.</li>
 <li><b>Auto Exotic</b> : nouveau garage mécanique (mêmes droits que LS Customs : réparer, facturer), posable au Builder.</li>
@@ -56,7 +70,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <ul>
 <li><b>Tests</b> : toutes les suites repassent au vert (4 691 + 2 357 vérifications, 0 échec), plus des tests pour les petits jobs et la pêche.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">50</span>Corrections en série, journal des expulsions, vrais vestiaires, braquages animés</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">50</span>Corrections en série, journal des expulsions, vrais vestiaires, braquages animés</summary><div class="b"><ul>
 <li><b>Journal des expulsions et bans</b> (nouveau module « Expulsions et bans ») : chaque kick, ban, connexion refusée et départ est enregistré avec sa raison précise, son origine (anticheat, staff, licence, file d&#x27;attente, maintenance…), le détail technique, le ping et la position. Le joueur voit une <b>référence #</b> à donner au staff. Salon Discord dédié possible (<code>logs_kicks</code>).</li>
 <li><b>Anticheat : plus d&#x27;éjections sans raison.</b> Délai de battement relevé (90 s), marge à la connexion (3 min), un <code>restart</code> de ressource via txAdmin n&#x27;éjecte plus tout le monde, un jeton périmé ou une réponse en retard est redemandé au lieu de sanctionner.</li>
 <li><b>Staff « hors ligne » alors qu&#x27;il est connecté</b> : corrigé (licence <code>license2:</code> et majuscules reconnues).</li>

@@ -1,23 +1,23 @@
 {
  "v": 1,
- "version": "1.1.3",
+ "version": "1.1.4",
  "date": "2026-10-21",
- "title": "Moins de métiers, Builder plus rapide, Auto Exotic, packs d'organisation",
+ "title": "Grosse optimisation, confidentialité des noms et des ID",
  "notes": [
-  "— Patch notes 53 — Moins de métiers, Builder plus rapide, Auto Exotic, packs d'organisation",
-  "Moins de métiers : le catalogue propose seulement 14 entreprises utiles (LSPD, EMS, justice, LS Customs, Auto Exotic, taxi, concession, Burger Shot, Bean Machine, Bahama Mamas, Vanilla Unicorn, agence immobilière, Weazel News, livraison). Au premier démarrage, les entreprises inutilisées (sans employé, sans point posé, caisse vide) sont retirées ; celles qui servent restent. Entreprises › Réglages › « Catalogue complet » réaffiche les 120 modèles.",
-  "Auto Exotic : nouveau garage mécanique (mêmes droits que LS Customs : réparer, facturer), posable au Builder.",
-  "Builder plus rapide : place-toi au bon endroit, choisis le point dans la liste, Entrée : il est posé. La liste revient tout de suite pour le point suivant (plus de deuxième Entrée).",
-  "Icône sur la carte à la création : le siège d'une entreprise (ex. Burger Shot) ou le QG d'un groupe se pose avec son icône et sa couleur, au choix (liste ou numéro de blip). Modifiable ensuite depuis le point.",
-  "Choisir le patron à la fin de la pose des points : parmi les joueurs connectés (grade le plus haut). Pour un groupe : le chef.",
-  "Packs de départ des organisations : 3 packs prêts (Rue, Standard, Gros calibre) choisis à la création au Builder et donnés tout de suite (caisse, coffre, véhicules au garage). Contenu modifiable dans Organisations › Réglages.",
-  "Correctifs Builder :",
-  "les points « Accueil », « Atelier » et « Cuisine / bar » étaient enregistrés comme un second siège (et restaient « Aucune position ») ; ceux déjà posés sont réparés ;",
-  "les points du Burger Shot (bornes, comptoir, postes, tableau, adresses) s'affichent maintenant comme posés et se suppriment depuis le Builder.",
-  "Inventaire : intérieur des cases beaucoup moins vert, fond plus transparent."
+  "— Patch notes 54 — Grosse optimisation, confidentialité des noms et des ID",
+  "Noms, grades et ID réservés au staff : les joueurs ne reçoivent plus aucune étiquette au-dessus des têtes (le réglage passe sur « staff seulement », appliqué une fois automatiquement). Menu ALT : la personne visée s'appelle « Une personne », sans ID (le staff voit le nom et l'ID). Inventaire : les joueurs proches s'affichent « Personne à 2 m », triés du plus proche au plus loin (le staff voit nom et ID).",
+  "Optimisation client :",
+  "points d'entreprise et magasins : la liste proche est recalculée toutes les 0,5 s au lieu de parcourir tous les points à chaque image ;",
+  "drapeaux de territoire : plus rien à chaque image quand aucun drapeau n'est à moins de 90 m ;",
+  "braquage : le vendeur n'est plus cherché parmi tous les PNJ à chaque image (cache d'une seconde) ;",
+  "densité des PNJ intégrée à la boucle unique « à chaque image » (un thread permanent de moins) ;",
+  "HUD : la boussole n'envoie plus l'interface à chaque degré ; coffres animés recoloriés moins souvent ;",
+  "activités, pêche et portes : plus d'appels à pb_panel à chaque image (marqueur et « libre ? » en local).",
+  "Optimisation serveur : les drapeaux de territoire ne renvoient plus leur état à tous les joueurs chaque seconde (le compte à rebours est fait par le client) ; les étiquettes ne sont plus calculées pour les joueurs qui n'en ont pas, ni du tout quand aucun staff n'est connecté.",
+  "Correctif : les blips des entreprises avaient perdu leur couleur, leur taille et leur portée courte (erreur du patch 53). Rétabli."
  ],
- "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.3.zip",
- "sha256": "7d364bb49085adca2daabfd21c16202fa75fd72a28d24b418fca5aa852ae96bd",
+ "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.4.zip",
+ "sha256": "544ee72298860f6bd81d3169603cd5a0a75ac8c933b234100f20002d25b290fd",
  "site": "https://noyzoupas.github.io/ShadowBase/",
- "sig": "bb00dc7e15348c740f49d82ea01d8985b64b1779591b2e08f715db594c588587da804073d185bc98efffbbad496ce4fa81386543e2047d40e76901752a29a005"
+ "sig": "b282f99f05f44589d15af946d8251406ceb838b358107d761171a795c3d078c3302e5b4ca8c7a89b201d4be1f71f723bd5f0e6e835b144d15a5a8a305dac5203"
 }
