@@ -15,8 +15,22 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.1.2</b> · 2026-10-21<br>Vendeurs derrière le comptoir, petits jobs pour chaque entreprise, vraie pêche, grand ménage, Coiffeur / barbier, bandea<div class="sha">SHA-256 : be12a34d882f7c4f495d960e463b5c5f7c42f5983df67f3c7edbed8ee1393e85</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.2.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.1.3</b> · 2026-10-21<br>Moins de métiers, Builder plus rapide, Auto Exotic, packs d&#x27;organisation<div class="sha">SHA-256 : 7d364bb49085adca2daabfd21c16202fa75fd72a28d24b418fca5aa852ae96bd</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.3.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
+<details class="card" open><summary><span class="n">53</span>Moins de métiers, Builder plus rapide, Auto Exotic, packs d&#x27;organisation</summary><div class="b"><ul>
+<li><b>Moins de métiers</b> : le catalogue propose seulement 14 entreprises utiles (LSPD, EMS, justice, LS Customs, <b>Auto Exotic</b>, taxi, concession, Burger Shot, Bean Machine, Bahama Mamas, Vanilla Unicorn, agence immobilière, Weazel News, livraison). Au premier démarrage, les entreprises inutilisées (sans employé, sans point posé, caisse vide) sont retirées ; celles qui servent restent. Entreprises › Réglages › « Catalogue complet » réaffiche les 120 modèles.</li>
+<li><b>Auto Exotic</b> : nouveau garage mécanique (mêmes droits que LS Customs : réparer, facturer), posable au Builder.</li>
+<li><b>Builder plus rapide</b> : place-toi au bon endroit, choisis le point dans la liste, <b>Entrée : il est posé</b>. La liste revient tout de suite pour le point suivant (plus de deuxième Entrée).</li>
+<li><b>Icône sur la carte à la création</b> : le siège d&#x27;une entreprise (ex. Burger Shot) ou le QG d&#x27;un groupe se pose avec son icône et sa couleur, au choix (liste ou numéro de blip). Modifiable ensuite depuis le point.</li>
+<li><b>Choisir le patron</b> à la fin de la pose des points : parmi les joueurs connectés (grade le plus haut). Pour un groupe : le chef.</li>
+<li><b>Packs de départ des organisations</b> : 3 packs prêts (Rue, Standard, Gros calibre) choisis à la création au Builder et donnés tout de suite (caisse, coffre, véhicules au garage). Contenu modifiable dans Organisations › Réglages.</li>
+<li><b>Correctifs Builder</b> :</li>
+</ul>
+<p>  - les points « Accueil », « Atelier » et « Cuisine / bar » étaient enregistrés comme un second siège (et restaient « Aucune position ») ; ceux déjà posés sont réparés ;</p>
+<p>  - les points du Burger Shot (bornes, comptoir, postes, tableau, adresses) s&#x27;affichent maintenant comme posés et <b>se suppriment</b> depuis le Builder.</p>
+<ul>
+<li><b>Inventaire</b> : intérieur des cases beaucoup moins vert, fond plus transparent.</li>
+</ul></div></details>
 <details class="card" open><summary><span class="n">52</span>Coiffeur / barbier, bandeau de démarrage</summary><div class="b"><ul>
 <li><b>Coiffeur / barbier</b> (nouveau type de magasin) : coupe, couleur et reflets, barbe, sourcils, poils du torse, maquillage des yeux, blush, rouge à lèvres, avec style, densité et teinte. Aperçu en direct sur le personnage, caméra sur le visage, « Tourner la tête » pour voir le profil. Le serveur ne modifie que les cheveux et ces détails (le reste du visage ne bouge pas), vérifie chaque valeur et encaisse le prix du passage (40 $ par défaut, modifiable dans Magasins).</li>
 </ul>
@@ -52,7 +66,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Vrais vestiaires</b> d&#x27;entreprise et de gang : le patron enregistre les tenues portées (avec grade minimum, homme/femme), les membres les enfilent, « Tenue civile » remet leurs vêtements. Le vestiaire est aussi proposé dans le pack de points des gangs.</li>
 <li><b>Braquages</b> : nouveau point Builder « Braquage : position du vendeur » pour le placer <b>derrière le comptoir</b>. Le vendeur lève les mains, crie, remplit un sac à la caisse puis se recroqueville ; le braqueur le tient en joue. Banque et bijouterie : ramassage des billets / vitrines cassées avec sac.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">49</span>Nouveau nom : Shadow Base</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">49</span>Nouveau nom : Shadow Base</summary><div class="b"><ul>
 <li>La base s&#x27;appelle désormais <b>Shadow Base</b> : panel, menus, messages de la console, écran de chargement, patch notes. Un serveur qui avait gardé le nom par défaut passe tout seul à « Shadow Base » (Configuration › Identité pour le changer).</li>
 <li>Nouveau logo partout (panel, bannière animée des menus, cartes) ; l&#x27;animation « le logo se dessine » suit le nouveau logo.</li>
 <li>Rien à refaire côté licences et réglages : les noms techniques (ressources <code>pb_panel</code>, <code>wframework</code>, <code>wb_*</code>, <code>wbase_license</code>, licences <code>WB1…</code>) ne changent pas.</li>
