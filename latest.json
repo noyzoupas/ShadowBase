@@ -1,16 +1,21 @@
 {
  "v": 1,
- "version": "1.1.0",
+ "version": "1.1.1",
  "date": "2026-10-21",
- "title": "Nouveau nom : Shadow Base",
+ "title": "Corrections en série, journal des expulsions, vrais vestiaires, braquages animés",
  "notes": [
-  "— Patch notes 49 — Nouveau nom : Shadow Base",
-  "La base s'appelle désormais Shadow Base : panel, menus, messages de la console, écran de chargement, patch notes. Un serveur qui avait gardé le nom par défaut passe tout seul à « Shadow Base » (Configuration › Identité pour le changer).",
-  "Nouveau logo partout (panel, bannière animée des menus, cartes) ; l'animation « le logo se dessine » suit le nouveau logo.",
-  "Rien à refaire côté licences et réglages : les noms techniques (ressources pb_panel, wframework, wb_*, wbase_license, licences WB1…) ne changent pas."
+  "— Patch notes 50 — Corrections en série, journal des expulsions, vrais vestiaires, braquages animés",
+  "Journal des expulsions et bans (nouveau module « Expulsions et bans ») : chaque kick, ban, connexion refusée et départ est enregistré avec sa raison précise, son origine (anticheat, staff, licence, file d'attente, maintenance…), le détail technique, le ping et la position. Le joueur voit une référence # à donner au staff. Salon Discord dédié possible (logs_kicks).",
+  "Anticheat : plus d'éjections sans raison. Délai de battement relevé (90 s), marge à la connexion (3 min), un restart de ressource via txAdmin n'éjecte plus tout le monde, un jeton périmé ou une réponse en retard est redemandé au lieu de sanctionner.",
+  "Staff « hors ligne » alors qu'il est connecté : corrigé (licence license2: et majuscules reconnues).",
+  "Touches des menus : changer une touche par défaut dans la config s'applique désormais à tous les joueurs (à leur prochaine connexion).",
+  "Onglets vides du panel (grades, comparaison) et préréglages d'économie « inconnus » : corrigés (accents mal gérés sous Windows).",
+  "Builder : suppression des points : la liste « Tous les points posés » montre aussi les points créés avant les patchs (coffres, comptoirs, garages…), chacun avec GPS et « Supprimer ce point », plus « Tout supprimer ».",
+  "Vrais vestiaires d'entreprise et de gang : le patron enregistre les tenues portées (avec grade minimum, homme/femme), les membres les enfilent, « Tenue civile » remet leurs vêtements. Le vestiaire est aussi proposé dans le pack de points des gangs.",
+  "Braquages : nouveau point Builder « Braquage : position du vendeur » pour le placer derrière le comptoir. Le vendeur lève les mains, crie, remplit un sac à la caisse puis se recroqueville ; le braqueur le tient en joue. Banque et bijouterie : ramassage des billets / vitrines cassées avec sac."
  ],
- "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.0.zip",
- "sha256": "cb9a643eec5eb4747b1908a74325960edd8854fdecf46b23ec9e5fe5b51d7bee",
+ "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.1.zip",
+ "sha256": "fa920e06999a9398272c1207cfb771e0de3fc162e6ef2e02a67af59667857080",
  "site": "https://noyzoupas.github.io/ShadowBase/",
- "sig": "0b7253ad77f19658b6965e65d0d705bc5c51fe29a90e265d5d72f78a3fdb4cf288ae9c64d12b866ad69828d2c52dccc7dc5c24076ecc4ef1f40468b97034b40a"
+ "sig": "211fb90d79c299953ec8baa99119bf7c977e08e8f5c2a6b729e7c416c17af313a7525a588676ec322e1a64bb39cff8cba8a25425e65b9ee294fb69e3f0105302"
 }
