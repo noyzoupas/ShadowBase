@@ -10,7 +10,7 @@
   "Rien à refaire côté licences et réglages : les noms techniques (ressources pb_panel, wframework, wb_*, wbase_license, licences WB1…) ne changent pas."
  ],
  "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.0.zip",
- "sha256": "d73d0360217dfe47dc04fd823432107c16d0adb6c2234522af2d8e541c6feaa7",
+ "sha256": "cb9a643eec5eb4747b1908a74325960edd8854fdecf46b23ec9e5fe5b51d7bee",
  "site": "https://noyzoupas.github.io/ShadowBase/",
- "sig": "569624f0eff1527968f9ec1d2e334e406b204a9c50213966075b7e96ac47855cc4f7b1a69c00f98e684a65bde959b0d60c866f45348eea21052679823114cb04"
+ "sig": "0b7253ad77f19658b6965e65d0d705bc5c51fe29a90e265d5d72f78a3fdb4cf288ae9c64d12b866ad69828d2c52dccc7dc5c24076ecc4ef1f40468b97034b40a"
 }
