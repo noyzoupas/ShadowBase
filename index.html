@@ -15,8 +15,56 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.1.6</b> · 2026-10-22<br>Atelier d&#x27;armes, portes en ALT, menu ALT admin, VIP dans F5, corrections, Entreprises sur mesure et toutes les icônes de<div class="sha">SHA-256 : acc37dde71f1e370be8dc74a7a7b12db33ae425a835538bfa2ddca847aa43949</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.6.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.1.7</b> · 2026-10-22<br>Points et étiquettes d&#x27;interaction, garage avec aperçu, noclip fantôme, Atelier mécano facturé, customisation en direct,<div class="sha">SHA-256 : a972a50fc1c27f37323e2ffafa53261ba197a791e26aed1b49c5269574087228</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.7.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
+<details class="card" open><summary><span class="n">62</span>Atelier mécano facturé, customisation en direct, menu Shadow retravaillé</summary><div class="b"><ul>
+<li><b>Customisation chez le mécano</b> (point « atelier » au Builder, ou F2 › Atelier) :</li>
+</ul>
+<p>  - le mécanicien en service doit être <b>dans le véhicule</b> du client ;</p>
+<p>  - <b>chaque option survolée s&#x27;affiche directement sur la voiture</b> : le client voit le rendu et dit si ça lui va. Entrée l&#x27;ajoute au <b>devis</b>, et en quittant une liste la voiture revient à l&#x27;état du devis ;</p>
+<p>  - <b>peinture</b> : principale et secondaire en classique / métallisé (≈ 75 teintes), mat, métal brossé, or et chrome, <b>teinte libre</b> (16 couleurs vives), nacré, intérieur, tableau de bord ;</p>
+<p>  - <b>jantes</b> : tous les types (sport, muscle, lowrider, SUV, tout-terrain, tuner, haut de gamme, Benny&#x27;s, rue, circuit…) avec tous leurs modèles, couleur des jantes, pneus personnalisés, fumée des pneus et sa couleur ;</p>
+<p>  - <b>carrosserie</b> : aileron, pare-chocs, bas de caisse, échappement, arceau, calandre, capot, ailes, toit, livrées. Seules les pièces qui existent pour le modèle sont proposées ;</p>
+<p>  - <b>Benny&#x27;s</b> : sièges, volant, tableau de bord, compteurs, hydraulique, bloc moteur… ;</p>
+<p>  - <b>performances</b> : moteur, freins, transmission, suspension, blindage, turbo ;</p>
+<p>  - <b>éclairage</b> : xénons et leur couleur, néons (tout autour, côtés, avant / arrière) et leur couleur. Aussi : vitres teintées, style de plaque, klaxon ;</p>
+<p>  - <b>Valider le devis</b> : le serveur calcule le prix lui-même (grille réglable dans le panel › Atelier mécanicien).</p>
+<ul>
+<li><b>Facture au client</b> : F5 › Mon entreprise › <b>Envoyer la facture</b>, puis on choisit le client à côté.</li>
+</ul>
+<p>  - Le client voit le détail et <b>paie</b> : l&#x27;argent va dans la <b>caisse de l&#x27;entreprise</b> et la customisation est <b>enregistrée avec son véhicule</b>.</p>
+<p>  - S&#x27;il <b>refuse</b>, la customisation est retirée de la voiture.</p>
+<p>  - Une facture payée plus tard depuis la tablette ou le téléphone compte aussi.</p>
+<ul>
+<li><b>F5 › Mon entreprise (mécano en service)</b> : <b>Réparer</b> et <b>Nettoyer</b> le véhicule le plus proche (animation, durée vérifiée), puis <b>Envoyer la facture</b>. Prix réglables (réparation 500 $, nettoyage 100 $ par défaut).</li>
+<li><b>Le mécano en service conduit les véhicules des clients</b> : il peut les ouvrir et les démarrer sans leur clé.</li>
+<li><b>Tenue de service automatique</b> : à la prise de service, la tenue enregistrée au vestiaire de l&#x27;entreprise est enfilée (la combinaison Benny&#x27;s pour le garage, l&#x27;uniforme pour la police…). À la fin du service, le joueur retrouve ses vêtements. Si aucune tenue n&#x27;est enregistrée, le patron est invité à la créer au vestiaire.</li>
+<li><b>Menu Shadow retravaillé</b> : fond, bannière, traits, lignes, puces et icônes repris de la maquette (version reçue dans le zip), avec le défilement des longues listes conservé.</li>
+<li><b>Inventaire</b> : titres « Sac à dos » et « Équipement » en français (les anciens étaient des images en anglais dont le sous-titre débordait sur la jauge de poids) ; les cases au-delà de la capacité d&#x27;un coffre n&#x27;affichent plus de cadenas « Premium ».</li>
+<li><b>Portes (ALT staff)</b> : beaucoup plus de portes détectées (portes épaisses, doubles portes, grilles, portails, portes de garage), jusqu&#x27;à 16 autour de toi dans un rayon de 12 m ; une porte déjà enregistrée est toujours reconnue, quelle que soit sa forme.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">61</span>Points et étiquettes d&#x27;interaction, garage avec aperçu, noclip fantôme</summary><div class="b"><ul>
+<li><b>Plus de flèches ni de texte en haut à gauche</b> :</li>
+</ul>
+<p>  - chaque endroit où l&#x27;on peut interagir est marqué par un <b>petit point lumineux</b> à hauteur de poitrine ;</p>
+<p>  - en s&#x27;approchant, une étiquette compacte <b>[E] GARAGE</b>, <b>[E] CUSTOMISER</b>… s&#x27;affiche <b>sur le point, dans le monde</b>, comme sur les serveurs de référence ;</p>
+<p>  - partout : banques, garages, magasins, logements, points d&#x27;entreprise, TIG, carburant, drapeaux, drogues, braquages, et toutes les extensions (pêche, chasse, activités, animaux, atelier d&#x27;armes, braquages, portes, petits jobs, Burger Shot) ;</p>
+<p>  - les placements au Builder gardent une invite en bas de l&#x27;écran (rien à quoi s&#x27;accrocher).</p>
+<ul>
+<li><b>Garage en menu, avec aperçu</b> :</li>
+</ul>
+<p>  - à l&#x27;ouverture, la liste des véhicules s&#x27;affiche dans le menu (même style que le menu staff) ;</p>
+<p>  - <b>en descendant sur un véhicule, il apparaît en transparence à la sortie du garage</b>, avec ses couleurs, et une caméra le montre. L&#x27;aperçu n&#x27;est visible que par toi ;</p>
+<p>  - Entrée sur un véhicule : Sortir, Récupérer ou Localiser. Clés et Organisation ouvrent la fenêtre complète.</p>
+<ul>
+<li><b>Fourrière corrigée</b> :</li>
+</ul>
+<p>  - une fourrière sans point de sortie faisait apparaître le véhicule nulle part : il sort maintenant à côté du point ;</p>
+<p>  - un véhicule abandonné en ville est retiré du monde au moment de la récupération ;</p>
+<p>  - <b>tu es mis directement au volant</b>, même si la sortie est un peu loin.</p>
+<ul>
+<li><b>Noclip fantôme</b> : en noclip, <b>personne ne te voit</b>. Toi, tu te vois en <b>transparence</b>, et ton véhicule aussi si tu noclip en voiture. Tout redevient normal à la sortie (sauf si « Invisible » est activé).</li>
+</ul></div></details>
 <details class="card" open><summary><span class="n">60</span>Bar et discothèque, télévisions, 911, conférences, coma</summary><div class="b"><ul>
 <li><b>Bar, discothèque, café, restaurant : le barman sert les clients</b> :</li>
 </ul>
@@ -84,7 +132,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Corrigé</b> : de nombreux champs du panel étaient refusés à tort (« format invalide »), par exemple <b>F4 comme raccourci du noclip</b>, les identifiants ou les listes « nom|valeur ». À l&#x27;inverse, certaines listes acceptaient n&#x27;importe quoi. Les formats sont maintenant lus exactement comme le serveur les vérifie.</li>
 <li><b>Changé</b> : F4 n&#x27;est plus la touche par défaut du raccourci staff « téléportation au point GPS » (elle sert à la radio). Remets une touche dans Staff › Raccourcis si tu t&#x27;en servais.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">58</span>Appels vocaux au téléphone</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">58</span>Appels vocaux au téléphone</summary><div class="b"><ul>
 <li><b>Appels vocaux</b> (par pma-voice, déjà installé) : nouvelle application <b>Appels</b> sur le téléphone (F1).</li>
 </ul>
 <p>  - <b>Clavier</b> pour composer un numéro, <b>appels récents</b> (durée, refusés, manqués) et <b>contacts</b> à appeler d&#x27;un clic ;</p>
@@ -102,7 +150,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Sécurité</b> : chaque appel a un canal vocal tiré au hasard. Le serveur vérifie toutes les 3 s que personne n&#x27;écoute un appel qui n&#x27;est pas le sien : un tricheur est retiré du canal et c&#x27;est noté dans les journaux (anticheat).</li>
 <li><b>Réglages</b> (panel › Téléphone › Réglages) : activer les appels, appels aux services, durée de la sonnerie, durée maximale d&#x27;un appel (30 min par défaut), nombre d&#x27;appels par minute. L&#x27;auto-test prévient si pma-voice ne tourne pas.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">57</span>Entreprises sur mesure et toutes les icônes de la carte</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">57</span>Entreprises sur mesure et toutes les icônes de la carte</summary><div class="b"><ul>
 <li><b>Entreprises sur mesure</b> : crée autant d&#x27;entreprises que tu veux, avec le nom de ton choix (ex. « Benny&#x27;s Motorworks », « Le Petit Café », « Garage du Port »). Tu choisis comment elle fonctionne parmi <b>tous les types du catalogue</b> (mécano, carrosserie, dépannage, café, restaurant, bar, boîte de nuit, taxi, supérette, armurerie, coiffeur…). Elle garde tout ce que fait ce type :</li>
 </ul>
 <p>  - un mécano a son atelier, le droit de réparer et les dépannages ;</p>
