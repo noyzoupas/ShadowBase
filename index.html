@@ -15,9 +15,148 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.1.5</b> · 2026-10-22<br>VIP, tatoueur, chasse, braquages, logements, animaux, inventaire, staff, optimisation<div class="sha">SHA-256 : 0744ba0e66d3ba60e06f33446c34d26b3a4202d40a2bcd94fa05a867953c06e2</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.5.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.1.6</b> · 2026-10-22<br>Atelier d&#x27;armes, portes en ALT, menu ALT admin, VIP dans F5, corrections, Entreprises sur mesure et toutes les icônes de<div class="sha">SHA-256 : acc37dde71f1e370be8dc74a7a7b12db33ae425a835538bfa2ddca847aa43949</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.6.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
-<details class="card" open><summary><span class="n">55</span>VIP, tatoueur, chasse, braquages, logements, animaux, inventaire, staff, optimisation</summary><div class="b"><ul>
+<details class="card" open><summary><span class="n">60</span>Bar et discothèque, télévisions, 911, conférences, coma</summary><div class="b"><ul>
+<li><b>Bar, discothèque, café, restaurant : le barman sert les clients</b> :</li>
+</ul>
+<p>  - au point « cuisine / bar » (E), le barman en service choisit un produit de la carte et une quantité. La préparation prend quelques secondes (animation) et les <b>ingrédients sont payés par la caisse</b> de l&#x27;entreprise (30 % du prix, réglable). Les recettes à ingrédients restent accessibles depuis le même menu ;</p>
+<p>  - puis <b>ALT sur un client › Servir</b> : il choisit le produit et la quantité, le client voit la commande et son prix, <b>accepte (il paie, espèces puis banque) ou refuse</b>. La caisse de l&#x27;entreprise encaisse ;</p>
+<p>  - <b>Discothèque</b>, <b>Pub</b> et <b>Café</b> sont maintenant proposés dans F10 › Builder › Entreprises. Le « Club » s&#x27;appelle désormais « Discothèque ».</p>
+<p>  - Réglages : Entreprises › Réglages › Service au bar.</p>
+<ul>
+<li><b>Télévisions</b> :</li>
+</ul>
+<p>  - <b>ALT sur une télé</b> (ou un écran de cinéma, un grand écran) › <b>Diffuser une vidéo</b>, puis colle un lien <b>YouTube</b> ou <b>Vimeo</b> ;</p>
+<p>  - tous les joueurs autour voient la <b>même vidéo au même moment</b>, et le son monte en s&#x27;approchant ;</p>
+<p>  - chacun règle son propre volume ;</p>
+<p>  - <b>Arrêter</b> coupe l&#x27;écran. Le staff voit et coupe toutes les diffusions (panel › Télévisions). Seuls les sites autorisés passent : un lien quelconque serait chargé chez tout le monde.</p>
+<ul>
+<li><b>Téléphone</b> :</li>
+</ul>
+<p>  - <b>SOS 911</b> sur le clavier : tous les policiers et secouristes en service sonnent, et <b>ta position s&#x27;affiche sur leur carte</b> (point clignotant et itinéraire) ;</p>
+<p>  - <b>conférence</b> : pendant un appel, « Ajouter » fait sonner un autre numéro, jusqu&#x27;à 5 personnes. Celui qui raccroche s&#x27;en va seul ;</p>
+<p>  - <b>bloquer un numéro</b> (Contacts) : il ne peut plus t&#x27;écrire ni t&#x27;appeler. Liste des numéros bloqués avec « Débloquer » ;</p>
+<p>  - <b>groupes de discussion</b> (Messages › icône groupe) : un nom, des numéros, les membres sont prévenus à chaque message. On peut quitter un groupe.</p>
+<ul>
+<li><b>Coma de faim et de soif</b> : à 0, le personnage tombe dans le coma, avec l&#x27;écran d&#x27;inconscience (« Tu t&#x27;es évanoui de faim »). Un secouriste peut le réanimer (la faim et la soif remontent à 15 %), sinon il réapparaît à l&#x27;hôpital. Un avertissement s&#x27;affiche sous 10 %. Désactivable dans HUD › Besoins.</li>
+<li><b>Builder</b> (F10 › Builder › une entreprise ou un groupe › un point posé) :</li>
+</ul>
+<p>  - <b>Y aller et vérifier le sol</b> : téléportation, puis le jeu dit si le point est sous le sol, dans le vide ou en l&#x27;air ;</p>
+<p>  - <b>Dupliquer ici</b> : copie le point à ta position (un coffre copié est vide) ;</p>
+<p>  - <b>Tout déplacer : ce point vient ici</b> : tous les points suivent avec le même décalage, pratique pour changer de bâtiment.</p>
+<ul>
+<li><b>Panel › Points posés</b> : carte de tous les points du serveur, liste des <b>problèmes</b> (position vide, hors carte, sous le niveau de la mer, doublon, très loin du siège) et bouton <b>Tester en jeu</b>.</li>
+<li><b>Garage</b> (et application Garage du téléphone) : carburant, moteur et carrosserie de chaque véhicule (en direct s&#x27;il est sorti), et <b>Localiser sur la carte</b>.</li>
+<li><b>Menu F10 › Rechercher</b> : un seul champ pour trouver un joueur (nom RP, nom FiveM, ID, licence), un véhicule (plaque) ou un numéro de téléphone.</li>
+<li><b>Économie › Gains par activité</b> : argent versé par heure et <b>par joueur et par heure</b> pour chaque activité (pêche, chasse, petits jobs, braquages, salaires, bar…), sur 24 h et 7 jours. Les transferts entre joueurs sont affichés à part.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">59</span>Radio F4, tickets reliés à Discord, anti-duplication, chronologie des joueurs</summary><div class="b"><ul>
+<li><b>Poste radio sur F4</b> :</li>
+</ul>
+<p>  - écran de talkie-walkie : fréquence tapée au pavé (puis OK) ou changée avec ◀ ▶, bouton marche / arrêt, volume (retenu d&#x27;une connexion à l&#x27;autre) ;</p>
+<p>  - boutons rapides vers les canaux de ton métier (ex. « Police 1–10 ») ;</p>
+<p>  - on parle en maintenant <b>Verr. Maj</b> (pma-voice utilisait ALT, déjà pris par le menu d&#x27;interaction : réglé dans <code>server.cfg</code>).</p>
+<p>  - <b>Sécurité</b> : le serveur vérifie chaque fréquence (nombre entier, plages réservées, métier en service, objet « Radio » si exigé). Toutes les 3 s, un joueur entré de force sur une fréquence réservée, à terre ou qui a perdu son métier en est retiré, et la triche est notée dans les journaux.</p>
+<p>  - Réglages : panel › Radio (touche, objet obligatoire, coupure à terre, fréquence maximale) et onglet <b>Aperçu</b>.</p>
+<ul>
+<li><b>Tickets</b> :</li>
+</ul>
+<p>  - <b>/ticket</b> ouvre une fenêtre de suivi : catégorie (aide, bug, plainte, remboursement, autre), conversation avec le staff, état, possibilité de clore soi-même ;</p>
+<p>  - <b>/report</b> crée aussi un ticket ;</p>
+<p>  - le joueur est prévenu à chaque réponse ;</p>
+<p>  - le staff répond dans le <b>panel › Tickets</b> (ouverts / clos, conversation, clore, rouvrir) et garde le menu F10 pour prendre en charge et aller voir le joueur.</p>
+<p>  - <b>Discord</b> : chaque ticket, réponse et clôture part sur Discord. Avec le bot du panel et l&#x27;identifiant du canal (Tickets › Réglages), <b>une réponse au message du ticket sur Discord revient en jeu</b>, et « !fermer » le clôt. Sans bot : webhook « Tickets des joueurs », envoi seulement.</p>
+<ul>
+<li><b>Anti-duplication</b> (panel › Anti-duplication) :</li>
+</ul>
+<p>  - alerte quand un joueur gagne plus de 150 000 $ en 1 h, ou reçoit plus de 250 objets identiques en 1 h (seuils réglables) ;</p>
+<p>  - les objets sortis d&#x27;un coffre ou donnés par un autre joueur ne comptent pas, seuls les objets créés comptent ;</p>
+<p>  - le staff en service est prévenu et l&#x27;alerte part sur Discord (canal « Alertes anti-duplication »), avec les principales sources de l&#x27;argent ;</p>
+<p>  - pas de sanction automatique : une alerte peut venir d&#x27;un gros braquage réussi. On la classe « vue » ou « fausse alerte ».</p>
+<ul>
+<li><b>Chronologie d&#x27;un joueur</b> (Anti-duplication › Chronologie, recherche par nom ou licence) : connexions et déconnexions, mouvements d&#x27;argent avec leur motif, objets reçus, sanctions, tickets, expulsions et journal du panel, du plus récent au plus ancien.</li>
+<li><b>Téléphone</b> :</li>
+</ul>
+<p>  - bouton <b>📍 position</b> dans une conversation : ta position (lue par le serveur) part en message, le destinataire appuie sur <b>Y aller</b> ;</p>
+<p>  - <b>haut-parleur</b> pendant un appel : les personnes à moins de 3 m entendent l&#x27;appel (et peuvent y parler, comme un vrai haut-parleur).</p>
+<ul>
+<li><b>Corrigé</b> : de nombreux champs du panel étaient refusés à tort (« format invalide »), par exemple <b>F4 comme raccourci du noclip</b>, les identifiants ou les listes « nom|valeur ». À l&#x27;inverse, certaines listes acceptaient n&#x27;importe quoi. Les formats sont maintenant lus exactement comme le serveur les vérifie.</li>
+<li><b>Changé</b> : F4 n&#x27;est plus la touche par défaut du raccourci staff « téléportation au point GPS » (elle sert à la radio). Remets une touche dans Staff › Raccourcis si tu t&#x27;en servais.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">58</span>Appels vocaux au téléphone</summary><div class="b"><ul>
+<li><b>Appels vocaux</b> (par pma-voice, déjà installé) : nouvelle application <b>Appels</b> sur le téléphone (F1).</li>
+</ul>
+<p>  - <b>Clavier</b> pour composer un numéro, <b>appels récents</b> (durée, refusés, manqués) et <b>contacts</b> à appeler d&#x27;un clic ;</p>
+<p>  - bouton <b>Appeler</b> sur chaque contact et dans chaque conversation ;</p>
+<p>  - pastille rouge sur l&#x27;application quand tu as manqué un appel.</p>
+<ul>
+<li><b>Appel entrant</b> :</li>
+</ul>
+<p>  - un <b>bandeau</b> s&#x27;affiche en haut de l&#x27;écran, même téléphone fermé, avec une sonnerie ;</p>
+<p>  - ouvre ton téléphone (F1) pour <b>décrocher</b> ou <b>refuser</b>, ou tape <b>/decrocher</b> et <b>/raccrocher</b> ;</p>
+<p>  - pendant l&#x27;appel, le personnage porte le téléphone à l&#x27;oreille (à pied comme en voiture) et le bandeau affiche la durée.</p>
+<ul>
+<li><b>Appeler un service</b> (police, EMS, mécano…) depuis l&#x27;Annuaire : <b>tous les employés en service sonnent</b>, le premier qui décroche prend l&#x27;appel.</li>
+<li><b>Cas gérés</b> : ligne occupée, correspondant injoignable ou en « ne pas déranger », pas de réponse au bout de 30 s, joueur à terre ou déconnecté (l&#x27;appel se coupe), téléphone suspendu par le staff.</li>
+<li><b>Sécurité</b> : chaque appel a un canal vocal tiré au hasard. Le serveur vérifie toutes les 3 s que personne n&#x27;écoute un appel qui n&#x27;est pas le sien : un tricheur est retiré du canal et c&#x27;est noté dans les journaux (anticheat).</li>
+<li><b>Réglages</b> (panel › Téléphone › Réglages) : activer les appels, appels aux services, durée de la sonnerie, durée maximale d&#x27;un appel (30 min par défaut), nombre d&#x27;appels par minute. L&#x27;auto-test prévient si pma-voice ne tourne pas.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">57</span>Entreprises sur mesure et toutes les icônes de la carte</summary><div class="b"><ul>
+<li><b>Entreprises sur mesure</b> : crée autant d&#x27;entreprises que tu veux, avec le nom de ton choix (ex. « Benny&#x27;s Motorworks », « Le Petit Café », « Garage du Port »). Tu choisis comment elle fonctionne parmi <b>tous les types du catalogue</b> (mécano, carrosserie, dépannage, café, restaurant, bar, boîte de nuit, taxi, supérette, armurerie, coiffeur…). Elle garde tout ce que fait ce type :</li>
+</ul>
+<p>  - un mécano a son atelier, le droit de réparer et les dépannages ;</p>
+<p>  - un café, un restaurant ou un bar a sa cuisine et son comptoir, avec la bonne carte (un café vend des cafés, pas le plat du jour) ;</p>
+<p>  - un taxi a ses courses ;</p>
+<p>  - et ainsi de suite.</p>
+<p>  Grades, salaires et droits sont générés automatiquement.</p>
+<p>  - <b>En jeu</b> : F10 › Builder › Entreprises › <b>Créer une entreprise sur mesure</b> (nom, type, icône), puis pose de ses points. Les entreprises sur mesure sont listées en haut du menu Entreprises.</p>
+<p>  - <b>Dans le panel</b> : Entreprises › Catalogue › « Créer une entreprise sur mesure ».</p>
+<ul>
+<li><b>Toutes les icônes de la carte</b> : un sélecteur affiche les <b>965 icônes de GTA</b> avec leur image. Les plus utiles (garage, bar, police…) sont en premier, avec recherche par nom ou par numéro, et choix de la couleur. Il est disponible :</li>
+</ul>
+<p>  - à la création d&#x27;une entreprise ;</p>
+<p>  - sur le siège d&#x27;une entreprise au Builder (« Voir toutes les icônes du jeu ») ;</p>
+<p>  - dans le panel (Entreprises › Modifier).</p>
+<ul>
+<li><b>Modifier une entreprise</b> : son type de fonctionnement et son icône se changent après coup, et le siège déjà posé prend la nouvelle icône.</li>
+<li>Les petits jobs (wb_jobs) suivent le type choisi : un garage renommé propose toujours les dépannages.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">56</span>Atelier d&#x27;armes, portes en ALT, menu ALT admin, VIP dans F5, corrections</summary><div class="b"><ul>
+<li><b>Mon VIP dans le menu F5</b> : statut (actif ou non), date de fin, liste des avantages. « Animal de compagnie » ouvre directement <b>/animal</b>. La carte peut être masquée dans le panel (Menu personnel › Carte VIP).</li>
+<li><b>Atelier d&#x27;armes clandestin</b> (nouvelle ressource <code>wb_armes</code>) :</li>
+</ul>
+<p>  - ateliers <b>cachés</b>, sans icône sur la carte : l&#x27;invite E n&#x27;apparaît qu&#x27;à côté de l&#x27;établi ;</p>
+<p>  - accès possible réservé à des gangs ou des entreprises ;</p>
+<p>  - fabrication en chaîne : ferraille, pièces d&#x27;acier, ressorts, canons, culasses, carcasses, crosses, puis les armes. Aussi les munitions et le démontage d&#x27;armes ;</p>
+<p>  - <b>plans</b> à acheter pour chaque famille d&#x27;armes ;</p>
+<p>  - <b>niveau d&#x27;armurier</b> de 1 à 10 par personnage ;</p>
+<p>  - finition artisanale, correcte ou excellente, avec un <b>mini-jeu d&#x27;assemblage</b> ;</p>
+<p>  - ratés possibles, alerte police, marché noir (ferraille, poudre, plans).</p>
+<p>  Pose : F10 › Builder › Atelier d&#x27;armes.</p>
+<ul>
+<li><b>Portes en ALT (staff)</b> : en maintenant ALT, les portes autour de toi s&#x27;entourent en jaune. Clique sur une porte pour choisir qui garde l&#x27;accès (tout le monde, entreprises, gangs), avec un filtre et une <b>recherche</b>, puis valide. Les deux battants d&#x27;une double porte sont pris ensemble. Sur une porte déjà verrouillable : ouvrir ou fermer, changer les accès, la rendre normale.</li>
+<li><b>Menu ALT, réservé au staff</b> :</li>
+</ul>
+<p>  - sur un véhicule :</p>
+<p>    - les occupants (nom et ID) s&#x27;affichent directement ;</p>
+<p>    - supprimer le véhicule (DV), crever les pneus, faire descendre les occupants ;</p>
+<p>    - réparer, déverrouiller, geler ;</p>
+<p>  - sur un joueur :</p>
+<p>    - TP sur lui ou TP à moi ;</p>
+<p>    - faire descendre du véhicule, donner un véhicule (ajouté à son garage), gifler ;</p>
+<p>    - <b>muter</b> : chat <b>et micro</b>, relancer démute.</p>
+<ul>
+<li><b>Corrections</b> :</li>
+</ul>
+<p>  - <b>invites E des extensions qui ne s&#x27;affichaient plus</b> (magasin de pêche, chasse, braquages…) après avoir ouvert certains magasins. C&#x27;est la cause des « le shop pêche ne s&#x27;ouvre pas » ;</p>
+<p>  - un menu qui ne s&#x27;ouvre pas affiche maintenant pourquoi, au lieu de ne rien faire ;</p>
+<p>  - l&#x27;invite « E pour interagir » ne sort plus de l&#x27;écran, même placée tout en haut ou sur un bord ; les textes courts restent à l&#x27;endroit choisi ;</p>
+<p>  - <b>envoi d&#x27;un logo ou d&#x27;une bannière depuis le PC</b> qui restait bloqué sur « Envoi… ». Les morceaux arrivant dans le désordre sont maintenant acceptés, un envoi raté ne bloque plus le suivant, et la taille s&#x27;affiche pendant l&#x27;envoi.</p>
+<ul>
+<li><b>Optimisation</b> : la recherche de portes en ALT ne tourne que pour le staff et seulement toutes les 0,5 s ; journal de l&#x27;atelier purgé automatiquement.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">55</span>VIP, tatoueur, chasse, braquages, logements, animaux, inventaire, staff, optimisation</summary><div class="b"><ul>
 <li><b>VIP</b> : donné ou retiré depuis le menu staff (F10 › Joueurs › un joueur › Donner / Retirer le VIP, durée en jours, 0 = permanent), avec <b>/vip &lt;id&gt; [jours]</b> et <b>/unvip &lt;id&gt;</b> (console aussi), ou dans le panel (module VIP). Le VIP est lié au compte.</li>
 <li><b>Multi-personnages (VIP)</b> : 3 personnages par compte, choix à la connexion. Chaque personnage a son inventaire, son argent, son métier, ses véhicules et ses logements.</li>
 <li><b>Animaux de compagnie (VIP)</b> : nouvelle ressource <code>wb_animaux</code>. Animalerie au Builder, chiens et chat, <b>/animal</b> (appeler, assis, couché, suivre, renommer).</li>
@@ -62,7 +201,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <p>  - images de l&#x27;interface allégées (7,5 Mo → 3,4 Mo) ;</p>
 <p>  - portes des logements recalculées toutes les 0,5 s au lieu de chaque image ;</p>
 <p>  - purge automatique de tous les journaux et nouveaux index sur la base.</p></div></details>
-<details class="card" open><summary><span class="n">54</span>Grosse optimisation, confidentialité des noms et des ID</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">54</span>Grosse optimisation, confidentialité des noms et des ID</summary><div class="b"><ul>
 <li><b>Noms, grades et ID réservés au staff</b> : les joueurs ne reçoivent plus aucune étiquette au-dessus des têtes (le réglage passe sur « staff seulement », appliqué une fois automatiquement). Menu ALT : la personne visée s&#x27;appelle « Une personne », sans ID (le staff voit le nom et l&#x27;ID). Inventaire : les joueurs proches s&#x27;affichent « Personne à 2 m », triés du plus proche au plus loin (le staff voit nom et ID).</li>
 <li><b>Optimisation client</b> :</li>
 </ul>
@@ -76,7 +215,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Optimisation serveur</b> : les drapeaux de territoire ne renvoient plus leur état à tous les joueurs chaque seconde (le compte à rebours est fait par le client) ; les étiquettes ne sont plus calculées pour les joueurs qui n&#x27;en ont pas, ni du tout quand aucun staff n&#x27;est connecté.</li>
 <li><b>Correctif</b> : les blips des entreprises avaient perdu leur couleur, leur taille et leur portée courte (erreur du patch 53). Rétabli.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">53</span>Moins de métiers, Builder plus rapide, Auto Exotic, packs d&#x27;organisation</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">53</span>Moins de métiers, Builder plus rapide, Auto Exotic, packs d&#x27;organisation</summary><div class="b"><ul>
 <li><b>Moins de métiers</b> : le catalogue propose seulement 14 entreprises utiles (LSPD, EMS, justice, LS Customs, <b>Auto Exotic</b>, taxi, concession, Burger Shot, Bean Machine, Bahama Mamas, Vanilla Unicorn, agence immobilière, Weazel News, livraison). Au premier démarrage, les entreprises inutilisées (sans employé, sans point posé, caisse vide) sont retirées ; celles qui servent restent. Entreprises › Réglages › « Catalogue complet » réaffiche les 120 modèles.</li>
 <li><b>Auto Exotic</b> : nouveau garage mécanique (mêmes droits que LS Customs : réparer, facturer), posable au Builder.</li>
 <li><b>Builder plus rapide</b> : place-toi au bon endroit, choisis le point dans la liste, <b>Entrée : il est posé</b>. La liste revient tout de suite pour le point suivant (plus de deuxième Entrée).</li>
@@ -90,7 +229,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <ul>
 <li><b>Inventaire</b> : intérieur des cases beaucoup moins vert, fond plus transparent.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">52</span>Coiffeur / barbier, bandeau de démarrage</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">52</span>Coiffeur / barbier, bandeau de démarrage</summary><div class="b"><ul>
 <li><b>Coiffeur / barbier</b> (nouveau type de magasin) : coupe, couleur et reflets, barbe, sourcils, poils du torse, maquillage des yeux, blush, rouge à lèvres, avec style, densité et teinte. Aperçu en direct sur le personnage, caméra sur le visage, « Tourner la tête » pour voir le profil. Le serveur ne modifie que les cheveux et ces détails (le reste du visage ne bouge pas), vérifie chaque valeur et encaisse le prix du passage (40 $ par défaut, modifiable dans Magasins).</li>
 </ul>
 <p>  - Builder › Commerces : « Coiffeur / barbier » (un salon où tu es) ou « Coiffeurs : les 7 salons de GTA d&#x27;un coup » (Herr Kutz, Beach Combover, O&#x27;Sheas…, blip ciseaux).</p>
