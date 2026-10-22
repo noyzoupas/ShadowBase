@@ -15,8 +15,53 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.1.4</b> · 2026-10-21<br>Grosse optimisation, confidentialité des noms et des ID<div class="sha">SHA-256 : 544ee72298860f6bd81d3169603cd5a0a75ac8c933b234100f20002d25b290fd</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.4.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.1.5</b> · 2026-10-22<br>VIP, tatoueur, chasse, braquages, logements, animaux, inventaire, staff, optimisation<div class="sha">SHA-256 : 0744ba0e66d3ba60e06f33446c34d26b3a4202d40a2bcd94fa05a867953c06e2</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.5.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
+<details class="card" open><summary><span class="n">55</span>VIP, tatoueur, chasse, braquages, logements, animaux, inventaire, staff, optimisation</summary><div class="b"><ul>
+<li><b>VIP</b> : donné ou retiré depuis le menu staff (F10 › Joueurs › un joueur › Donner / Retirer le VIP, durée en jours, 0 = permanent), avec <b>/vip &lt;id&gt; [jours]</b> et <b>/unvip &lt;id&gt;</b> (console aussi), ou dans le panel (module VIP). Le VIP est lié au compte.</li>
+<li><b>Multi-personnages (VIP)</b> : 3 personnages par compte, choix à la connexion. Chaque personnage a son inventaire, son argent, son métier, ses véhicules et ses logements.</li>
+<li><b>Animaux de compagnie (VIP)</b> : nouvelle ressource <code>wb_animaux</code>. Animalerie au Builder, chiens et chat, <b>/animal</b> (appeler, assis, couché, suivre, renommer).</li>
+<li><b>Salon de tatouage</b> : tatouages classés par zone du corps, aperçu en direct, prix par nouveau tatouage (retirer est gratuit). Builder › Commerces › Salon de tatouage.</li>
+<li><b>Pêche</b> : canne et leurre VIP, bonus de revente VIP, canne visible en main, <b>filet de pêche</b> depuis un bateau, <b>concours de la semaine</b> (plus gros poisson, prix versé en banque, /concours).</li>
+<li><b>Chasse</b> : nouvelle ressource <code>wb_chasse</code>. Zones au Builder, 7 animaux de rareté différente (le puma et la panthère attaquent), appeaux (dont un VIP), dépeçage au couteau, marché aux prix variables, bonus VIP.</li>
+<li><b>Braquages et trafics</b> : nouvelle ressource <code>wb_braquages</code>.</li>
+</ul>
+<p>  - Cambriolages (crochet, fouilles, voisin qui appelle la police).</p>
+<p>  - Receleur caché.</p>
+<p>  - Distributeurs à la perceuse.</p>
+<p>  - <b>GoFast</b>, avec des départs cachés à trouver en RP, une course chronométrée et la police qui suit la voiture.</p>
+<p>  - Fourgons blindés (charge thermique, sacs d&#x27;argent).</p>
+<ul>
+<li><b>Logements</b> :</li>
+</ul>
+<p>  - impôt foncier automatique sur les logements achetés ;</p>
+<p>  - vraie colocation : clés partagées, porte, coffre commun, loyer payable par les colocataires ;</p>
+<p>  - sonnette, avec <b>/ouvrir</b> pour faire entrer la personne ;</p>
+<p>  - intérieurs instanciés (chacun chez soi) ;</p>
+<p>  - intérieurs prédéfinis (studio, appartement, luxe, villa) et <b>meubles posables</b> pour les VIP ;</p>
+<p>  - <b>aquarium</b> pour exposer tes poissons.</p>
+<ul>
+<li><b>Builder</b> : un fantôme montre où le point sera posé, et <b>Ctrl+Z</b> annule le dernier point posé ou déplacé.</li>
+<li><b>Inventaire</b> :</li>
+</ul>
+<p>  - les objets ramassés vont dans le sac, plus dans les raccourcis 1 à 5 ;</p>
+<p>  - tri automatique, recherche, poids par catégorie ;</p>
+<p>  - bouton « Coffre » qui ouvre le coffre du véhicule proche à côté du sac.</p>
+<ul>
+<li><b>Vestiaires</b> : gilet et badge enregistrés par grade, ajoutés automatiquement à chaque tenue.</li>
+<li><b>Restaurants</b> : ce qui est préparé en cuisine part directement en rayon au comptoir de l&#x27;entreprise (ticket de caisse par article à l&#x27;encaissement).</li>
+<li><b>Staff</b> :</li>
+</ul>
+<p>  - spectateur amélioré : rejoint les joueurs éloignés, affiche leurs infos, ← → pour changer de joueur, retour à ta place à la fin ;</p>
+<p>  - <b>enregistrement d&#x27;écran</b> de 30 s, revisionnable (nécessite screenshot-basic).</p>
+<ul>
+<li><b>Événements</b> (nouveau module) : annonces, météo et bonus de paie programmés, une fois ou en répétition.</li>
+<li><b>Optimisation</b> :</li>
+</ul>
+<p>  - le panel d&#x27;administration n&#x27;est chargé qu&#x27;à sa première ouverture ;</p>
+<p>  - images de l&#x27;interface allégées (7,5 Mo → 3,4 Mo) ;</p>
+<p>  - portes des logements recalculées toutes les 0,5 s au lieu de chaque image ;</p>
+<p>  - purge automatique de tous les journaux et nouveaux index sur la base.</p></div></details>
 <details class="card" open><summary><span class="n">54</span>Grosse optimisation, confidentialité des noms et des ID</summary><div class="b"><ul>
 <li><b>Noms, grades et ID réservés au staff</b> : les joueurs ne reçoivent plus aucune étiquette au-dessus des têtes (le réglage passe sur « staff seulement », appliqué une fois automatiquement). Menu ALT : la personne visée s&#x27;appelle « Une personne », sans ID (le staff voit le nom et l&#x27;ID). Inventaire : les joueurs proches s&#x27;affichent « Personne à 2 m », triés du plus proche au plus loin (le staff voit nom et ID).</li>
 <li><b>Optimisation client</b> :</li>
@@ -54,7 +99,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Bandeau au démarrage du serveur</b> : la console affiche la version installée, le <b>numéro et la date du dernier patch notes</b>, et l&#x27;<b>état de la licence</b> (valide : client, identifiant, expiration, fichier ou server.cfg ; verrouillée : raison et empreinte du serveur).</li>
 <li><b>Nouveautés du panel</b> : les patch notes 49 à 51 étaient dans le désordre (la 49 passait pour la plus récente) et les titres longs étaient coupés en plein mot. Corrigé.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">51</span>Vendeurs derrière le comptoir, petits jobs pour chaque entreprise, vraie pêche, grand ménage</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">51</span>Vendeurs derrière le comptoir, petits jobs pour chaque entreprise, vraie pêche, grand ménage</summary><div class="b"><ul>
 <li><b>Vendeurs derrière le comptoir, partout</b> : dans les 19 supérettes de GTA (24/7, LTD, Rob&#x27;s Liquor), le vendeur du magasin et celui du braquage se placent tout seuls derrière la caisse, face aux clients. Pour un magasin ou un intérieur personnalisé : Builder › Commerces › « Magasin : position du vendeur » (et toujours « Braquage : position du vendeur »).</li>
 <li><b>Petits jobs pour chaque entreprise</b> (nouvelle ressource <code>wb_jobs</code>) : en service, touche <b>O</b> (ou /jobs). 12 types de missions adaptés au métier : livraisons, repas en scooter, courses de taxi, dépannages, patrouilles, appels de secours, chantiers, poubelles, reportages, transport, convoyage de voitures, service sur place. Véhicule de service fourni, PNJ (clients, passagers, blessés, automobilistes en panne), paie à chaque étape + bonus pour la caisse de l&#x27;entreprise. Réglages : Extensions › Petits jobs.</li>
 <li><b>Vraie pêche</b> (nouvelle ressource <code>wb_peche</code>) : pêche partout face à l&#x27;eau ou en bateau, 27 espèces en 5 raretés selon l&#x27;eau (mer, large, lac, rivière), 5 appâts et leurres de rareté croissante, 3 cannes, ferrage avec E dans la zone verte, trouvailles (coffre englouti, leurre doré), records du serveur. <b>Marché aux poissons vivant</b> : chaque vente fait baisser le cours de l&#x27;espèce, qui remonte avec le temps, et une « pêche du jour » est mieux payée. Points à poser : Builder › Pêche.</li>
