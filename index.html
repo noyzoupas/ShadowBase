@@ -15,8 +15,19 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.2.6</b> · 2026-10-23<br>Commandes de chat, 220 emotes avec aperçu, gestes à deux, audit<div class="sha">SHA-256 : ea3a2a4222686672e2e6d4f31cd9176644ead053c86a276ad437da0fcd45da8b</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.6.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.2.7</b> · 2026-10-23<br>Cases à cocher, notifications regroupées, ID du HUD, taille du HUD<div class="sha">SHA-256 : a49fd31d5415620b688ab0c28d1e5ad49d1816ce330d8ab67933cef213a5d796</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.7.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
+<details class="card" open><summary><span class="n">79</span>Cases à cocher, notifications regroupées, ID du HUD, taille du HUD</summary><div class="b"><ul>
+<li><b>Cases à cocher des menus</b> : une case pouvait se cocher puis se décocher toute seule.</li>
+</ul>
+<p>  - Un double-clic (ou deux appuis rapprochés) envoyait deux bascules : le second est maintenant ignoré pendant 0,35 s, et un double-clic sur une ligne n&#x27;active plus l&#x27;action deux fois.</p>
+<p>  - Menu staff : les actions envoyées à moins de 250 ms d&#x27;intervalle étaient ignorées par le serveur (anti-spam) et la case revenait en arrière ; elles sont maintenant espacées au lieu d&#x27;être perdues.</p>
+<p>  - Menu staff › Réglages du service : « Ped de service » et « Bloquer les accès » relisaient les valeurs de l&#x27;ouverture du menu et revenaient à leur ancien état ; ils relisent maintenant les valeurs à jour.</p>
+<ul>
+<li><b>Notifications</b> : une notification identique (même type, titre et texte) encore à l&#x27;écran ne s&#x27;empile plus. La carte existante affiche un compteur « x2, x3… », remonte en tête et repart pour sa durée complète.</li>
+<li><b>HUD en haut à droite</b> : la ligne « ID · joueurs en ligne » avait un cadre noir (elle reprenait par erreur le style d&#x27;une autre fenêtre). Corrigé.</li>
+<li><b>Taille du HUD (F5 › Mes paramètres)</b> : chaque joueur peut grossir ou réduire son HUD de 80 % à 160 % (réglette en mode cartes, ← → en mode RageUI). Ça agit sur l&#x27;argent, les besoins, le lieu, la barre de vie, l&#x27;heure en haut à droite et le compteur. Le réglage est gardé sur le poste du joueur et se multiplie avec la taille réglée par le serveur.</li>
+</ul></div></details>
 <details class="card" open><summary><span class="n">78</span>Commandes de chat, 220 emotes avec aperçu, gestes à deux, audit</summary><div class="b"><ul>
 <li><b>Commandes de chat</b> (≈ 80 commandes, 107 avec les alias), proposées au fil de la frappe avec leur aide et leurs paramètres ; un joueur ne voit que celles qu&#x27;il peut utiliser (étiquette rouge « STAFF » sur les autres). <code>/aide</code> les liste toutes.</li>
 </ul>
