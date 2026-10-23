@@ -15,8 +15,27 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.2.3</b> · 2026-10-23<br>Menus F6 / F7 en lib, garage sans fenêtre, taxi facturé, HUD et police d&#x27;écriture<div class="sha">SHA-256 : 4519329ef07a3b94941918d072e19f69c9d5bed1feb351c51d5c2f3630e64c71</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.3.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.2.4</b> · 2026-10-23<br>HUD comme les photos, props permanents, clic partout, musique coupée<div class="sha">SHA-256 : a720b119ae32212072ece47b3f408a2904021461bcea5fa9e9a1eb1ef9a02232</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.4.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
+<details class="card" open><summary><span class="n">76</span>HUD comme les photos, props permanents, clic partout, musique coupée</summary><div class="b"><ul>
+<li><b>Props permanents</b> (menu staff F10 › <b>Props permanents</b>, droit « Poser et retirer des props permanents », en service) :</li>
+</ul>
+<p>  - <b>Poser un prop</b> : un modèle de la liste (barrière, cône, table, chaise, banc, tente, barnum, projecteur, conteneur…) ou <b>Autre modèle…</b> (nom technique du jeu). Il apparaît en transparence là où tu vises : <b>← →</b> tourner, <b>↑ ↓</b> monter / descendre, <b>E</b> poser, <b>Retour arrière</b> annuler. Le menu revient ensuite là où tu étais ;</p>
+<p>  - <b>Props proches</b> : le prop survolé est entouré ; Entrée le retire ;</p>
+<p>  - ils sont enregistrés en base et <b>restent après un redémarrage</b> ; chaque joueur fait apparaître ceux à moins de 150 m. Liste, nombre maximum et modèles proposés : panel › <b>Props permanents</b>.</p>
+<ul>
+<li><b>Musique des magasins coupée</b> : magasins de vêtements, supérettes et stations-service, Ammu-Nation, coiffeurs, tatoueurs, concession, garages de customisation. Les noms des sources de musique viennent de la liste extraite du jeu ; les radios sans nom sont coupées tant que le joueur est dans le magasin.</li>
+<li><b>/bdatest</b> (staff) : teste tout de suite la case « Joueurs en BDA » avec ton compte Discord et te dit ce qui manque (jeton du bot, serveur, salon, Discord pas ouvert au lancement de FiveM) ou si tu es bien vu dans le salon.</li>
+<li><b>Clic du serveur partout</b> : ton clic (fichier <code>web/sounds/click.wav</code>, recoupé au plus près du son) remplace les sons de navigation des menus lib (monter, descendre, valider, retour) et se joue à chaque appui dans les interfaces : inventaire, menu ALT, téléphone, tablettes, boutiques… Le son d&#x27;erreur reste celui du jeu. Volume et coupure : panel › Menus (« Sons de navigation », « Volume du clic »).</li>
+<li><b>Touches F6 / F7 corrigées</b> : chez les joueurs déjà venus, FiveM gardait en mémoire l&#x27;ancienne touche « F6 = tablette » et « F7 = tablette des organisations ». Ces anciennes touches ouvrent maintenant le menu de l&#x27;entreprise (F6) et le menu de l&#x27;organisation (F7), et un appui ne peut plus ouvrir puis refermer le menu aussitôt. Aussi en commandes : <b>/entreprise</b> et <b>/organisation</b>.</li>
+<li><b>/pbversion</b> : affiche la version installée et les touches, pour vérifier qu&#x27;une mise à jour est bien arrivée.</li>
+<li><b>Invite d&#x27;interaction</b> comme la photo : carré rouge avec la touche en blanc, étiquette sombre, texte normal (plus en majuscules).</li>
+<li><b>Repère des points d&#x27;interaction</b> : le rond lumineux sous l&#x27;invite est remplacé par une petite touche « E » rouge au-dessus du point (elle disparaît quand l&#x27;invite complète s&#x27;affiche).</li>
+<li><b>Notifications</b> comme la photo : ton logo dans un carré sombre, titre « Informations » (ou Attention / Erreur), croix pour fermer, barre de temps bleue, texte en dessous.</li>
+<li><b>Compteur</b> comme la photo, tout en bas à droite : phares (feux de croisement / route), moteur (rouge s&#x27;il est abîmé), KM/H ; rapport dans un carré blanc ; vitesse sur 3 chiffres (zéros grisés) ; carburant en litres (« 68.15/80.0l ») ; poids du coffre (« 0.0/70.0kg ») ; compteur kilométrique.</li>
+<li><b>HUD en haut à droite</b> : ajout du <b>métier</b> (avec grade et « en service ») et de l&#x27;<b>organisation</b> (à sa couleur), mis à jour dès qu&#x27;ils changent.</li>
+<li><b>Points qui ne s&#x27;enlevaient pas</b> : les 3 missions civiles d&#x27;exemple (livraison, déchets, <b>coursier</b>) avaient des positions par défaut, jamais posées en jeu : elles sont désactivées (réactivables dans le panel › Métiers civils), et toute mission civile se supprime maintenant au Builder avec « Supprimer le point le plus proche ».</li>
+</ul></div></details>
 <details class="card" open><summary><span class="n">75</span>Menus F6 / F7 en lib, garage sans fenêtre, taxi facturé, HUD et police d&#x27;écriture</summary><div class="b"><ul>
 <li><b>F6 : menu de mon entreprise</b> (lib) : « Prendre mon service » / « Quitter mon service », facturer, menotter, fouiller, amende, réanimer selon le métier.</li>
 </ul>
@@ -78,7 +97,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Corrigé</b> : À la déconnexion, le joueur disparaissait avant que les autres scripts ne le lisent : le service n&#x27;était pas toujours remis à zéro et la déconnexion n&#x27;apparaissait pas dans la chronologie.</li>
 <li><b>Corrigé</b> : Points d&#x27;entreprise et sacs au sol : demandes limitées (un client modifié pouvait surcharger la base de données).</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">72</span>Nouveau menu ALT, drapeaux de vente, tournois de poker, badge</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">72</span>Nouveau menu ALT, drapeaux de vente, tournois de poker, badge</summary><div class="b"><ul>
 <li><b>Amélioré</b> : Menu ALT refait : petite boîte bleu nuit, texte seul, barre bleue sur la ligne survolée, les catégories s&#x27;ouvrent dedans et « Retour » remonte. Les anciens styles restent au choix dans le panel.</li>
 <li><b>Amélioré</b> : Drapeaux de vente redessinés (vrai drapeau rectangulaire qui flotte dans le vent, emblème, blanc quand la zone est neutre). Plus de texte au-dessus du drapeau : l&#x27;état de la zone s&#x27;affiche sur le côté de l&#x27;écran.</li>
 <li><b>Nouveau</b> : Poker : tournois (droit d&#x27;entrée, jetons de tournoi, blindes qui doublent, cagnotte partagée entre les premiers, classement dans le panel) et tables privées avec mot de passe.</li>
