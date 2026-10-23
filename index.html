@@ -15,8 +15,58 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.2.2</b> · 2026-10-23<br>Casino et repères de la carte, La ville réagit (impayés, mandats, fourrière, secours), Taxi, dépanneuse, annonces, véhic<div class="sha">SHA-256 : c0183a370d657f80e5818415f5e705f6575c0f2dd8522768129c8f5c7348279f</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.2.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.2.3</b> · 2026-10-23<br>Menus F6 / F7 en lib, garage sans fenêtre, taxi facturé, HUD et police d&#x27;écriture<div class="sha">SHA-256 : 4519329ef07a3b94941918d072e19f69c9d5bed1feb351c51d5c2f3630e64c71</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.3.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
+<details class="card" open><summary><span class="n">75</span>Menus F6 / F7 en lib, garage sans fenêtre, taxi facturé, HUD et police d&#x27;écriture</summary><div class="b"><ul>
+<li><b>F6 : menu de mon entreprise</b> (lib) : « Prendre mon service » / « Quitter mon service », facturer, menotter, fouiller, amende, réanimer selon le métier.</li>
+</ul>
+<p>  - Mécano en service : <b>Réparer</b>, <b>Nettoyer</b>, <b>Customisation</b> (dans le véhicule du client), <b>Envoyer la facture</b>.</p>
+<p>  - Taxi : <b>Courses en attente</b> (accepter), <b>Démarrer le compteur</b>, <b>Terminer la course</b>, puis <b>Envoyer la facture</b> au client choisi.</p>
+<p>  - Bar, café, restaurant : <b>Servir un client</b>.</p>
+<p>  - La tablette de l&#x27;entreprise s&#x27;ouvre au <b>siège / bureau du patron</b> (point du Builder) ou avec <code>/tablette</code>. <b>F5 › Mon entreprise</b> ne fait plus que dire si on est dans une entreprise (et son grade, son service).</p>
+<ul>
+<li><b>Choisir quelqu&#x27;un</b> (facture, menottes, fouille, service…) : la personne survolée dans la liste est <b>entourée et marquée d&#x27;une flèche</b> au-dessus de la tête.</li>
+<li><b>Facture reçue</b> : elle s&#x27;affiche tout de suite dans un menu : <b>Payer</b> (banque puis espèces) ou <b>Plus tard</b> (elle reste dans la tablette et le téléphone).</li>
+<li><b>Point de prise de service</b> : un petit menu « Prendre mon service » / « Quitter mon service » au lieu d&#x27;un basculement direct.</li>
+<li><b>F7 : menu de mon organisation</b> (lib) : <b>Ligoter</b>, <b>Détacher</b>, <b>Escorter</b>, <b>Mettre dans le véhicule</b>, <b>Fouiller</b> (la personne doit être ligotée), <b>GPS : notre QG</b>, <b>Coffre</b> (au QG), <b>Verser à la caisse</b>, <b>Membres en ligne</b>.</li>
+</ul>
+<p>  - La <b>tablette de l&#x27;organisation s&#x27;ouvre seulement au QG</b> (point QG ou bureau du chef posé au Builder). Sans QG posé, elle reste accessible partout.</p>
+<p>  - Réglages dans le panel › Tablette des organisations › <b>Menu F7</b> : distances, objet nécessaire pour ligoter (ex. un serflex de ton inventaire, vide = aucun).</p>
+<ul>
+<li><b>Taxi</b> : plus de paiement automatique. À la fin de la course, le chauffeur envoie la facture au client (F6) ; la part du chauffeur lui est versée quand le client paie. L&#x27;app Taxi du téléphone sert seulement au client pour commander (option pour la rendre aux chauffeurs).</li>
+<li><b>Garage</b> :</li>
+</ul>
+<p>  - plus aucune fenêtre : <b>Clés</b>, <b>Organisation</b> et <b>Entreprise</b> sont des sous-menus du menu lib ;</p>
+<p>  - le joueur est <b>figé</b> tant que le menu du garage est ouvert ;</p>
+<p>  - quand on sort un véhicule, le menu se ferme tout de suite ; si le véhicule ne peut pas apparaître (modèle absent, place refusée), le joueur est prévenu et le véhicule <b>revient au garage</b> au lieu de rester « dehors ».</p>
+<ul>
+<li><b>Builder</b> :</li>
+</ul>
+<p>  - liste des points d&#x27;une entreprise › <b>Véhicules de l&#x27;entreprise</b> : tout le catalogue du jeu <b>par catégorie</b> ; les véhicules ajoutés deviennent des véhicules de service (employés en service). On peut aussi les retirer ;</p>
+<p>  - <b>aperçu en transparence</b> du jeu du casino (machine à sous, roulette, blackjack…) devant toi avant de le poser, exactement où il apparaîtra ;</p>
+<p>  - après une pose, le menu <b>revient d&#x27;une étape</b> (là où tu avais choisi) au lieu de se fermer.</p>
+<ul>
+<li><b>Portes</b> (ALT sur une porte, staff) : on <b>coche qui a accès</b> puis <b>Valider</b> (plus de nom, de groupe ni de filtre à remplir ; recherche seulement si la liste est longue). Les grandes portes (garages, portails) s&#x27;ouvrent à 7 m à pied et <b>jusqu&#x27;à 15 m en voiture</b> (E, sans klaxonner).</li>
+<li><b>Tablette en main</b> : à l&#x27;ouverture de la tablette (entreprise ou organisation), le personnage tient une tablette avec l&#x27;animation.</li>
+<li><b>Mécano</b> : dans la customisation, en survolant chaque <b>klaxon</b> on l&#x27;entend avant de choisir.</li>
+<li><b>Appels</b> : le micro marche pendant un appel même quand le téléphone est ouvert (la touche pour parler reste au jeu).</li>
+<li><b>HUD « Shadow »</b> (nouveau style par défaut, une fois ; réglable dans le panel) : lieu en haut à gauche dans la mini-carte, direction en haut à droite, barre de vie verte sous la carte, espèces / banque / voix / faim / soif à droite de la carte ; en haut à droite : serveur, heure, date, ton ID et les joueurs en ligne. Il se cale sur la vraie position de la mini-carte, quelle que soit la résolution.</li>
+<li><b>Tableau du staff</b> : petites cases carrées en haut au centre (icône, chiffre, libellé dessous) : joueurs en ligne, staff en service, reports en attente, <b>joueurs en BDA</b>.</li>
+</ul>
+<p>  - <b>Joueurs en BDA</b> = joueurs connectés présents dans le <b>salon vocal d&#x27;attente du support</b> sur Discord. À régler : panel › Staff › identifiant du salon vocal (mode développeur Discord → clic droit sur le salon → Copier l&#x27;identifiant), avec le jeton du bot et l&#x27;identifiant du serveur Discord (module Discord). Mis à jour toutes les minutes ; « — » tant que ce n&#x27;est pas réglé.</p>
+<p>  - Discord ne donne pas la liste d&#x27;un salon vocal sans connexion permanente : le bot demande, joueur connecté par joueur connecté, dans quel salon vocal il est. Une personne dans le salon mais pas en jeu n&#x27;est donc pas comptée.</p>
+<ul>
+<li><b>Point de vente</b> (drapeau) : en bas à droite, une ligne par organisation présente dans le cercle avec son nombre de membres (ex. « White (10) »), la barre suit le nombre. Le propriétaire et l&#x27;attaquant restent affichés même à 0.</li>
+<li><b>Gamertags</b> (nouveau style « Sensity », par défaut une fois) :</li>
+</ul>
+<p>  - au-dessus : <b>[VIP*]</b> si la personne est VIP (le nom du VIP réglé dans le panel, ex. « Elite Club »), puis <b>[son entreprise]</b> et <b>[son gang]</b> s&#x27;il en a un ;</p>
+<p>  - au milieu : <b>[ID][Joueur] Nom</b>, le rôle staff à la place de « Joueur » pour le staff en service, et <b>(Nouveau)</b> en vert pendant les 72 premières heures (réglable) ;</p>
+<p>  - en dessous : <b>Ping</b> en vert (orange puis rouge s&#x27;il est élevé).</p>
+<p>  - Tout le monde a maintenant une étiquette ; elles restent visibles par le staff seulement (réglage « Qui voit les étiquettes »).</p>
+<ul>
+<li><b>Menu ALT</b> : boîte carrée, compacte et sombre, lignes serrées.</li>
+<li><b>Police d&#x27;écriture</b> : une seule partout en jeu, celle du « Zone neutre » (Poppins), <b>inventaire compris</b> ; les textes trop longs (noms d&#x27;objets, titres de coffres) se coupent proprement avec « … » au lieu de déborder.</li>
+</ul></div></details>
 <details class="card" open><summary><span class="n">74</span>Fusion 1.2.2, inventaire d&#x27;origine conservé, corrections</summary><div class="b"><ul>
 <li><b>Amélioré</b> : Tout le travail des patchs 63 à 73 est intégré (casino, poker, taxi, contrats, guerres de territoire, largages, Builder rangé…), sauf le nouvel inventaire : l&#x27;inventaire d&#x27;origine est gardé (couleur du serveur, décor assombri, flou). Les protections anti-duplication de l&#x27;inventaire sont bien reprises.</li>
 <li><b>Corrigé</b> : Un serveur passé par la 1.2.2 retrouve automatiquement l&#x27;apparence d&#x27;origine de l&#x27;inventaire (une seule fois, réglable ensuite dans le panel).</li>
@@ -35,7 +85,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Nouveau</b> : Croupiers du casino aux tables (blackjack, roulette, dés, plus haut / plus bas, poker) avec un geste à chaque donne.</li>
 <li><b>Nouveau</b> : Badge d&#x27;employé : ALT › Métier › Montrer mon badge (entreprise, grade, matricule, en service ou non).</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">71</span>Hélipad, où est ma voiture, meubles à vendre, tenue de service</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">71</span>Hélipad, où est ma voiture, meubles à vendre, tenue de service</summary><div class="b"><ul>
 <li><b>Nouveau</b> : Hélipad d&#x27;entreprise (Builder › entreprise › Hélipad) et catalogue de véhicules de service achetés avec la caisse : hélicoptères à l&#x27;hélipad, voitures au garage, bateaux au port ; revente à 50 %.</li>
 <li><b>Nouveau</b> : Téléphone › Garage : où est chaque véhicule (en direct, dernière position connue, garage, fourrière la plus proche), itinéraire et repère sur la carte ; véhicules de service et clés prêtées listés aussi.</li>
 <li><b>Nouveau</b> : Meubles en objets : Magasin de meubles au Builder, on pose ses meubles chez soi et ils reviennent dans le sac quand on les retire. App Contrats : vente d&#x27;objets entre joueurs (meubles et autres), paiement sécurisé.</li>
