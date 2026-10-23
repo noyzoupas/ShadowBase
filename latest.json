@@ -1,22 +1,26 @@
 {
  "v": 1,
- "version": "1.2.5",
+ "version": "1.2.6",
  "date": "2026-10-23",
- "title": "Logement, fiche d'infos, braquage, gamertags, invite",
+ "title": "Commandes de chat, 220 emotes avec aperçu, gestes à deux, audit",
  "notes": [
-  "— Patch notes 77 — Logement, fiche d'infos, braquage, gamertags, invite",
-  "Logement : l'invite « E : sortir, meubles, aquarium » ne s'affiche plus partout dans l'appartement, seulement à la porte intérieure (là où on arrive), avec la petite touche « E » dessus. Si on quitte le logement autrement (téléporté, réapparition…), l'invite disparaît et les meubles locaux sont retirés.",
-  "Fiche d'infos (infos d'un joueur au menu staff, papiers, argent, plaque au menu ALT…) :",
-  "elle se ferme en même temps que le menu auquel elle est accrochée (avant, elle restait jusqu'à la fin de son délai, même après avoir quitté le menu) ; sans menu, elle s'efface au bout de 12 s au plus ;",
-  "plus carrée et transparente : coins presque droits, fond sombre transparent, titre séparé par un trait fin.",
-  "Invite d'interaction : texte en 14 px et touche en 26 px (avant 16 / 30) ; une touche longue (« RMB », « ENTRÉE »…) prend une police plus petite et tient dans son carré ; l'étiquette va jusqu'à 440 px avant d'être coupée.",
-  "Braquage de supérette : le vendeur était aussi un PNJ du magasin, que le jeu retournait chaque seconde vers le joueur : il restait à te regarder. Pendant le braquage il n'est plus tourné, il fait l'animation de la caisse (sac en main) et la reprend si quelque chose la coupe.",
-  "Gamertags : ancrés au-dessus du personnage (plus sur la tête, qui bouge avec les animations), recalculés à chaque image et posés au pixel près : ils ne tremblent plus quand on tourne la caméra, marche, monte ou descend.",
-  "Inventaire : les demi-cercles en pointillés verts et les petites croix du fond sont effacés des deux images de fond (originaux gardés dans _archive/2026-10-23-inventaire-fonds).",
-  "Une image pour chaque objet : les 265 objets du serveur (base + extensions + activités + Burger Shot) ont maintenant une image dédiée, dans l'inventaire comme dans les boutiques. 170 images dessinées dans le même style (fond transparent, contour sombre) s'ajoutent aux images ox déjà présentes : 27 poissons, gibier (peaux, viandes, bois, griffes, appeaux), 16 masques, 5 sacs, 4 pochons de drogue et leurs matières premières, 16 meubles, butin des cambriolages, pièces et plans d'armes, plats et boissons, matériaux (minerais, lingots, bois, verre…), outils de pêche et leurres, jeton de casino, fausse plaque. Les objets Burger Shot prennent burger, frites ou soda. Pour en ajouter : outils/images_objets/generer_images.py."
+  "— Patch notes 78 — Commandes de chat, 220 emotes avec aperçu, gestes à deux, audit",
+  "Commandes de chat (≈ 80 commandes, 107 avec les alias), proposées au fil de la frappe avec leur aide et leurs paramètres ; un joueur ne voit que celles qu'il peut utiliser (étiquette rouge « STAFF » sur les autres). /aide les liste toutes.",
+  "Staff : chaque commande est un raccourci d'une action du menu F10, avec les mêmes droits, la même obligation d'être en service, le même contrôle de rang et le même journal. /staff (prendre / quitter le service), /goto, /bring, /tp x y z ou /tp id, /tpm, /back, /spec, /noclip, /god, /invisible, /noms, /coords, /heal [id], /revive [id], /gilet [id], /nourrir [id], /healall, /freeze, /kill, /slap, /ejecter, /desarmer, /info, /inv, /clearinv, /chercher, /msg, /warn, /kick, /ban id 1h|1j|3j|7j|30j|def motif, /mute, /unmute, /jail, /unjail, /givecash, /givebank, /giveitem, /giveweapon, /givecar, /car, /dv, /dvall, /fix, /flip, /clean, /plein, /unlock, /meteo, /heurejeu, /blackout, /clearpeds, /restart, /annulerrestart.",
+  "Tout le monde : /id (ton ID et celui des joueurs proches), /joueurs, /ping, /heure, /de [faces], /pileface, /essayer <action> (réussite ou échec, vu par les proches), /donner <id> <montant> (au joueur à côté), /discord, /regles (textes à régler dans le panel), /clear, /moteur, /coffre, /capot, /vitres, /ceinture, /verrou, /sac, /telephone, /siege 1-4, /position (rue et quartier), /e <emote>, /emotes.",
+  "Menu des emotes (F9) : 220 emotes au lieu de 70, et un aperçu dans chaque carte (plus aucune case vide). Toutes les animations, scénarios et objets ont été vérifiés un par un dans les fichiers du jeu.",
+  "Emote : 33 danses (boîte de nuit, foule, podium, disco, salsa, air guitar / batterie / synthé…), 29 humeurs (esprit soufflé, pleurnicher, poule mouillée, respect, réfléchir…), 25 poses de repos (chaise, fauteuil, marches, muret, transat, dormir, adossé pied au mur, statue, super-héros…), 15 de sport (haltères, tractions, développé couché, golf, tennis, échauffement…).",
+  "Accessoires : téléphone, selfie, filmer, tablette, parapluie, rose, livre, carton, lampe torche, joint, pêche, pancarte… ; boissons (bière, whisky, vin, champagne, canette, eau) et nourriture (burger, sandwich, donut, hot-dog, taco, barbecue) avec l'objet en main ; métiers (souder, marteler, marteau-piqueur, mécanique, jardiner, balayer, ordinateur, distributeur…).",
+  "Actions : 31 gestes (oui, non, toi, moi, par là, doucement, salut, pistolets avec les doigts…), postures (à genoux mains sur la tête, s'accroupir, inspecter) et métiers (faction, radio, badge, matraque, massage cardiaque, circulation…).",
+  "/e danse 3, /e pompes… joue une emote sans ouvrir le menu (nom ou identifiant, sans accents) ; /e seul l'arrête.",
+  "Gestes à deux (menu emotes et menu ALT, toujours avec accord Y / N) : 8 nouveaux — taper dans la main, accolade, tape dans le dos, poignée de main virile, faire la bise, remettre un objet, gifle (RP), coup de tête (RP). « Checker » fait maintenant un vrai check du poing.",
+  "Audit :",
+  "Danse 1 et Danse 2 ne marchaient pas (animations absentes du jeu), dans le menu F9, le menu ALT et le menu d'interaction : remplacées par des danses qui existent.",
+  "Toutes les animations et tous les scénarios de la base contrôlés contre les fichiers du jeu ; tous les événements, appels de fonctions et messages d'interface vérifiés d'un fichier à l'autre (aucun envoyé dans le vide) ; manifestes, syntaxe (239 fichiers) et variables globales vérifiés.",
+  "Ancien test de la passerelle QBCore / ESX (retirée de la base) rangé dans _archive."
  ],
- "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.5.zip",
- "sha256": "7426355847aaa19d3111bf79dca4ee4e6a218aae0d55d17f42300379147eb508",
+ "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.6.zip",
+ "sha256": "ea3a2a4222686672e2e6d4f31cd9176644ead053c86a276ad437da0fcd45da8b",
  "site": "https://noyzoupas.github.io/ShadowBase/",
- "sig": "37291053ada26ac33650013cbe714dd2e962aed8e80f4a4dfb58d34c0aa7805cb3fb730db9815623fe960c10b54109797773aa6fa691c6a544a16a8666d21a05"
+ "sig": "0317895f847e7293290639de6932bc593b5ade3382f4648c2825668097c25e4180ef3dffc8588acfbff749bf5fec3743542b0dca295e83ed41f9b0020794c608"
 }
