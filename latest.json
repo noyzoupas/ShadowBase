@@ -1,28 +1,22 @@
 {
  "v": 1,
- "version": "1.2.4",
+ "version": "1.2.5",
  "date": "2026-10-23",
- "title": "HUD comme les photos, props permanents, clic partout, musique coupée",
+ "title": "Logement, fiche d'infos, braquage, gamertags, invite",
  "notes": [
-  "— Patch notes 76 — HUD comme les photos, props permanents, clic partout, musique coupée",
-  "Props permanents (menu staff F10 › Props permanents, droit « Poser et retirer des props permanents », en service) :",
-  "Poser un prop : un modèle de la liste (barrière, cône, table, chaise, banc, tente, barnum, projecteur, conteneur…) ou Autre modèle… (nom technique du jeu). Il apparaît en transparence là où tu vises : ← → tourner, ↑ ↓ monter / descendre, E poser, Retour arrière annuler. Le menu revient ensuite là où tu étais ;",
-  "Props proches : le prop survolé est entouré ; Entrée le retire ;",
-  "ils sont enregistrés en base et restent après un redémarrage ; chaque joueur fait apparaître ceux à moins de 150 m. Liste, nombre maximum et modèles proposés : panel › Props permanents.",
-  "Musique des magasins coupée : magasins de vêtements, supérettes et stations-service, Ammu-Nation, coiffeurs, tatoueurs, concession, garages de customisation. Les noms des sources de musique viennent de la liste extraite du jeu ; les radios sans nom sont coupées tant que le joueur est dans le magasin.",
-  "/bdatest (staff) : teste tout de suite la case « Joueurs en BDA » avec ton compte Discord et te dit ce qui manque (jeton du bot, serveur, salon, Discord pas ouvert au lancement de FiveM) ou si tu es bien vu dans le salon.",
-  "Clic du serveur partout : ton clic (fichier web/sounds/click.wav, recoupé au plus près du son) remplace les sons de navigation des menus lib (monter, descendre, valider, retour) et se joue à chaque appui dans les interfaces : inventaire, menu ALT, téléphone, tablettes, boutiques… Le son d'erreur reste celui du jeu. Volume et coupure : panel › Menus (« Sons de navigation », « Volume du clic »).",
-  "Touches F6 / F7 corrigées : chez les joueurs déjà venus, FiveM gardait en mémoire l'ancienne touche « F6 = tablette » et « F7 = tablette des organisations ». Ces anciennes touches ouvrent maintenant le menu de l'entreprise (F6) et le menu de l'organisation (F7), et un appui ne peut plus ouvrir puis refermer le menu aussitôt. Aussi en commandes : /entreprise et /organisation.",
-  "/pbversion : affiche la version installée et les touches, pour vérifier qu'une mise à jour est bien arrivée.",
-  "Invite d'interaction comme la photo : carré rouge avec la touche en blanc, étiquette sombre, texte normal (plus en majuscules).",
-  "Repère des points d'interaction : le rond lumineux sous l'invite est remplacé par une petite touche « E » rouge au-dessus du point (elle disparaît quand l'invite complète s'affiche).",
-  "Notifications comme la photo : ton logo dans un carré sombre, titre « Informations » (ou Attention / Erreur), croix pour fermer, barre de temps bleue, texte en dessous.",
-  "Compteur comme la photo, tout en bas à droite : phares (feux de croisement / route), moteur (rouge s'il est abîmé), KM/H ; rapport dans un carré blanc ; vitesse sur 3 chiffres (zéros grisés) ; carburant en litres (« 68.15/80.0l ») ; poids du coffre (« 0.0/70.0kg ») ; compteur kilométrique.",
-  "HUD en haut à droite : ajout du métier (avec grade et « en service ») et de l'organisation (à sa couleur), mis à jour dès qu'ils changent.",
-  "Points qui ne s'enlevaient pas : les 3 missions civiles d'exemple (livraison, déchets, coursier) avaient des positions par défaut, jamais posées en jeu : elles sont désactivées (réactivables dans le panel › Métiers civils), et toute mission civile se supprime maintenant au Builder avec « Supprimer le point le plus proche »."
+  "— Patch notes 77 — Logement, fiche d'infos, braquage, gamertags, invite",
+  "Logement : l'invite « E : sortir, meubles, aquarium » ne s'affiche plus partout dans l'appartement, seulement à la porte intérieure (là où on arrive), avec la petite touche « E » dessus. Si on quitte le logement autrement (téléporté, réapparition…), l'invite disparaît et les meubles locaux sont retirés.",
+  "Fiche d'infos (infos d'un joueur au menu staff, papiers, argent, plaque au menu ALT…) :",
+  "elle se ferme en même temps que le menu auquel elle est accrochée (avant, elle restait jusqu'à la fin de son délai, même après avoir quitté le menu) ; sans menu, elle s'efface au bout de 12 s au plus ;",
+  "plus carrée et transparente : coins presque droits, fond sombre transparent, titre séparé par un trait fin.",
+  "Invite d'interaction : texte en 14 px et touche en 26 px (avant 16 / 30) ; une touche longue (« RMB », « ENTRÉE »…) prend une police plus petite et tient dans son carré ; l'étiquette va jusqu'à 440 px avant d'être coupée.",
+  "Braquage de supérette : le vendeur était aussi un PNJ du magasin, que le jeu retournait chaque seconde vers le joueur : il restait à te regarder. Pendant le braquage il n'est plus tourné, il fait l'animation de la caisse (sac en main) et la reprend si quelque chose la coupe.",
+  "Gamertags : ancrés au-dessus du personnage (plus sur la tête, qui bouge avec les animations), recalculés à chaque image et posés au pixel près : ils ne tremblent plus quand on tourne la caméra, marche, monte ou descend.",
+  "Inventaire : les demi-cercles en pointillés verts et les petites croix du fond sont effacés des deux images de fond (originaux gardés dans _archive/2026-10-23-inventaire-fonds).",
+  "Une image pour chaque objet : les 265 objets du serveur (base + extensions + activités + Burger Shot) ont maintenant une image dédiée, dans l'inventaire comme dans les boutiques. 170 images dessinées dans le même style (fond transparent, contour sombre) s'ajoutent aux images ox déjà présentes : 27 poissons, gibier (peaux, viandes, bois, griffes, appeaux), 16 masques, 5 sacs, 4 pochons de drogue et leurs matières premières, 16 meubles, butin des cambriolages, pièces et plans d'armes, plats et boissons, matériaux (minerais, lingots, bois, verre…), outils de pêche et leurres, jeton de casino, fausse plaque. Les objets Burger Shot prennent burger, frites ou soda. Pour en ajouter : outils/images_objets/generer_images.py."
  ],
- "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.4.zip",
- "sha256": "a720b119ae32212072ece47b3f408a2904021461bcea5fa9e9a1eb1ef9a02232",
+ "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.5.zip",
+ "sha256": "7426355847aaa19d3111bf79dca4ee4e6a218aae0d55d17f42300379147eb508",
  "site": "https://noyzoupas.github.io/ShadowBase/",
- "sig": "eec6e1b365055797c3d1cc152f1be440c64b8bd5d5207b5b984985c8763386072e6147adccc71caebf1ccb87d3025b623159627a9b0f19f35747416b994aa70a"
+ "sig": "37291053ada26ac33650013cbe714dd2e962aed8e80f4a4dfb58d34c0aa7805cb3fb730db9815623fe960c10b54109797773aa6fa691c6a544a16a8666d21a05"
 }

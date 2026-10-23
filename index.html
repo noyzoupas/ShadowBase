@@ -15,8 +15,21 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.2.4</b> · 2026-10-23<br>HUD comme les photos, props permanents, clic partout, musique coupée<div class="sha">SHA-256 : a720b119ae32212072ece47b3f408a2904021461bcea5fa9e9a1eb1ef9a02232</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.4.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.2.5</b> · 2026-10-23<br>Logement, fiche d&#x27;infos, braquage, gamertags, invite<div class="sha">SHA-256 : 7426355847aaa19d3111bf79dca4ee4e6a218aae0d55d17f42300379147eb508</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.5.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
+<details class="card" open><summary><span class="n">77</span>Logement, fiche d&#x27;infos, braquage, gamertags, invite</summary><div class="b"><ul>
+<li><b>Logement</b> : l&#x27;invite « E : sortir, meubles, aquarium » ne s&#x27;affiche plus partout dans l&#x27;appartement, seulement à la porte intérieure (là où on arrive), avec la petite touche « E » dessus. Si on quitte le logement autrement (téléporté, réapparition…), l&#x27;invite disparaît et les meubles locaux sont retirés.</li>
+<li><b>Fiche d&#x27;infos</b> (infos d&#x27;un joueur au menu staff, papiers, argent, plaque au menu ALT…) :</li>
+</ul>
+<p>  - elle se ferme <b>en même temps que le menu</b> auquel elle est accrochée (avant, elle restait jusqu&#x27;à la fin de son délai, même après avoir quitté le menu) ; sans menu, elle s&#x27;efface au bout de 12 s au plus ;</p>
+<p>  - plus <b>carrée</b> et <b>transparente</b> : coins presque droits, fond sombre transparent, titre séparé par un trait fin.</p>
+<ul>
+<li><b>Invite d&#x27;interaction</b> : texte en 14 px et touche en 26 px (avant 16 / 30) ; une touche longue (« RMB », « ENTRÉE »…) prend une police plus petite et tient dans son carré ; l&#x27;étiquette va jusqu&#x27;à 440 px avant d&#x27;être coupée.</li>
+<li><b>Braquage de supérette</b> : le vendeur était aussi un PNJ du magasin, que le jeu retournait chaque seconde vers le joueur : il restait à te regarder. Pendant le braquage il n&#x27;est plus tourné, il fait l&#x27;animation de la caisse (sac en main) et la reprend si quelque chose la coupe.</li>
+<li><b>Gamertags</b> : ancrés au-dessus du personnage (plus sur la tête, qui bouge avec les animations), recalculés à chaque image et posés au pixel près : ils ne tremblent plus quand on tourne la caméra, marche, monte ou descend.</li>
+<li><b>Inventaire</b> : les demi-cercles en pointillés verts et les petites croix du fond sont effacés des deux images de fond (originaux gardés dans <code>_archive/2026-10-23-inventaire-fonds</code>).</li>
+<li><b>Une image pour chaque objet</b> : les 265 objets du serveur (base + extensions + activités + Burger Shot) ont maintenant une image dédiée, dans l&#x27;inventaire comme dans les boutiques. 170 images dessinées dans le même style (fond transparent, contour sombre) s&#x27;ajoutent aux images ox déjà présentes : 27 poissons, gibier (peaux, viandes, bois, griffes, appeaux), 16 masques, 5 sacs, 4 pochons de drogue et leurs matières premières, 16 meubles, butin des cambriolages, pièces et plans d&#x27;armes, plats et boissons, matériaux (minerais, lingots, bois, verre…), outils de pêche et leurres, jeton de casino, fausse plaque. Les objets Burger Shot prennent burger, frites ou soda. Pour en ajouter : <code>outils/images_objets/generer_images.py</code>.</li>
+</ul></div></details>
 <details class="card" open><summary><span class="n">76</span>HUD comme les photos, props permanents, clic partout, musique coupée</summary><div class="b"><ul>
 <li><b>Props permanents</b> (menu staff F10 › <b>Props permanents</b>, droit « Poser et retirer des props permanents », en service) :</li>
 </ul>
@@ -92,7 +105,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Corrigé</b> : Loterie du casino : le prochain tirage pouvait être décalé d&#x27;une heure au changement d&#x27;heure été / hiver.</li>
 <li><b>Corrigé</b> : Téléphone : les apps (Contrats, Annonces…) plantaient au démarrage du serveur ; Économie › Contrats ne s&#x27;ouvrait pas dans le panel.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">73</span>Menu ALT comme la référence, corrections</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">73</span>Menu ALT comme la référence, corrections</summary><div class="b"><ul>
 <li><b>Amélioré</b> : Menu ALT : large boîte bleu ardoise translucide, texte blanc bien espacé, pastille bleu cyan sur la ligne choisie, sans surlignage.</li>
 <li><b>Corrigé</b> : À la déconnexion, le joueur disparaissait avant que les autres scripts ne le lisent : le service n&#x27;était pas toujours remis à zéro et la déconnexion n&#x27;apparaissait pas dans la chronologie.</li>
 <li><b>Corrigé</b> : Points d&#x27;entreprise et sacs au sol : demandes limitées (un client modifié pouvait surcharger la base de données).</li>
