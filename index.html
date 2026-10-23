@@ -15,9 +15,86 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.1.7</b> · 2026-10-22<br>Points et étiquettes d&#x27;interaction, garage avec aperçu, noclip fantôme, Atelier mécano facturé, customisation en direct,<div class="sha">SHA-256 : a972a50fc1c27f37323e2ffafa53261ba197a791e26aed1b49c5269574087228</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.1.7.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.2.2</b> · 2026-10-23<br>Casino et repères de la carte, La ville réagit (impayés, mandats, fourrière, secours), Taxi, dépanneuse, annonces, véhic<div class="sha">SHA-256 : c0183a370d657f80e5818415f5e705f6575c0f2dd8522768129c8f5c7348279f</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.2.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
-<details class="card" open><summary><span class="n">62</span>Atelier mécano facturé, customisation en direct, menu Shadow retravaillé</summary><div class="b"><ul>
+<details class="card" open><summary><span class="n">74</span>Fusion 1.2.2, inventaire d&#x27;origine conservé, corrections</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Tout le travail des patchs 63 à 73 est intégré (casino, poker, taxi, contrats, guerres de territoire, largages, Builder rangé…), sauf le nouvel inventaire : l&#x27;inventaire d&#x27;origine est gardé (couleur du serveur, décor assombri, flou). Les protections anti-duplication de l&#x27;inventaire sont bien reprises.</li>
+<li><b>Corrigé</b> : Un serveur passé par la 1.2.2 retrouve automatiquement l&#x27;apparence d&#x27;origine de l&#x27;inventaire (une seule fois, réglable ensuite dans le panel).</li>
+<li><b>Corrigé</b> : Loterie du casino : le prochain tirage pouvait être décalé d&#x27;une heure au changement d&#x27;heure été / hiver.</li>
+<li><b>Corrigé</b> : Téléphone : les apps (Contrats, Annonces…) plantaient au démarrage du serveur ; Économie › Contrats ne s&#x27;ouvrait pas dans le panel.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">73</span>Menu ALT comme la référence, corrections</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Menu ALT : large boîte bleu ardoise translucide, texte blanc bien espacé, pastille bleu cyan sur la ligne choisie, sans surlignage.</li>
+<li><b>Corrigé</b> : À la déconnexion, le joueur disparaissait avant que les autres scripts ne le lisent : le service n&#x27;était pas toujours remis à zéro et la déconnexion n&#x27;apparaissait pas dans la chronologie.</li>
+<li><b>Corrigé</b> : Points d&#x27;entreprise et sacs au sol : demandes limitées (un client modifié pouvait surcharger la base de données).</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">72</span>Nouveau menu ALT, drapeaux de vente, tournois de poker, badge</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Menu ALT refait : petite boîte bleu nuit, texte seul, barre bleue sur la ligne survolée, les catégories s&#x27;ouvrent dedans et « Retour » remonte. Les anciens styles restent au choix dans le panel.</li>
+<li><b>Amélioré</b> : Drapeaux de vente redessinés (vrai drapeau rectangulaire qui flotte dans le vent, emblème, blanc quand la zone est neutre). Plus de texte au-dessus du drapeau : l&#x27;état de la zone s&#x27;affiche sur le côté de l&#x27;écran.</li>
+<li><b>Nouveau</b> : Poker : tournois (droit d&#x27;entrée, jetons de tournoi, blindes qui doublent, cagnotte partagée entre les premiers, classement dans le panel) et tables privées avec mot de passe.</li>
+<li><b>Nouveau</b> : Croupiers du casino aux tables (blackjack, roulette, dés, plus haut / plus bas, poker) avec un geste à chaque donne.</li>
+<li><b>Nouveau</b> : Badge d&#x27;employé : ALT › Métier › Montrer mon badge (entreprise, grade, matricule, en service ou non).</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">71</span>Hélipad, où est ma voiture, meubles à vendre, tenue de service</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Hélipad d&#x27;entreprise (Builder › entreprise › Hélipad) et catalogue de véhicules de service achetés avec la caisse : hélicoptères à l&#x27;hélipad, voitures au garage, bateaux au port ; revente à 50 %.</li>
+<li><b>Nouveau</b> : Téléphone › Garage : où est chaque véhicule (en direct, dernière position connue, garage, fourrière la plus proche), itinéraire et repère sur la carte ; véhicules de service et clés prêtées listés aussi.</li>
+<li><b>Nouveau</b> : Meubles en objets : Magasin de meubles au Builder, on pose ses meubles chez soi et ils reviennent dans le sac quand on les retire. App Contrats : vente d&#x27;objets entre joueurs (meubles et autres), paiement sécurisé.</li>
+<li><b>Amélioré</b> : Tenue de service : la dernière tenue enfilée au vestiaire devient sa tenue de service ; chacun peut désactiver la tenue automatique.</li>
+<li><b>Corrigé</b> : Licence : la limite de joueurs et le blocage sans licence ne s&#x27;appliquaient pas (erreur dans la connexion).</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">70</span>Poker entre joueurs, historique du casino</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Poker Texas Hold&#x27;em entre joueurs (Builder › Casino › Jeu › Poker) : 2 à 6 places, cave en jetons, blindes, relances, tapis et pots secondaires, temps de parole, commission du casino dès le flop.</li>
+<li><b>Nouveau</b> : Casino › Mes parties : bilans du jour, de la semaine et depuis toujours, jeu préféré, plus gros gain, dernières parties. Panel › Casino › Joueurs : classement des gagnants et perdants.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">69</span>Grande chasse aux bugs</summary><div class="b"><ul>
+<li><b>Corrigé</b> : Duplication d&#x27;objets quand deux joueurs vident le même coffre en même temps ; aquarium et consigne qui pouvaient donner deux fois.</li>
+<li><b>Corrigé</b> : Caisses (organisation, entreprise, casino, bar, atelier, missions) qui pouvaient payer deux fois ou passer dans le rouge sur un double clic.</li>
+<li><b>Corrigé</b> : Garage : on ne range plus une voiture laissée ailleurs (doublon). Fourrière et atelier : la plaque est lue par le serveur, plus de saisie ou de tuning à distance.</li>
+<li><b>Corrigé</b> : Location remboursée même véhicule détruit ; magasin qui encaissait sans donner l&#x27;objet ; remboursement accepté alors que le client n&#x27;avait plus les articles ; achat de logement payé sans être attribué en cas d&#x27;erreur.</li>
+<li><b>Corrigé</b> : Se déconnecter menotté ne libère plus (toujours menotté à la reconnexion, police prévenue) ; virements à soi-même refusés.</li>
+<li><b>Corrigé</b> : Braquages : un distributeur payé deux fois, GoFast livré avec n&#x27;importe quel véhicule. Fabrication (armes, activités) qui donnait l&#x27;objet même si les pièces manquaient.</li>
+<li><b>Corrigé</b> : Discord : synchronisations étalées (plus de limite de débit), pseudo envoyé seulement s&#x27;il change.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">68</span>Largages, chasses au trésor, guerres de territoire</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Largage : une zone est annoncée, une caisse tombe, le premier qui l&#x27;ouvre gagne argent et objets. Chasse au trésor : la zone se resserre toutes les 3 minutes, il faut creuser au bon endroit.</li>
+<li><b>Nouveau</b> : Lancement automatique (toutes les X minutes s&#x27;il y a assez de joueurs), planifié dans Événements, ou à la main depuis le panel.</li>
+<li><b>Nouveau</b> : Guerres de territoire planifiées (jour et heure) : points de présence dans la zone et d&#x27;éliminations de rivaux, tableau des scores à l&#x27;écran, la zone et la récompense au vainqueur, historique.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">67</span>Ville vivante (ouvert / fermé, contrats, plaques, Discord, journaux)</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Entreprises ouvertes ou fermées : repère vert ou rouge sur la carte selon les employés en service, et annuaire du téléphone en direct (ouverts d&#x27;abord).</li>
+<li><b>Nouveau</b> : Contrats de vente entre joueurs (app Contrats) : véhicule ou logement, signature à côté, paiement sécurisé et taxe de mutation.</li>
+<li><b>Nouveau</b> : Plaques personnalisées (payantes, au garage) et fausses plaques pour les illégaux : la police ne retrouve plus le véhicule, retrait en ALT.</li>
+<li><b>Nouveau</b> : Journal des morts (qui, par qui, arme, distance, position) et sauvegardes d&#x27;inventaire avec restauration à une date donnée.</li>
+<li><b>Nouveau</b> : Discord ↔ personnage : rôles VIP, métier et groupe donnés et retirés tout seuls, pseudo du personnage, Discord obligatoire en option.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">66</span>Builder rangé, garages terrestres, aériens et navals</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Builder (F10 › Builder) : tout est rangé en 7 sections (Entreprises, Illégal, Commerces et services, Garages et véhicules, Immobilier et coffres, Activités, Autres) avec une recherche, au lieu d&#x27;une longue liste.</li>
+<li><b>Nouveau</b> : Garages créés en jeu : on pose l&#x27;entrée, la sortie du véhicule et le PNJ, étape par étape ; garage, hangar d&#x27;avions, port, et une fourrière pour chacun.</li>
+<li><b>Nouveau</b> : Garages séparés par type : un avion ne se range que dans un hangar, un bateau que dans un port ; icône de carte selon le type, PNJ au comptoir.</li>
+<li><b>Corrigé</b> : Le groupe Casino n&#x27;apparaissait pas dans le Builder ; nom du jeu repris du préréglage choisi.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">65</span>Taxi, dépanneuse, annonces, véhicules de service, logements</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Taxi : app Taxi du téléphone (commander, accepter), taximètre mesuré par le serveur, paiement automatique ou facture.</li>
+<li><b>Nouveau</b> : Dépanneuse : un mécano en service avec un plateau charge un véhicule (ALT), le décharge ou le dépose à la fourrière contre une prime pour sa caisse.</li>
+<li><b>Nouveau</b> : Véhicules de service d&#x27;entreprise (clé seulement en service) et clés prêtées pour 1 à 24 h.</li>
+<li><b>Nouveau</b> : Téléphone : app Annonces (vente, achat, emploi, logement…) avec Écrire / Appeler l&#x27;auteur.</li>
+<li><b>Nouveau</b> : Logements : loyer prélevé même hors ligne, expulsion après les impayés tolérés, affaires mises à la consigne, dette transmise à l&#x27;agence.</li>
+<li><b>Amélioré</b> : Économie › Tableau de bord ; historique récent à côté du spectateur staff ; plus d&#x27;annonces de redémarrage en double.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">64</span>La ville réagit (impayés, mandats, fourrière, secours)</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Factures et amendes impayées : majoration, puis saisie sur le compte (même hors ligne), puis mandat visible dans la tablette de la police.</li>
+<li><b>Nouveau</b> : Véhicule abandonné ou disparu : envoyé en fourrière, SMS au propriétaire. Messages automatiques au téléphone (Trésor public, Fourrière, Hôpital…).</li>
+<li><b>Nouveau</b> : Joueur à terre : les secouristes en service sont alertés tout seuls ; les frais d&#x27;hôpital vont à la caisse des secours, facture si le joueur n&#x27;a pas l&#x27;argent.</li>
+<li><b>Amélioré</b> : Chronologie du joueur : factures, amendes, majorations, saisies, mandats, fourrières, comas, prison, réanimations.</li>
+<li><b>Corrigé</b> : Employés restés « en service » après une déconnexion ; page Paie qui affichait toujours « payée par l&#x27;État ». Patron prévenu quand la caisse ne couvre plus la paie.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">63</span>Casino et repères de la carte</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Casino au Builder (Casino › Caisse / Jeu) : machine à sous, roulette, blackjack, roue de la fortune, dés, plus haut / plus bas, tickets à gratter, avec de vraies animations. Tous les tirages sont faits par le serveur.</li>
+<li><b>Nouveau</b> : Jetons de casino dans l&#x27;inventaire (achetés et revendus à la caisse), loterie hebdomadaire avec cagnotte, casino de l&#x27;État ou d&#x27;une entreprise, statistiques et redistribution affichées.</li>
+<li><b>Nouveau</b> : Repères : les doublons sont masqués automatiquement, les repères fantômes supprimés ; « /blips reset » ou Points posés › Repères des joueurs pour tout redessiner.</li>
+<li><b>Corrigé</b> : Repères qui restaient sur la carte : joueur observé par le staff, animal de compagnie, alertes 911 et secours empilées.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">62</span>Atelier mécano facturé, customisation en direct, menu Shadow retravaillé</summary><div class="b"><ul>
 <li><b>Customisation chez le mécano</b> (point « atelier » au Builder, ou F2 › Atelier) :</li>
 </ul>
 <p>  - le mécanicien en service doit être <b>dans le véhicule</b> du client ;</p>
@@ -43,7 +120,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Inventaire</b> : titres « Sac à dos » et « Équipement » en français (les anciens étaient des images en anglais dont le sous-titre débordait sur la jauge de poids) ; les cases au-delà de la capacité d&#x27;un coffre n&#x27;affichent plus de cadenas « Premium ».</li>
 <li><b>Portes (ALT staff)</b> : beaucoup plus de portes détectées (portes épaisses, doubles portes, grilles, portails, portes de garage), jusqu&#x27;à 16 autour de toi dans un rayon de 12 m ; une porte déjà enregistrée est toujours reconnue, quelle que soit sa forme.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">61</span>Points et étiquettes d&#x27;interaction, garage avec aperçu, noclip fantôme</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">61</span>Points et étiquettes d&#x27;interaction, garage avec aperçu, noclip fantôme</summary><div class="b"><ul>
 <li><b>Plus de flèches ni de texte en haut à gauche</b> :</li>
 </ul>
 <p>  - chaque endroit où l&#x27;on peut interagir est marqué par un <b>petit point lumineux</b> à hauteur de poitrine ;</p>
@@ -65,7 +142,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <ul>
 <li><b>Noclip fantôme</b> : en noclip, <b>personne ne te voit</b>. Toi, tu te vois en <b>transparence</b>, et ton véhicule aussi si tu noclip en voiture. Tout redevient normal à la sortie (sauf si « Invisible » est activé).</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">60</span>Bar et discothèque, télévisions, 911, conférences, coma</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">60</span>Bar et discothèque, télévisions, 911, conférences, coma</summary><div class="b"><ul>
 <li><b>Bar, discothèque, café, restaurant : le barman sert les clients</b> :</li>
 </ul>
 <p>  - au point « cuisine / bar » (E), le barman en service choisit un produit de la carte et une quantité. La préparation prend quelques secondes (animation) et les <b>ingrédients sont payés par la caisse</b> de l&#x27;entreprise (30 % du prix, réglable). Les recettes à ingrédients restent accessibles depuis le même menu ;</p>
@@ -99,7 +176,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Menu F10 › Rechercher</b> : un seul champ pour trouver un joueur (nom RP, nom FiveM, ID, licence), un véhicule (plaque) ou un numéro de téléphone.</li>
 <li><b>Économie › Gains par activité</b> : argent versé par heure et <b>par joueur et par heure</b> pour chaque activité (pêche, chasse, petits jobs, braquages, salaires, bar…), sur 24 h et 7 jours. Les transferts entre joueurs sont affichés à part.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">59</span>Radio F4, tickets reliés à Discord, anti-duplication, chronologie des joueurs</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">59</span>Radio F4, tickets reliés à Discord, anti-duplication, chronologie des joueurs</summary><div class="b"><ul>
 <li><b>Poste radio sur F4</b> :</li>
 </ul>
 <p>  - écran de talkie-walkie : fréquence tapée au pavé (puis OK) ou changée avec ◀ ▶, bouton marche / arrêt, volume (retenu d&#x27;une connexion à l&#x27;autre) ;</p>
