@@ -1,20 +1,26 @@
 {
  "v": 1,
- "version": "1.2.41",
- "date": "2026-10-26",
- "title": "Cases à cocher, notifications regroupées, ID du HUD, taille du HUD",
+ "version": "1.2.42",
+ "date": "2026-10-27",
+ "title": "ceinture, plein à pied, réglages au clavier, garde-robe, gilets pare-balles, clés prêtées, flotte, ceinture",
  "notes": [
-  "— Patch notes 79 — Cases à cocher, notifications regroupées, ID du HUD, taille du HUD",
-  "Cases à cocher des menus : une case pouvait se cocher puis se décocher toute seule.",
-  "Un double-clic (ou deux appuis rapprochés) envoyait deux bascules : le second est maintenant ignoré pendant 0,35 s, et un double-clic sur une ligne n'active plus l'action deux fois.",
-  "Menu staff : les actions envoyées à moins de 250 ms d'intervalle étaient ignorées par le serveur (anti-spam) et la case revenait en arrière ; elles sont maintenant espacées au lieu d'être perdues.",
-  "Menu staff › Réglages du service : « Ped de service » et « Bloquer les accès » relisaient les valeurs de l'ouverture du menu et revenaient à leur ancien état ; ils relisent maintenant les valeurs à jour.",
-  "Notifications : une notification identique (même type, titre et texte) encore à l'écran ne s'empile plus. La carte existante affiche un compteur « x2, x3… », remonte en tête et repart pour sa durée complète.",
-  "HUD en haut à droite : la ligne « ID · joueurs en ligne » avait un cadre noir (elle reprenait par erreur le style d'une autre fenêtre). Corrigé.",
-  "Taille du HUD (F5 › Mes paramètres) : chaque joueur peut grossir ou réduire son HUD de 80 % à 160 % (réglette en mode cartes, ← → en mode RageUI). Ça agit sur l'argent, les besoins, le lieu, la barre de vie, l'heure en haut à droite et le compteur. Le réglage est gardé sur le poste du joueur et se multiplie avec la taille réglée par le serveur."
+  "— Patch notes 125 — ceinture, plein à pied, réglages au clavier",
+  "Corrigé : Ceinture : un appui ne la bascule plus deux fois de suite (« bouclée » aussitôt suivi de « détachée »).",
+  "Modifié : Essence : on descend du véhicule pour faire le plein. À la pompe, E ouvre le choix des litres, puis le personnage remplit le réservoir (animation, durée selon les litres). Au volant près d'une pompe : « Descends du véhicule pour faire le plein ».",
+  "Corrigé : Menu F5 en grandes cartes › Mes paramètres : la taille du HUD se règle aux flèches ← → et avec des boutons ‹ › (le curseur ne répondait qu'à la souris). La valeur affichée est la bonne à la réouverture.",
+  "Amélioré : Menus de la lib : les flèches gauche / droite de la manette et du clavier (deux codes de touche du jeu) changent les listes et les curseurs.",
+  "Corrigé : Menu F5 en grandes cartes : plus de rouge, accents blancs Shadow Studio V2.",
+  "— Patch notes 126 — garde-robe, gilets pare-balles, clés prêtées, flotte, ceinture",
+  "Nouveau : Garde-robe : « Enregistrer ma tenue » (bouton Tenue de l'inventaire ou menu ALT sur soi) range la tenue portée dans un sac de vêtements, avec la photo du haut. Utiliser le sac remet toute la tenue, n'importe où (visage et cheveux ne changent pas). Dans un logement, menu ALT › « Mes tenues » : enfiler ou supprimer. 10 tenues par joueur.",
+  "Nouveau : Gilets pare-balles en vêtement : « Gilet pare-balles léger » (blindage 50) et « lourd » (100), avec leur photo. Ils s'équipent dans la case Gilet ; le blindage restant est gardé quand on l'enlève ; à 0 le gilet est détruit. Tant qu'il tient, une balle dans la tête ne tue pas d'un coup. À ajouter au catalogue d'un magasin (objets gilet_leger et gilet_lourd).",
+  "Nouveau : Menu ALT sur un joueur › « Prêter la clé de mon véhicule » : ton véhicule personnel le plus proche (30 m), pour 1 heure, sans passer par le garage.",
+  "Nouveau : Flotte : le patron (menu F6) et le chef d'organisation (menu F7) voient leurs véhicules de service : sortis ou non, qui les a sortis, GPS pour les retrouver, et « Rappeler au garage » pour ceux qui sont abandonnés (personne à bord).",
+  "Nouveau : HUD : pastille « Ceinture » qui clignote au-dessus du compteur quand on roule à plus de 10 km/h sans ceinture (voitures seulement).",
+  "Corrigé : Stations-service : plus de station en double au même endroit (pack de base + liste des 27 stations) ; les doublons existants sont retirés au démarrage.",
+  "Corrigé : Photos des vêtements : 352 images vides (texture manquante, damier rose) retirées ; ces pièces gardent leur numéro."
  ],
- "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.41.zip",
- "sha256": "ede39e6e4fe6a926d333f8dcca206b96dd19cd392608f53ec01dead4f0f18b75",
+ "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.42.zip",
+ "sha256": "b22807ee3e07f8820002176f4934ef1a20ff2d5db72e85f36f38884b1e27c384",
  "site": "https://noyzoupas.github.io/ShadowBase/",
- "sig": "0c3005d495a863d44a20f42397c179b3eaada2bd4bdfcdb75f148601bb1c34cdbbd150bde4a3076773d4b3a1d5195fad9d45c510f0548555467483bac9645500"
+ "sig": "18ccb93ecddde7b47ddea8a5bde4c3df30dcf272c788a939d8b6c870a7cbb29e52ed882ecebbd90a28baee795a5fbd26e27b1ea9549dfba8a708cacfad90870e"
 }
