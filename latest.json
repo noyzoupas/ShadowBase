@@ -1,7 +1,7 @@
 {
  "v": 1,
- "version": "1.2.37",
- "date": "2026-10-25",
+ "version": "1.2.38",
+ "date": "2026-10-26",
  "title": "Cases à cocher, notifications regroupées, ID du HUD, taille du HUD",
  "notes": [
   "— Patch notes 79 — Cases à cocher, notifications regroupées, ID du HUD, taille du HUD",
@@ -13,8 +13,8 @@
   "HUD en haut à droite : la ligne « ID · joueurs en ligne » avait un cadre noir (elle reprenait par erreur le style d'une autre fenêtre). Corrigé.",
   "Taille du HUD (F5 › Mes paramètres) : chaque joueur peut grossir ou réduire son HUD de 80 % à 160 % (réglette en mode cartes, ← → en mode RageUI). Ça agit sur l'argent, les besoins, le lieu, la barre de vie, l'heure en haut à droite et le compteur. Le réglage est gardé sur le poste du joueur et se multiplie avec la taille réglée par le serveur."
  ],
- "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.37.zip",
- "sha256": "1a442cfa1bd7c517285463f600328dfa25c0ef5396f1940a01367de17c03dea4",
+ "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.38.zip",
+ "sha256": "732db13e0c04ae39f5f4d8e820e18b6aeb00ab80e7cdbdac508977d22daccc93",
  "site": "https://noyzoupas.github.io/ShadowBase/",
- "sig": "20e40f2388ba64a35fee6f6768d8265cb546271e1b935a2d44148ed14d6c5037586c72e1c8d147f259db1ee1d8754e7740173cbd73faae3b94e24703d8cc6900"
+ "sig": "667da114c6f4665a64fe61e1cd5143994c94647f165dd86059408693f75a32f469244caca0c53a848e46487a17c46da31660a812cd860677ba10c748a5a0c30b"
 }
