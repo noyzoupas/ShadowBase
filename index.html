@@ -15,13 +15,82 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.2.45</b> · 2026-10-29<br>batailles de zone, annonces plein écran, customs, recherche d&#x27;objets, téléphone, nouvelles cartes<div class="sha">SHA-256 : f6c3425307ca52c8960f57d0c43b8853a425a030890e43d98d3627b556247822</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.45.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.2.46</b> · 2026-10-29<br>villa Playboy, territoires réparés, affichage des guerres, tirs libres pendant toute prise de zone, téléphone, carte, zo<div class="sha">SHA-256 : 8d7e45693ce423dd38a9be651c06f3fe45d7adae9e3cc1159e69c867539a97ec</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.46.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
-<details class="card" open><summary><span class="n">138</span>téléphone, nouvelles cartes</summary><div class="b"><ul>
+<details class="card" open><summary><span class="n">148</span>blanchiment, actions annulées, chat, notifications</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Blanchiment : l&#x27;argent propre reste chez le contact. Quand c&#x27;est fini, une notification te prévient et tu vas le récupérer (bouton Récupérer). Nouvelle progression : anneau qui se remplit peu à peu, avec une lumière qui file le long de la partie remplie jusqu&#x27;au bout, et temps restant en direct.</li>
+<li><b>Corrigé</b> : Action annulée (labo, récolte…) : la barre de progression restait à l&#x27;écran. X annule maintenant l&#x27;action pour de bon et la barre disparaît toujours.</li>
+<li><b>Amélioré</b> : Chat en haut à gauche, à la place du chat de base, plus épuré : messages sans bulle, panneau en verre discret quand on écrit.</li>
+<li><b>Amélioré</b> : Notifications au-dessus de la mini-carte, sans la petite croix.</li>
+<li><b>Corrigé</b> : Drapeau (point de vente) : le nombre de membres de chaque gang est tout en bas à droite ; les munitions montent au-dessus.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">147</span>menu Échap, carte de GTA, Mort RP, repos, concession, Fish &amp; Chips, cigares</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Menu Échap : des cases au centre de l&#x27;écran, le jeu reste visible derrière. Carte (celle de GTA), Paramètres (ceux de GTA), Personnage, Parcours, Réglages, Boutique, Mes lieux, Reprendre.</li>
+<li><b>Amélioré</b> : Carte : retour à la carte de base de GTA (P, /carte, Échap › Carte), sans panneau.</li>
+<li><b>Corrigé</b> : Écran de mort : « Maintiens G pour réapparaître » ne marchait pas (la touche était bloquée par un autre script), et les rectangles noirs autour des touches ont disparu.</li>
+<li><b>Nouveau</b> : Repos après une réapparition : 3 minutes sans sortir d&#x27;arme, sans tirer ni courir (temps affiché). Le staff peut en mettre ou en retirer (menu staff › un joueur). Nouvelles options globales du menu staff : réanimer tout le monde, lever tous les repos, démenotter tout le monde.</li>
+<li><b>Nouveau</b> : Mort RP (menu staff › un joueur) : à sa prochaine balle reçue, le personnage meurt pour de bon. Écran MORT RP, objets qu&#x27;il a donnés à d&#x27;autres joueurs ces 24 h retirés, expulsion au bout de 10 s, toutes les données du personnage effacées (le compte, les bans et les sanctions restent).</li>
+<li><b>Nouveau</b> : Prisons au Builder (catégorie Prison) : lieu, sortie et limite de la zone, pour la police et pour le staff. Les peines du menu staff vont dans la prison du staff.</li>
+<li><b>Nouveau</b> : Concession tenue par des joueurs (magasin Concession rattaché à une entreprise) : le client regarde les véhicules et demande un essai (alerte aux vendeurs en service). Le vendeur, menu ALT sur le client : Faire essayer un véhicule, Vendre un véhicule (le client accepte et paie, l&#x27;entreprise encaisse).</li>
+<li><b>Nouveau</b> : Fish &amp; Chips : même système que le Burger Shot (bornes, cuisine, postes, mini-jeux) sans livraison, à son nom. Le Burger Shot devient un modèle : copie la ressource et change sa config pour créer un autre restaurant identique.</li>
+<li><b>Nouveau</b> : Fabrique de cigares (Builder › Activités › Cigares) : champ de tabac, séchoir, assemblage des cigares, mise en boîte, revente au grossiste.</li>
+<li><b>Amélioré</b> : Supérettes : seulement du pain, de l&#x27;eau et le téléphone. Quincaillerie sans kit de réparation. Magasins de meubles : un vendeur PNJ. Laboratoire de drogue : 8 s au lieu de 20.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">146</span>carte, sac, Dynasty8, blanchiment, DJ, Fish &amp; Chips</summary><div class="b"><ul>
+<li><b>Corrigé</b> : Carte : P, /carte et la carte rapide (Échap ou P depuis celle-ci) ouvrent la carte du serveur, plus celle de GTA. Échap ouvre le menu du serveur (sa « Carte » est la nôtre) ; réglables dans Menu Échap.</li>
+<li><b>Corrigé</b> : Sac à dos impossible à retirer : un vêtement porté se retire maintenant toujours d&#x27;un clic sur sa case, et il est retiré tout seul si son objet quitte ton inventaire (coffre, don, jeté).</li>
+<li><b>Amélioré</b> : Coffres de véhicule agrandis : poids doublé et 50 % d&#x27;emplacements en plus (les réglages existants aussi).</li>
+<li><b>Nouveau</b> : Points de ton entreprise / organisation (siège, tablette, coffre, garage, vestiaire, atelier…) : un repère rose sur la carte, visible de ses membres seulement. Les territoires prennent la couleur exacte du gang.</li>
+<li><b>Corrigé</b> : Les points de vente de drogue ne s&#x27;affichent plus sur la carte (ni drapeaux, ni repère qui parle de drogue).</li>
+<li><b>Amélioré</b> : Laboratoire de drogue : plus de mini-jeu, seulement l&#x27;animation de préparation et la barre de progression ; la quantité produite est toujours celle prévue.</li>
+<li><b>Nouveau</b> : Dynasty8 : menu ALT › une personne › Remettre les clés. Logement à vendre : clé définitive au prix de l&#x27;annonce. Logement à louer : l&#x27;agent choisit la durée (1 à 30 jours). Le client accepte et paie depuis son compte ; l&#x27;agence touche sa commission.</li>
+<li><b>Amélioré</b> : Blanchiment : vraie fenêtre (même style que la banque) à la place du menu, avec l&#x27;argent sale sur toi, les offres du contact à cliquer et l&#x27;avancement en cours.</li>
+<li><b>Nouveau</b> : DJ : tables de mixage, platines et enceintes dans les props permanents (F10 › Props, catégorie DJ et musique). ALT sur la table › Mettre de la musique (lien YouTube) : tout le monde autour l&#x27;entend, plus fort en s&#x27;approchant. Les écrans (ALT › Diffuser une vidéo) passent la vidéo avec le son.</li>
+<li><b>Nouveau</b> : Fish &amp; Chips : nouveau type d&#x27;entreprise (Builder) avec sa carte (fish &amp; chips, filet pané, frites, petits pois, burger de poisson, boissons). Préparation en cuisine et vente au comptoir ou au client, sans livraison.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">145</span>carte du serveur, moteur, armes, chasse, F2</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Carte (Échap › Carte ou /carte) : la carte du serveur en plein écran à la place de celle de GTA, avec le même panneau à droite. Trois types de carte (Satellite, Plan, Sombre), territoires (bleus si libres, couleur du gang sinon), repères des lieux, ta position, GPS d&#x27;un clic sur la carte ou sur un lieu. Glisser pour déplacer, molette pour zoomer.</li>
+<li><b>Corrigé</b> : Véhicules : le moteur calait à chaque première montée (comme un moteur froid). Il était coupé le temps que le serveur vérifie la clé ; il n&#x27;est plus coupé que si tu n&#x27;as vraiment pas la clé.</li>
+<li><b>Corrigé</b> : Armes : les touches 1 à 5 répondaient « une arme s&#x27;équipe avec les touches 1 à 5 » sans rien faire pour une arme hors du catalogue (pack d&#x27;armes, objet weapon_*). Elle s&#x27;équipe maintenant, et une arme ajoutée au catalogue dans le panel est utilisable tout de suite.</li>
+<li><b>Corrigé</b> : Plus de menu sur F2 : il faisait doublon avec le F6 (menu entreprise) chez les joueurs venus quand il était sur F2.</li>
+<li><b>Amélioré</b> : Chasse : aucun animal ne voit, n&#x27;entend ni n&#x27;attaque le chasseur, même les pumas et panthères ; la faune du monde non plus. On ne meurt plus en chassant.</li>
+<li><b>Amélioré</b> : Guerre de territoire : les points de chaque gang sont tout en bas à droite, les munitions juste au-dessus (elles montent quand il y a plus de gangs dans la zone). Hors guerre, les munitions restent en bas à droite.</li>
+<li><b>Amélioré</b> : Tablette de l&#x27;organisation › Territoires : la carte se déplace en glissant et zoome à la molette ou avec + / −.</li>
+<li><b>Amélioré</b> : Plus aucun bandeau de couleur à gauche : onglets de la boutique F11, petites notifications d&#x27;action (tablette, banque, boutique, marché), encadrés d&#x27;information, notifications au style « minimal ».</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">144</span>tablette au QG, carte des territoires, barres de défilement</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Tablette de l&#x27;entreprise et de l&#x27;organisation, dans la même fenêtre que la banque : elle s&#x27;ouvre seulement au siège / QG (E sur le point), et se ferme si on s&#x27;éloigne. Bureau du patron : la gestion s&#x27;ouvre directement. /tablette, /orga et les pages de gestion du F6 renvoient au siège (réglage dans Organisations › réglages). L&#x27;espace citoyen reste ouvert à tous.</li>
+<li><b>Nouveau</b> : Tablette de l&#x27;organisation › Accueil : tableau de bord (ton grade et ton XP, membres en ligne, caisse commune, territoires tenus, classement, derniers messages du chef, nos territoires avec la prochaine livraison, membres connectés).</li>
+<li><b>Nouveau</b> : Tablette de l&#x27;organisation › Territoires : carte des zones avec leur vraie forme, en bleu si libre, à la couleur du gang qui la tient sinon (ta zone entourée de blanc), légende, Satellite / Plan, cadrage sur les zones ou toute la carte.</li>
+<li><b>Amélioré</b> : Carte du jeu : les territoires libres sont en bleu, ceux d&#x27;un gang prennent sa couleur, plus visibles.</li>
+<li><b>Corrigé</b> : Grosse barre blanche à droite des listes (téléphone, magasins, menus, inventaire…) : le navigateur du jeu ignorait le réglage des barres de défilement. Barre fine et discrète partout, cachée dans le téléphone.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">143</span>téléphone, carte, zones visibles</summary><div class="b"><ul>
+<li><b>Corrigé</b> : Téléphone : à l&#x27;étape « Fond d&#x27;écran » du premier démarrage, le bouton Continuer sortait de l&#x27;écran (on restait bloqué). La grille des fonds défile, le bouton reste toujours visible en bas.</li>
+<li><b>Nouveau</b> : Carte (Échap › Carte ou /carte) : ton nom FiveM en première ligne de la liste, un clic fait clignoter ta position sur la carte.</li>
+<li><b>Amélioré</b> : Territoires : les zones et leur repère sont visibles sur la carte par tous les joueurs (réglage dans Zones de gangs › Réglages ; avant, seulement les membres d&#x27;un gang).</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">142</span>tirs libres pendant toute prise de zone</summary><div class="b"><ul>
+<li><b>Corrigé</b> : Prise d&#x27;un territoire déjà tenu par une organisation : pendant la prise, tout le monde peut tirer dans la zone. Avant, pendant une guerre planifiée, seul le gang propriétaire pouvait tirer (les attaquants étaient désarmés), et pendant une bataille quelqu&#x27;un qui arrivait pouvait rester bloqué quelques secondes.</li>
+<li><b>Corrigé</b> : Guerres planifiées : secours coupés dans la zone comme pour les batailles, zone rouge avec sa vraie forme sur la carte, plus d&#x27;invite « Attaquer » pendant la guerre. Une bataille et une guerre planifiée ne peuvent plus se lancer sur la même zone en même temps.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">141</span>affichage des guerres</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Guerre de territoire : texte propre en haut de l&#x27;écran, sans cadre (« ZONE EN GUERRE · zone · temps restant », puis les règles), et les points de chaque gang en bas à droite avec leur barre de couleur. Même affichage pour les batailles de zone et les guerres planifiées, seulement dans la zone en guerre.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">140</span>territoires réparés</summary><div class="b"><ul>
+<li><b>Corrigé</b> : Carte : les territoires s&#x27;affichent avec leur vraie forme (la zone dessinée au Builder est remplie, plus un grand cercle approximatif). Le staff qui gère les territoires les voit aussi, même sans gang : une zone créée apparaît tout de suite.</li>
+<li><b>Corrigé</b> : Contour au sol : il suit le terrain tous les 2,5 m (avant : un trait tiré à la hauteur du joueur, qui flottait ou s&#x27;enfonçait), avec un voile lumineux de 2 m de haut de la couleur du gang. Rouge pendant une guerre.</li>
+<li><b>Corrigé</b> : Dans une zone : « Territoire · nom » s&#x27;affiche à chaque entrée et reste tant qu&#x27;on y est (il disparaissait après la première fois). La présence suit le contour dessiné, partout : prise des points, éliminations, guerres planifiées.</li>
+<li><b>Corrigé</b> : Guerres : le compte à rebours et les scores ne s&#x27;affichent plus que dans la zone en guerre (avant : sur l&#x27;écran de tout le serveur). La zone clignote en rouge sur la carte, et la fin de la guerre est envoyée à tous : plus de zone restée « en guerre » chez ceux qui étaient partis. Deux batailles en même temps ne se mélangent plus.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">139</span>villa Playboy</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Nouvelle carte : la villa Playboy à Richman (ressource playboy_mansion dans [addon]). Intérieur complet : garage, deux bureaux, cave à vin avec entrée secrète, pièce secrète, trois chambres, cuisine, bibliothèque, sur deux étages. Les points (entrée, garage, coffre…) se posent au Builder.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">138</span>téléphone, nouvelles cartes</summary><div class="b"><ul>
 <li><b>Nouveau</b> : Cartes du panel et du créateur (choix du point d&#x27;arrivée) : la nouvelle carte satellite avec le nom des lieux, et un bouton Satellite / Plan pour passer au plan des routes. Même cadrage que la carte du jeu : les points restent à leur place.</li>
 <li><b>Corrigé</b> : Téléphone : on pouvait rester bloqué dans la configuration du premier démarrage. Le code se tape aussi au clavier (chiffres, Retour arrière), « Passer (sans code) » est proposé dès le Bonjour, l&#x27;accueil s&#x27;ouvre tout de suite après « Commencer », et la configuration n&#x27;est plus redemandée à chaque ouverture (colonnes de la base réparées au démarrage si besoin).</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">137</span>batailles de zone, annonces plein écran, customs, recherche d&#x27;objets</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">137</span>batailles de zone, annonces plein écran, customs, recherche d&#x27;objets</summary><div class="b"><ul>
 <li><b>Nouveau</b> : Territoires = batailles de zone : points de contrôle à tenir seul, score par point tenu et par élimination, premier à 100 ou meilleur score au temps. Tableau des scores à l&#x27;écran, avance par les graffitis. Prise possible seulement aux heures réelles programmées (ven/sam/dim 20h-23h, Paris), pas de secours en zone de guerre, texte propre en bas de l&#x27;écran et scores en bas à droite, annonces de début et de fin, tirs interdits dans la zone sauf pour son gang hors guerre.</li>
 <li><b>Corrigé</b> : Atelier : customs des véhicules add-on (teintes, annulation, roues de moto, options du modèle, refus signalés, ré-application à la sortie).</li>
 <li><b>Nouveau</b> : Annonces plein écran façon txAdmin : grand bandeau au centre de l&#x27;écran (4 styles, durée, son, auteur), panel › Annonces, commande /annonce, historique. Aperçu dans le panel, utilisable depuis le menu admin F10. Réservé aux fondateurs.</li>
@@ -32,7 +101,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Nouveau</b> : Annonces : destinataires au choix (groupe, entreprise, joueur, staff, police), modèles enregistrés, historique nettoyé automatiquement.</li>
 <li><b>Nouveau</b> : Menu staff : journal des actions et bouton Annuler (argent, objets, gel, silence, téléportation, bannissement, prison).</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">136</span>grosse liste (viseur, territoires, blanchiment, labos, EMS, F7, téléphone…)</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">136</span>grosse liste (viseur, territoires, blanchiment, labos, EMS, F7, téléphone…)</summary><div class="b"><ul>
 <li><b>Corrigé</b> : Viseur staff : il plantait le jeu en visant quelqu&#x27;un (contour lumineux posé sur un personnage) et n&#x27;était pas au centre de l&#x27;écran. Repère sans danger (cercle au sol + flèche) et réticule au vrai centre ; même correction dans tous les menus de sélection (F6, F7…).</li>
 <li><b>Corrigé</b> : Points qui ne s&#x27;enlevaient pas (pêche, chasse, activités, braquages, animalerie, atelier d&#x27;armes) : ils apparaissent maintenant dans Builder › Existant et se suppriment un par un.</li>
 <li><b>Nouveau</b> : Territoires de gang au Builder : marche jusqu&#x27;à chaque coin et appuie sur Entrée, la zone se dessine au fur et à mesure ; E pour terminer, puis le nom et l&#x27;objet offert toutes les 5 h au groupe qui la tient. Les zones dessinées s&#x27;affichent au sol et la capture suit leur contour.</li>
@@ -58,7 +127,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Modifié</b> : Chasse : puma et panthère s&#x27;approchent au pas, attaquent seulement de près et font 4 fois moins de dégâts.</li>
 <li><b>Retiré</b> : Base militaire : plus de soldats, de véhicules de l&#x27;armée ni d&#x27;avions de chasse dans le monde ; chars, blindés et avions militaires retirés du catalogue. Les PNJ morts ne lâchent plus d&#x27;arme ni d&#x27;argent.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">135</span>grand audit (bugs, exploits, cohérence)</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">135</span>grand audit (bugs, exploits, cohérence)</summary><div class="b"><ul>
 <li><b>Corrigé</b> : Props (menu staff) : choisir un prop dans le catalogue plantait le script et empêchait toute pose. Corrigé.</li>
 <li><b>Corrigé</b> : Exploit d&#x27;argent : un patron d&#x27;une entreprise payée par l&#x27;État pouvait fixer 20 000 $ de salaire par paie (argent créé à chaque paie). Plafond réglable, 1 500 $ par défaut (Entreprises › Réglages). Une entreprise payée par sa caisse garde jusqu&#x27;à 20 000 $.</li>
 <li><b>Corrigé</b> : Munitions de fusil, sniper, mitrailleuse et roquettes : « utiliser » la boîte la faisait disparaître sans rien recharger. Elles rechargent l&#x27;arme équipée du bon calibre.</li>
