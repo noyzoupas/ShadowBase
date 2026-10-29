@@ -1,23 +1,23 @@
 {
  "v": 1,
- "version": "1.2.47",
+ "version": "1.2.48",
  "date": "2026-10-29",
- "title": "journal du staff sur MariaDB, page du métier dans la tablette, concession d'entreprise, Builder de la prison, objets reç",
+ "title": "supprimer un véhicule depuis la fiche joueur, coffres de véhicules agrandis, objet offert par les zones au choix, plus a",
  "notes": [
-  "— Patch notes 149 — journal du staff sur MariaDB",
-  "Corrigé : Journal du staff : la table ne se créait pas sur MariaDB (« undo » est un mot réservé). Elle se crée au prochain démarrage, et les actions du staff s'y enregistrent de nouveau.",
-  "— Patch notes 150 — page du métier dans la tablette, concession d'entreprise, Builder de la prison",
-  "Nouveau : Tablette d'entreprise : une page propre au métier, comme le panneau d'une vraie entreprise. Ouvrir / fermer l'établissement, annonce à la ville, ventes du jour et de la semaine, dernières ventes, GPS vers ses points de vente.",
-  "Nouveau : Concession : catalogue et prix des véhicules, promotion sur toute la vitrine, vitrine avec essais par les vendeurs ou achat direct, catalogue complet de GTA en option. Les vendeurs gèrent toujours les essais et les ventes en ville.",
-  "Nouveau : Boîte de nuit, bar, DJ : lancer une soirée (la ville est prévenue), happy hour sur la carte du bar, ce qui passe sur les platines près du club (la direction peut couper), carte et stock du bar.",
-  "Nouveau : Café et restauration : menu du jour annoncé à la ville, happy hour, prix de la carte, stock du comptoir et réapprovisionnement payé par la caisse.",
-  "Nouveau : Builder : la concession existe en deux versions. Commerces › Concessionnaire (vente directe, sans vendeur) et Entreprises › Concession de l'entreprise (vitrine, essais, ventes par les vendeurs, argent dans la caisse).",
-  "Amélioré : Builder : nouvelle section Prison, avec la prison de la police et celle du staff bien séparées (1 · lieu du détenu, 2 · sortie, 3 · limite de la zone). Avant, tout était mélangé dans « Autres ».",
-  "— Patch notes 151 — objets reçus et perdus à l'écran",
-  "Nouveau : Quand ton sac change, une petite carte apparaît en bas de l'écran avec l'image de l'objet, son nom et « +2 » ou « −1 » : objet ramassé, acheté, reçu, pris dans un coffre, munitions ou nourriture utilisées, objet donné ou retiré. Le même objet s'additionne sur une seule carte."
+  "— Patch notes 152 — supprimer un véhicule depuis la fiche joueur",
+  "Nouveau : Panel › Joueurs : la fiche d'un joueur (bouton « Fiche » dans la liste en ligne ou hors ligne) liste ses véhicules, avec « Supprimer définitivement » (droit « Gérer les véhicules », confirmation demandée).",
+  "Amélioré : Supprimer un véhicule l'enlève aussi de la ville s'il est sorti et vide son coffre (avant, le contenu du coffre restait en base).",
+  "— Patch notes 153 — coffres de véhicules agrandis",
+  "Amélioré : Coffres des véhicules : au moins 130 kg (40 emplacements) pour toutes les voitures, bateaux et appareils, au moins 200 kg (60 emplacements) pour les camions, utilitaires, fourgons, services, urgences, militaires et commerciaux. Les coffres déjà plus grands ne changent pas ; motos et vélos gardent leur petit coffre.",
+  "— Patch notes 154 — objet offert par les zones au choix",
+  "Amélioré : Zones de gangs : l'objet offert se choisit parmi tous les objets de l'inventaire, objets personnalisés compris, avec la même recherche que « Donner un objet » du staff (nom simple ou technique, ou par catégorie). On règle aussi la quantité et toutes les combien d'heures.",
+  "Nouveau : Builder › Existant › Territoires : chaque zone a « Objet offert » pour changer l'objet, la quantité et la fréquence sans la recréer. Dans le panel (Zones de gangs › Zones), l'objet se choisit dans une liste au lieu d'être tapé.",
+  "— Patch notes 155 — plus aucun militaire dans le monde",
+  "Corrigé : Armée : il restait des hélicoptères et des avions militaires (Cayo Perico notamment). Tout le matériel militaire du jeu est maintenant retiré : hélicoptères (Valkyrie, Hunter, Akula, Cargobob, Savage…), avions (Lazer, Titan, Besra, Hydra, Volatol…), blindés, remorques et bateaux de l'armée, soldats et mercenaires.",
+  "Amélioré : Ceux déjà garés dans le monde disparaissent aussi (contrôle toutes les 15 s). Un véhicule militaire sorti par le staff ou par un script n'est jamais touché."
  ],
- "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.47.zip",
- "sha256": "1623bd01452dce2c019d379cd7e7d0bacab440e50edfca9ba8f8791f63d2d36a",
+ "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.48.zip",
+ "sha256": "8b99e5c208688efbc0adf6c90703174343c33e982ec68608630d5e81c6946b27",
  "site": "https://noyzoupas.github.io/ShadowBase/",
- "sig": "072a7cb8486d38027faf2182db5527e804489bbea9735cc8dd5f6341da22d8a34250033b1d561125c037e9065e1edbf04848e6fd6f1d96b23453dcf2c8a28a06"
+ "sig": "0a7447d701d4d5df753d0f6a171d4577ef9f93ce98be139d5765b9f070a2806d69435a57fafebdea10e237f2aa15092d3a291cb2c797fdf31643b979059f7e01"
 }

@@ -15,12 +15,27 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.2.47</b> · 2026-10-29<br>journal du staff sur MariaDB, page du métier dans la tablette, concession d&#x27;entreprise, Builder de la prison, objets reç<div class="sha">SHA-256 : 1623bd01452dce2c019d379cd7e7d0bacab440e50edfca9ba8f8791f63d2d36a</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.47.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.2.48</b> · 2026-10-29<br>supprimer un véhicule depuis la fiche joueur, coffres de véhicules agrandis, objet offert par les zones au choix, plus a<div class="sha">SHA-256 : 8b99e5c208688efbc0adf6c90703174343c33e982ec68608630d5e81c6946b27</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.48.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
-<details class="card" open><summary><span class="n">151</span>objets reçus et perdus à l&#x27;écran</summary><div class="b"><ul>
+<details class="card" open><summary><span class="n">155</span>plus aucun militaire dans le monde</summary><div class="b"><ul>
+<li><b>Corrigé</b> : Armée : il restait des hélicoptères et des avions militaires (Cayo Perico notamment). Tout le matériel militaire du jeu est maintenant retiré : hélicoptères (Valkyrie, Hunter, Akula, Cargobob, Savage…), avions (Lazer, Titan, Besra, Hydra, Volatol…), blindés, remorques et bateaux de l&#x27;armée, soldats et mercenaires.</li>
+<li><b>Amélioré</b> : Ceux déjà garés dans le monde disparaissent aussi (contrôle toutes les 15 s). Un véhicule militaire sorti par le staff ou par un script n&#x27;est jamais touché.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">154</span>objet offert par les zones au choix</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Zones de gangs : l&#x27;objet offert se choisit parmi tous les objets de l&#x27;inventaire, objets personnalisés compris, avec la même recherche que « Donner un objet » du staff (nom simple ou technique, ou par catégorie). On règle aussi la quantité et toutes les combien d&#x27;heures.</li>
+<li><b>Nouveau</b> : Builder › Existant › Territoires : chaque zone a « Objet offert » pour changer l&#x27;objet, la quantité et la fréquence sans la recréer. Dans le panel (Zones de gangs › Zones), l&#x27;objet se choisit dans une liste au lieu d&#x27;être tapé.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">153</span>coffres de véhicules agrandis</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Coffres des véhicules : au moins 130 kg (40 emplacements) pour toutes les voitures, bateaux et appareils, au moins 200 kg (60 emplacements) pour les camions, utilitaires, fourgons, services, urgences, militaires et commerciaux. Les coffres déjà plus grands ne changent pas ; motos et vélos gardent leur petit coffre.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">152</span>supprimer un véhicule depuis la fiche joueur</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Panel › Joueurs : la fiche d&#x27;un joueur (bouton « Fiche » dans la liste en ligne ou hors ligne) liste ses véhicules, avec « Supprimer définitivement » (droit « Gérer les véhicules », confirmation demandée).</li>
+<li><b>Amélioré</b> : Supprimer un véhicule l&#x27;enlève aussi de la ville s&#x27;il est sorti et vide son coffre (avant, le contenu du coffre restait en base).</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">151</span>objets reçus et perdus à l&#x27;écran</summary><div class="b"><ul>
 <li><b>Nouveau</b> : Quand ton sac change, une petite carte apparaît en bas de l&#x27;écran avec l&#x27;image de l&#x27;objet, son nom et « +2 » ou « −1 » : objet ramassé, acheté, reçu, pris dans un coffre, munitions ou nourriture utilisées, objet donné ou retiré. Le même objet s&#x27;additionne sur une seule carte.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">150</span>page du métier dans la tablette, concession d&#x27;entreprise, Builder de la prison</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">150</span>page du métier dans la tablette, concession d&#x27;entreprise, Builder de la prison</summary><div class="b"><ul>
 <li><b>Nouveau</b> : Tablette d&#x27;entreprise : une page propre au métier, comme le panneau d&#x27;une vraie entreprise. Ouvrir / fermer l&#x27;établissement, annonce à la ville, ventes du jour et de la semaine, dernières ventes, GPS vers ses points de vente.</li>
 <li><b>Nouveau</b> : Concession : catalogue et prix des véhicules, promotion sur toute la vitrine, vitrine avec essais par les vendeurs ou achat direct, catalogue complet de GTA en option. Les vendeurs gèrent toujours les essais et les ventes en ville.</li>
 <li><b>Nouveau</b> : Boîte de nuit, bar, DJ : lancer une soirée (la ville est prévenue), happy hour sur la carte du bar, ce qui passe sur les platines près du club (la direction peut couper), carte et stock du bar.</li>
@@ -28,10 +43,10 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Nouveau</b> : Builder : la concession existe en deux versions. Commerces › Concessionnaire (vente directe, sans vendeur) et Entreprises › Concession de l&#x27;entreprise (vitrine, essais, ventes par les vendeurs, argent dans la caisse).</li>
 <li><b>Amélioré</b> : Builder : nouvelle section Prison, avec la prison de la police et celle du staff bien séparées (1 · lieu du détenu, 2 · sortie, 3 · limite de la zone). Avant, tout était mélangé dans « Autres ».</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">149</span>journal du staff sur MariaDB</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">149</span>journal du staff sur MariaDB</summary><div class="b"><ul>
 <li><b>Corrigé</b> : Journal du staff : la table ne se créait pas sur MariaDB (« undo » est un mot réservé). Elle se crée au prochain démarrage, et les actions du staff s&#x27;y enregistrent de nouveau.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">148</span>blanchiment, actions annulées, chat, notifications</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">148</span>blanchiment, actions annulées, chat, notifications</summary><div class="b"><ul>
 <li><b>Amélioré</b> : Blanchiment : l&#x27;argent propre reste chez le contact. Quand c&#x27;est fini, une notification te prévient et tu vas le récupérer (bouton Récupérer). Nouvelle progression : anneau qui se remplit peu à peu, avec une lumière qui file le long de la partie remplie jusqu&#x27;au bout, et temps restant en direct.</li>
 <li><b>Corrigé</b> : Action annulée (labo, récolte…) : la barre de progression restait à l&#x27;écran. X annule maintenant l&#x27;action pour de bon et la barre disparaît toujours.</li>
 <li><b>Amélioré</b> : Chat en haut à gauche, à la place du chat de base, plus épuré : messages sans bulle, panneau en verre discret quand on écrit.</li>
