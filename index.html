@@ -15,8 +15,23 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.2.44</b> · 2026-10-28<br>grosse liste (viseur, territoires, blanchiment, labos, EMS, F7, téléphone…)<div class="sha">SHA-256 : 8364cf1fd5ce5448776ba812d6b1ccc233f91a036eb69082327541ec5591cdb1</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.44.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.2.45</b> · 2026-10-29<br>batailles de zone, annonces plein écran, customs, recherche d&#x27;objets, téléphone, nouvelles cartes<div class="sha">SHA-256 : f6c3425307ca52c8960f57d0c43b8853a425a030890e43d98d3627b556247822</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.45.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
+<details class="card" open><summary><span class="n">138</span>téléphone, nouvelles cartes</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Cartes du panel et du créateur (choix du point d&#x27;arrivée) : la nouvelle carte satellite avec le nom des lieux, et un bouton Satellite / Plan pour passer au plan des routes. Même cadrage que la carte du jeu : les points restent à leur place.</li>
+<li><b>Corrigé</b> : Téléphone : on pouvait rester bloqué dans la configuration du premier démarrage. Le code se tape aussi au clavier (chiffres, Retour arrière), « Passer (sans code) » est proposé dès le Bonjour, l&#x27;accueil s&#x27;ouvre tout de suite après « Commencer », et la configuration n&#x27;est plus redemandée à chaque ouverture (colonnes de la base réparées au démarrage si besoin).</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">137</span>batailles de zone, annonces plein écran, customs, recherche d&#x27;objets</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Territoires = batailles de zone : points de contrôle à tenir seul, score par point tenu et par élimination, premier à 100 ou meilleur score au temps. Tableau des scores à l&#x27;écran, avance par les graffitis. Prise possible seulement aux heures réelles programmées (ven/sam/dim 20h-23h, Paris), pas de secours en zone de guerre, texte propre en bas de l&#x27;écran et scores en bas à droite, annonces de début et de fin, tirs interdits dans la zone sauf pour son gang hors guerre.</li>
+<li><b>Corrigé</b> : Atelier : customs des véhicules add-on (teintes, annulation, roues de moto, options du modèle, refus signalés, ré-application à la sortie).</li>
+<li><b>Nouveau</b> : Annonces plein écran façon txAdmin : grand bandeau au centre de l&#x27;écran (4 styles, durée, son, auteur), panel › Annonces, commande /annonce, historique. Aperçu dans le panel, utilisable depuis le menu admin F10. Réservé aux fondateurs.</li>
+<li><b>Nouveau</b> : HUD : munitions en haut à droite (chargeur / réserve + barre) à la place de celles du jeu, réglable.</li>
+<li><b>Nouveau</b> : Menu staff › Donner un objet : recherche par nom simplifié ou technique, les deux noms affichés.</li>
+<li><b>Nouveau</b> : Panneau à droite de la carte du jeu (icônes natives de GTA) : lieux par catégorie, recherche, repères qui clignotent, GPS, masquer les repères, zones de territoires (Échap › Carte ou /carte).</li>
+<li><b>Nouveau</b> : Territoires : les batailles reprennent après un redémarrage, historique des guerres, police et staff peuvent tirer dans les zones.</li>
+<li><b>Nouveau</b> : Annonces : destinataires au choix (groupe, entreprise, joueur, staff, police), modèles enregistrés, historique nettoyé automatiquement.</li>
+<li><b>Nouveau</b> : Menu staff : journal des actions et bouton Annuler (argent, objets, gel, silence, téléportation, bannissement, prison).</li>
+</ul></div></details>
 <details class="card" open><summary><span class="n">136</span>grosse liste (viseur, territoires, blanchiment, labos, EMS, F7, téléphone…)</summary><div class="b"><ul>
 <li><b>Corrigé</b> : Viseur staff : il plantait le jeu en visant quelqu&#x27;un (contour lumineux posé sur un personnage) et n&#x27;était pas au centre de l&#x27;écran. Repère sans danger (cercle au sol + flèche) et réticule au vrai centre ; même correction dans tous les menus de sélection (F6, F7…).</li>
 <li><b>Corrigé</b> : Points qui ne s&#x27;enlevaient pas (pêche, chasse, activités, braquages, animalerie, atelier d&#x27;armes) : ils apparaissent maintenant dans Builder › Existant et se suppriment un par un.</li>
@@ -58,7 +73,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Corrigé</b> : Second emploi : le message disait « /jobswap » ; il indique maintenant F5 › Mon entreprise.</li>
 <li><b>Corrigé</b> : Builder › Existant : une suppression refusée affichait quand même « supprimé ».</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">134</span>Ammu-Nation, téléphone obligatoire, nouvelle radio, chasse aux bugs d&#x27;interface</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">134</span>Ammu-Nation, téléphone obligatoire, nouvelle radio, chasse aux bugs d&#x27;interface</summary><div class="b"><ul>
 <li><b>Modifié</b> : Ammu-Nation : plus d&#x27;armes à feu en vente libre. On y trouve les armes blanches (couteau, batte, pied-de-biche, club de golf, marteau, lampe torche, machette, hachette, cran d&#x27;arrêt, poing américain, clé) et les munitions de tous les calibres pour tout le monde (9 mm, calibre 12, SMG, fusil, sniper, mitrailleuse, roquettes). Le pistolet (150 000 $) est réservé aux VIP ; un non-VIP ne peut ni l&#x27;acheter, ni le recevoir d&#x27;un vendeur.</li>
 <li><b>Modifié</b> : Téléphone obligatoire : sans l&#x27;objet « téléphone » dans le sac, impossible d&#x27;ouvrir le téléphone, d&#x27;appeler ou d&#x27;être joint (le 911 aussi). Chaque personnage reçoit un téléphone gratuit, une seule fois (à la fin de la création, ou à la connexion pour les personnages existants).</li>
 <li><b>Nouveau</b> : Radio (F4) refaite en menu : fréquence actuelle, « Choisir une fréquence », « Couper la radio », volume (← →, mémorisé), 5 dernières fréquences, fréquences réservées de ton métier, touche pour parler rappelée.</li>
@@ -76,7 +91,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Corrigé</b> : Noms au-dessus des têtes : le réglage avait été mis dans F5 › Mes paramètres, visible par tous les joueurs. Il est retiré du F5 : les noms sont réservés au staff et s&#x27;affichent seulement avec Menu staff › Gestion personnelle › « Noms au-dessus des têtes » (ID, nom et grade ; masqués par défaut). L&#x27;ancien affichage en double du menu staff est supprimé.</li>
 <li><b>Modifié</b> : Écran de chargement retiré : wb_loading ne s&#x27;affiche plus (son dossier peut être supprimé). Le chargement FiveM par défaut revient.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">133</span>Builder Créer / Existant, ponts mécano, garages par type, grosse passe de cohérence</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">133</span>Builder Créer / Existant, ponts mécano, garages par type, grosse passe de cohérence</summary><div class="b"><ul>
 <li><b>Nouveau</b> : Builder en deux onglets : « Créer » (entreprise, groupe, garage, magasin, ascenseur… puis ses points) et « Existant » (tout ce qui est déjà posé : modifier, déplacer, y aller, supprimer, du plus proche au plus loin).</li>
 <li><b>Nouveau</b> : Garages mécano : plusieurs ponts (un par mécano). Dans la liste des points de l&#x27;entreprise, « Pont (atelier) » en ajoute un à chaque Entrée ; la customisation s&#x27;ouvre près de n&#x27;importe lequel.</li>
 <li><b>Modifié</b> : Chaque véhicule ne se sort et ne se range que dans son type de garage, y compris pour les entreprises et les organisations : voitures au garage, hélicoptères à l&#x27;hélipad / au hangar, bateaux au port. Le vrai type est appris sur le véhicule (même un modèle ajouté). Un hélicoptère ou un bateau acheté en concession est livré au hangar / au port le plus proche (GPS posé).</li>
