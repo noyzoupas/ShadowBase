@@ -15,20 +15,112 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.2.48</b> · 2026-10-29<br>supprimer un véhicule depuis la fiche joueur, coffres de véhicules agrandis, objet offert par les zones au choix, plus a<div class="sha">SHA-256 : 8b99e5c208688efbc0adf6c90703174343c33e982ec68608630d5e81c6946b27</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.48.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.2.49</b> · 2026-10-30<br>téléphone Garage refait, notifications et textes d&#x27;information, nouveau design du panel, déplacer les interfaces directe<div class="sha">SHA-256 : ae9978a0636da874a82d070ae5f476b73b2946d40e4666ed23619ee8911d09c8</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.49.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
-<details class="card" open><summary><span class="n">155</span>plus aucun militaire dans le monde</summary><div class="b"><ul>
+<details class="card" open><summary><span class="n">176</span>notifications et boombox</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Notifications : plus de croix, fond un peu plus transparent.</li>
+<li><b>Corrigé</b> : Boombox : elle se tient maintenant par la poignée, droite, côté haut-parleurs vers l&#x27;extérieur.</li>
+<li><b>Nouveau</b> : Staff : /boombox_regler ajuste en direct la position de la boombox dans la main, avec les flèches, pour tout le monde.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">175</span>membre du Discord obligatoire</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Connexion : il faut aussi être membre du serveur Discord pour rejoindre. Le joueur refusé voit le lien pour le rejoindre et peut se reconnecter aussitôt. Il faut le jeton du bot et l&#x27;identifiant du serveur (module Discord). Si Discord ne répond pas, le joueur entre, pour qu&#x27;une panne ne ferme pas le serveur. L&#x27;équipe et le propriétaire passent toujours.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">174</span>Discord obligatoire</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Connexion : Discord est maintenant obligatoire pour rejoindre le serveur, même en maintenance. Un joueur sans l&#x27;application Discord ouverte est refusé avec les étapes à suivre. L&#x27;équipe et le propriétaire passent toujours. Réglage et message : Panel › Discord ↔ personnage.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">173</span>notifications refaites</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Notifications refaites d&#x27;après le modèle : carte sombre, logo sur une tuile, type en gras avec le nom du serveur dessous, croix pour fermer, barre de temps à la couleur du serveur et message en dessous.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">172</span>écran de la boombox</summary><div class="b"><ul>
+<li><b>Corrigé</b> : Boombox et CarPlay : l&#x27;écran ne réagissait pas à la souris, les clics passaient à travers. Équiper la boombox ferme aussi l&#x27;inventaire, qui restait derrière.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">171</span>notifications et véhicules du staff</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Notifications : le petit type (Informations, Succès, Attention, Erreur) revient sous le nom du serveur, avec son icône et sa couleur.</li>
+<li><b>Nouveau</b> : Menu staff (F10) › Gestion des véhicules › Supprimer définitivement : le véhicule où tu es ou le plus proche, par plaque, ou par joueur connecté. Aussi sur la fiche d&#x27;un joueur : Véhicules du joueur. Une confirmation est demandée.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">170</span>boombox en main et CarPlay</summary><div class="b"><ul>
+<li><b>Nouveau</b> : CarPlay : dans un véhicule, touche O. Un petit écran propose des radios en un clic, un vrai champ pour coller un lien YouTube ou Vimeo et tes derniers liens. Tous les occupants peuvent changer ou couper la musique, et les autres sont prévenus.</li>
+<li><b>Amélioré</b> : Boombox VIP : c&#x27;est maintenant un objet du sac. Utilisée, elle passe en main et ouvre le même écran ; utilisée à nouveau, elle se range. Le son la suit quand tu te déplaces. La commande /boombox et la pose au sol disparaissent.</li>
+<li><b>Nouveau</b> : Panel › Musique : liste des musiques en cours, radios et distances réglables.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">169</span>réapparition à l&#x27;hôpital</summary><div class="b"><ul>
+<li><b>Corrigé</b> : Écran de mort : la touche G est maintenant lue directement au clavier, même si « Détoner » a été réassignée dans les réglages de GTA ou désactivée par un autre script. Il faut toujours la maintenir 1,5 seconde, une fois le délai écoulé. En secours, la commande /reapparaitre fait la même chose.</li>
+<li><b>Corrigé</b> : Réapparition : une panne de facture, de journal ou de sac ne bloque plus le joueur à terre, et un point d&#x27;hôpital mal réglé renvoie à l&#x27;hôpital par défaut. Si le serveur ne savait pas le joueur à terre, l&#x27;écran se recale au lieu d&#x27;ignorer la touche.</li>
+<li><b>Corrigé</b> : Réapparition : le personnage attend que le sol de l&#x27;hôpital soit chargé avant de retomber, il ne passe plus à travers la carte.</li>
+<li><b>Corrigé</b> : Anticheat : un joueur à terre n&#x27;est plus signalé pour invincibilité. Réglé sur « Expulser », cette détection pouvait le sortir du serveur pendant l&#x27;écran de mort.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">168</span>boutique plus simple, coins au menu staff</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Panel › Boutique : ajouter un article se fait en trois étapes. La catégorie, puis le choix dans la liste complète avec les photos (tous les véhicules, toutes les armes, tous les objets de l&#x27;inventaire, logements, durées de VIP, montants, boosts), puis le prix. Le nom et la photo se remplissent tout seuls ; le formulaire ne montre que les champs utiles.</li>
+<li><b>Nouveau</b> : Menu staff › un joueur › Coins de la boutique : donner ou retirer des coins, avec un motif. Droit « Boutique : créditer ou retirer des coins », tracé dans les mouvements.</li>
+<li><b>Corrigé</b> : Boutique : l&#x27;historique des mouvements de coins pouvait rester vide pour les opérations sans référence (crédits du staff, achats). Tout est maintenant tracé.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">167</span>caméléon dans le F5</summary><div class="b"><ul>
+<li><b>Amélioré</b> : VIP : la peinture caméléon se gère maintenant depuis le menu F5, avec sa propre entrée juste après la carte VIP. La commande /cameleon disparaît.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">166</span>grosse correction</summary><div class="b"><ul>
+<li><b>Corrigé</b> : Mort RP : il restait du personnage effacé : 2e métier, clés de véhicules, factures, casier, comptes en banque, appels, tickets de loterie, gang, photo. Tout est retiré ; le compte, lui, reste (bans, VIP, notes du staff).</li>
+<li><b>Corrigé</b> : Comptoirs d&#x27;entreprise : une bijouterie, un tatoueur, une armurerie ou un magasin de meubles proposaient du pain et de l&#x27;eau par défaut. Leur catalogue démarre vide, à remplir. La fabrique de cigares vend des cigares (plus des pizzas), le Galaxy a la carte du bar.</li>
+<li><b>Corrigé</b> : Plus aucun véhicule militaire à louer (Squaddie et Winky remplacés à Cayo Perico par le Verus et le Manchez Scout) ni en concession, même avec le catalogue élargi.</li>
+<li><b>Corrigé</b> : Duplication d&#x27;objets : en cas de double clic ou d&#x27;action simultanée, un objet pouvait être donné, jeté, vendu, servi au bar ou consommé sans être retiré du sac. Le retrait est maintenant vérifié d&#x27;abord partout ; un client de bar est remboursé si l&#x27;article n&#x27;est plus là.</li>
+<li><b>Amélioré</b> : Textes du panel et des organisations remis à jour : plus de « point boss » ni de « bureau du chef » pour les organisations illégales.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">165</span>vraies peintures caméléon</summary><div class="b"><ul>
+<li><b>Nouveau</b> : VIP : /cameleon propose maintenant les vraies peintures du jeu : 20 peintures spéciales et 62 peintures Rockstar, en plus de l&#x27;effet qui suit le regard. Peintures par WildBrick142 et Disquse (Chameleon Paint), shaders de Rockstar Games.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">164</span>onglet Téléportation dans le menu staff</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Menu staff › Téléportation : TP rapides (ajoute ta position, visible par tout le staff), Lieux du Builder (magasins, garages, banques, entreprises…) et Mappings.</li>
+<li><b>Nouveau</b> : Mappings : le serveur lit tout seul les fichiers de carte des ressources démarrées et trouve où ils se trouvent, à chaque démarrage ou avec « Rechercher à nouveau ». Un mapping ajouté apparaît sans rien régler ; on peut le renommer ou le masquer.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">163</span>encore plus d&#x27;avantages VIP</summary><div class="b"><ul>
+<li><b>Nouveau</b> : VIP : boombox portable (/boombox) : posée par terre, un lien YouTube, tout le monde autour entend la musique ; on change de musique ou on la ramasse quand on veut. Elle remplace l&#x27;avantage sur le blanchiment, qui redevient le même pour tout le monde.</li>
+<li><b>Nouveau</b> : VIP : peinture caméléon (/cameleon, au volant de ton véhicule) : 8 teintes dont un arc-en-ciel, la couleur change selon l&#x27;angle de vue. Gratuite et enregistrée sur le véhicule.</li>
+<li><b>Nouveau</b> : VIP : +50 kg et +15 emplacements dans les coffres de ses véhicules, -10 % en magasin (supérettes, vêtements, coiffeurs, tatoueurs), 10 tenues enregistrées en plus, plaque personnalisée gratuite, priorité dans la file d&#x27;attente.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">162</span>organisations, tout au QG</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Organisations illégales : plus de point bureau. Tout se gère au QG (membres, grades, caisse, crypto, territoires, labos, contrats). Les bureaux déjà posés sont retirés ; une organisation sans QG voit son bureau devenir son QG. Les entreprises gardent leur bureau du patron.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">161</span>bouton E, avantages VIP, drogues</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Bouton E pour interagir refait : pastille translucide, touche ronde à la couleur du serveur.</li>
+<li><b>Nouveau</b> : VIP : blanchiment avec 5 points de commission en moins et 25 % plus rapide, repos après réapparition réduit de moitié, fourrière gratuite, carburant 20 % moins cher, 5 places de véhicules en plus. Tout se règle dans le panel (VIP › Réglages) et se voit dans F5.</li>
+<li><b>Amélioré</b> : Drogues plus légères : 1 kg le produit brut (au lieu de 1,5), 0,7 kg le pochon (au lieu de 1). Le produit brut non transformé se vend deux fois moins cher (x0,2 au lieu de x0,4) ; le prix des pochons ne change pas.</li>
+<li><b>Amélioré</b> : Notifications un peu plus grandes, toujours compactes.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">160</span>blanchiment corrigé, petites notifications</summary><div class="b"><ul>
+<li><b>Corrigé</b> : Blanchiment : le bouton « Récupérer » ne faisait rien, l&#x27;argent restait bloqué chez le contact. Il est maintenant versé. Si le contact d&#x27;origine a été supprimé ou reposé, n&#x27;importe quel autre contact rend l&#x27;argent.</li>
+<li><b>Amélioré</b> : Notifications beaucoup plus petites : logo et nom du serveur sur une seule ligne, catégorie discrète à droite, message en dessous.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">159</span>écran de chargement à la connexion, barre du noclip, sons des menus</summary><div class="b"><ul>
+<li><b>Corrigé</b> : Connexion : après le loading screen, on ne voit plus son personnage tomber dans le vide. Un écran de chargement (logo du serveur, sur fond noir) reste affiché jusqu&#x27;à l&#x27;écran « Appuyez sur E », le créateur ou l&#x27;arrivée à la dernière position, et le personnage reste figé derrière.</li>
+<li><b>Corrigé</b> : Noclip : la barre des touches ne déborde plus et ne passe plus à la ligne (une pastille par touche, la vitesse ne fait plus bouger la barre). Les touches affichées sont les bonnes : ZQSD se déplacer, E monter, A (Q en QWERTY) descendre, Shift boost, Ctrl ralenti, molette vitesse.</li>
+<li><b>Nouveau</b> : F5 › Mes paramètres › Sons des menus : trois choix, clic du serveur, sons de base des menus de GTA ou aucun son. Réglage mémorisé sur ton poste.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">158</span>déplacer les interfaces directement en jeu</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Placement en jeu : Panel › Placement à l&#x27;écran › « Modifier directement en jeu » (ou la commande /placement). Le panel se ferme et chaque interface (HUD, compteur, chat, notifications, menus, munitions, invite, barre de progression, mini-carte) apparaît dans un cadre pointillé sur ta vraie vue : glisse-la où tu veux, puis Valider. Échap annule.</li>
+<li><b>Nouveau</b> : Les notifications peuvent rester où on les lâche (emplacement libre), en plus des 7 coins ; la mini-carte du jeu se déplace aussi (à vérifier sur ta résolution).</li>
+<li><b>Amélioré</b> : Le glisser respecte maintenant les limites acceptées par le serveur (plus d&#x27;erreur « Valeur hors limites » en posant le chat tout à droite).</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">157</span>nouveau design du panel</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Panel refait : plus de barre latérale. L&#x27;accueil est une grille de catégories (Serveur, Joueurs, Économie, Véhicules, Illégal &amp; gangs…) avec le nombre d&#x27;outils ; une catégorie ouvre la liste de ses outils en cartes, un outil ouvre sa page. Le tableau de bord et les favoris ont chacun leur tuile.</li>
+<li><b>Nouveau</b> : Recherche en haut à droite (touche /), qui filtre tout de suite les catégories ou les outils de la catégorie ouverte ; Échap revient en arrière avant de fermer ; barre d&#x27;aide en bas.</li>
+<li><b>Amélioré</b> : Plus fluide : entrées animées en cascade, survol qui s&#x27;allume à la couleur de la marque, aucun flou coûteux. Les pages d&#x27;outils gardent le même contenu avec des champs et des boutons plus nets.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">156</span>téléphone Garage refait, notifications et textes d&#x27;information</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Téléphone › Garage : une carte par véhicule (nom, plaque, état Sorti / Rangé / Fourrière, où il se trouve), trois jauges lisibles (carburant, moteur, carrosserie) et un seul bouton Localiser / Y aller. Les jauges ne se superposent plus au texte.</li>
+<li><b>Amélioré</b> : Notifications : nouvelle carte noire translucide avec le logo du serveur, son nom, la catégorie (Général, Attention, Erreur…) et le message ; les montants, quantités et x/y sont en orange.</li>
+<li><b>Amélioré</b> : Texte d&#x27;information en haut à gauche (territoire, repos après réapparition) : même style que les textes d&#x27;action des serveurs pro, blanc avec les valeurs en orange, à la place du texte centré en bas de l&#x27;écran.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">155</span>plus aucun militaire dans le monde</summary><div class="b"><ul>
 <li><b>Corrigé</b> : Armée : il restait des hélicoptères et des avions militaires (Cayo Perico notamment). Tout le matériel militaire du jeu est maintenant retiré : hélicoptères (Valkyrie, Hunter, Akula, Cargobob, Savage…), avions (Lazer, Titan, Besra, Hydra, Volatol…), blindés, remorques et bateaux de l&#x27;armée, soldats et mercenaires.</li>
 <li><b>Amélioré</b> : Ceux déjà garés dans le monde disparaissent aussi (contrôle toutes les 15 s). Un véhicule militaire sorti par le staff ou par un script n&#x27;est jamais touché.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">154</span>objet offert par les zones au choix</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">154</span>objet offert par les zones au choix</summary><div class="b"><ul>
 <li><b>Amélioré</b> : Zones de gangs : l&#x27;objet offert se choisit parmi tous les objets de l&#x27;inventaire, objets personnalisés compris, avec la même recherche que « Donner un objet » du staff (nom simple ou technique, ou par catégorie). On règle aussi la quantité et toutes les combien d&#x27;heures.</li>
 <li><b>Nouveau</b> : Builder › Existant › Territoires : chaque zone a « Objet offert » pour changer l&#x27;objet, la quantité et la fréquence sans la recréer. Dans le panel (Zones de gangs › Zones), l&#x27;objet se choisit dans une liste au lieu d&#x27;être tapé.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">153</span>coffres de véhicules agrandis</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">153</span>coffres de véhicules agrandis</summary><div class="b"><ul>
 <li><b>Amélioré</b> : Coffres des véhicules : au moins 130 kg (40 emplacements) pour toutes les voitures, bateaux et appareils, au moins 200 kg (60 emplacements) pour les camions, utilitaires, fourgons, services, urgences, militaires et commerciaux. Les coffres déjà plus grands ne changent pas ; motos et vélos gardent leur petit coffre.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">152</span>supprimer un véhicule depuis la fiche joueur</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">152</span>supprimer un véhicule depuis la fiche joueur</summary><div class="b"><ul>
 <li><b>Nouveau</b> : Panel › Joueurs : la fiche d&#x27;un joueur (bouton « Fiche » dans la liste en ligne ou hors ligne) liste ses véhicules, avec « Supprimer définitivement » (droit « Gérer les véhicules », confirmation demandée).</li>
 <li><b>Amélioré</b> : Supprimer un véhicule l&#x27;enlève aussi de la ville s&#x27;il est sorti et vide son coffre (avant, le contenu du coffre restait en base).</li>
 </ul></div></details>
