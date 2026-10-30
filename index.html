@@ -15,20 +15,43 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.2.49</b> · 2026-10-30<br>téléphone Garage refait, notifications et textes d&#x27;information, nouveau design du panel, déplacer les interfaces directe<div class="sha">SHA-256 : ae9978a0636da874a82d070ae5f476b73b2946d40e4666ed23619ee8911d09c8</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.49.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.2.50</b> · 2026-10-30<br>job casino, tables de casino Molo, réglage de la boombox, plaques, boutique et repères du casino, téléportation et mappi<div class="sha">SHA-256 : 7f69662a521f3b9f3fc8da32bc3fb5b0f91fec674c08d5c80499be280869efb4</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.50.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
-<details class="card" open><summary><span class="n">176</span>notifications et boombox</summary><div class="b"><ul>
+<details class="card" open><summary><span class="n">181</span>téléportation et mappings</summary><div class="b"><ul>
+<li><b>Corrigé</b> : Noclip : la téléportation fonctionne aussi en plein vol. C&#x27;est maintenant le noclip qui applique le saut, sans attendre le sol.</li>
+<li><b>Corrigé</b> : Téléportation sans hauteur connue (mappings, point GPS) : le sol est cherché par paliers au-dessus du lieu, le personnage n&#x27;arrive plus sous la carte ou en l&#x27;air.</li>
+<li><b>Corrigé</b> : Menu staff › Téléportation › Mappings : les fichiers sont lus correctement, et une liste de secours prend le relais si le serveur ne peut pas lire ses dossiers. Le résultat signale les fichiers de packs protégés, illisibles.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">180</span>plaques, boutique et repères du casino</summary><div class="b"><ul>
+<li><b>Corrigé</b> : Boutique : la plaque personnalisée fonctionne. L&#x27;écran n&#x27;envoyait pas le véhicule et le texte sous les noms attendus, l&#x27;achat était toujours refusé.</li>
+<li><b>Nouveau</b> : VIP : Changer de plaque dans le menu F5, gratuitement, pour un véhicule rangé au garage.</li>
+<li><b>Amélioré</b> : Boutique : les caisses mystère sont supprimées, tirage compris. Celles déjà en vente disparaissent à la mise à jour.</li>
+<li><b>Nouveau</b> : Staff : F10 › Téléportation › Casino regroupe la caisse, la salle, la roue, le podium, le bar, l&#x27;hôtel et les ascenseurs.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">179</span>réglage de la boombox</summary><div class="b"><ul>
+<li><b>Corrigé</b> : /boombox_regler : les trois rotations fonctionnent vraiment. En mode rotation, les flèches tournent et penchent la boombox, A et E l&#x27;inclinent (Page haut et bas aussi).</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">178</span>tables de casino Molo</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Casino : les scripts Molo sont installés (poker à trois cartes, blackjack, roulette, machines à sous, roue, paris, hôtel). Leurs jetons passent par la caisse du serveur, qui débite le vrai argent du joueur et la caisse de l&#x27;entreprise.</li>
+<li><b>Amélioré</b> : Job casino : avec Molo, la tablette suit les jetons vendus et rachetés. Fermer la salle ou interdire un joueur arrête la vente de jetons, pas les tables.</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">177</span>job casino</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Job casino : l&#x27;entreprise Casino a sa page Salle de jeux dans la tablette, avec bénéfices, jeux, plus gros gains et interdits. La direction relie le casino à sa caisse, ouvre ou ferme la salle et règle les mises.</li>
+<li><b>Nouveau</b> : Menu F6 du casino : vendre des jetons à un client, voir les joueurs en salle ; pour la direction, offrir des jetons et interdire de casino. Un joueur interdit, ou une salle fermée, peut toujours revendre ses jetons à la caisse.</li>
+<li><b>Nouveau</b> : Mapping molo_casino ajouté au serveur (nécessite la licence du pack sur le compte Cfx du serveur).</li>
+</ul></div></details>
+<details class="card"><summary><span class="n">176</span>notifications et boombox</summary><div class="b"><ul>
 <li><b>Amélioré</b> : Notifications : plus de croix, fond un peu plus transparent.</li>
 <li><b>Corrigé</b> : Boombox : elle se tient maintenant par la poignée, droite, côté haut-parleurs vers l&#x27;extérieur.</li>
 <li><b>Nouveau</b> : Staff : /boombox_regler ajuste en direct la position de la boombox dans la main, avec les flèches, pour tout le monde.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">175</span>membre du Discord obligatoire</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">175</span>membre du Discord obligatoire</summary><div class="b"><ul>
 <li><b>Nouveau</b> : Connexion : il faut aussi être membre du serveur Discord pour rejoindre. Le joueur refusé voit le lien pour le rejoindre et peut se reconnecter aussitôt. Il faut le jeton du bot et l&#x27;identifiant du serveur (module Discord). Si Discord ne répond pas, le joueur entre, pour qu&#x27;une panne ne ferme pas le serveur. L&#x27;équipe et le propriétaire passent toujours.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">174</span>Discord obligatoire</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">174</span>Discord obligatoire</summary><div class="b"><ul>
 <li><b>Nouveau</b> : Connexion : Discord est maintenant obligatoire pour rejoindre le serveur, même en maintenance. Un joueur sans l&#x27;application Discord ouverte est refusé avec les étapes à suivre. L&#x27;équipe et le propriétaire passent toujours. Réglage et message : Panel › Discord ↔ personnage.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">173</span>notifications refaites</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">173</span>notifications refaites</summary><div class="b"><ul>
 <li><b>Amélioré</b> : Notifications refaites d&#x27;après le modèle : carte sombre, logo sur une tuile, type en gras avec le nom du serveur dessous, croix pour fermer, barre de temps à la couleur du serveur et message en dessous.</li>
 </ul></div></details>
 <details class="card"><summary><span class="n">172</span>écran de la boombox</summary><div class="b"><ul>
