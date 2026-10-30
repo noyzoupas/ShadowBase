@@ -15,8 +15,15 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.2.51</b> · 2026-10-30<br>Builder, poser un autre<div class="sha">SHA-256 : 890e143d890864dd829d356b08effc3595a0ed0f02b28b1296fd6cc497122b88</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.51.zip">Télécharger la mise à jour</a></section>
-<p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
+<section class="hero"><div><b>Version 1.2.52</b> · 2026-10-30<br>mises à jour légères, coffres à 650 kg<div class="sha">SHA-256 : fed635d31d7fc761095a4c33c323dc340380fe173b1840a33ad6e34648df06e4</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.52.zip">Tout télécharger (nouvelle installation)</a></section>
+<section class="card" style="padding:14px 18px"><b>Mise à jour rapide</b> : uniquement les fichiers qui ont changé. Prends la ligne de ta version installée (affichée dans le panel, module Mises à jour).<ul><li><a href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.51-vers-v1.2.52.zip">Depuis la version 1.2.51</a> : 5 fichier(s), 0.1 Mo</li><li><a href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.50-vers-v1.2.52.zip">Depuis la version 1.2.50</a> : 7 fichier(s), 0.1 Mo</li><li><a href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.49-vers-v1.2.52.zip">Depuis la version 1.2.49</a> : 21 fichier(s), 0.3 Mo</li><li><a href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.48-vers-v1.2.52.zip">Depuis la version 1.2.48</a> : 72 fichier(s), 0.7 Mo</li><li><a href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.47-vers-v1.2.52.zip">Depuis la version 1.2.47</a> : 77 fichier(s), 0.7 Mo</li><li><a href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.46-vers-v1.2.52.zip">Depuis la version 1.2.46</a> : 79 fichier(s), 0.8 Mo</li><li><a href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.45-vers-v1.2.52.zip">Depuis la version 1.2.45</a> : 140 fichier(s), 1.1 Mo</li><li><a href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.44-vers-v1.2.52.zip">Depuis la version 1.2.44</a> : 156 fichier(s), 2.4 Mo</li><li><a href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.43-vers-v1.2.52.zip">Depuis la version 1.2.43</a> : 179 fichier(s), 2.5 Mo</li><li><a href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.42-vers-v1.2.52.zip">Depuis la version 1.2.42</a> : 225 fichier(s), 2.8 Mo</li></ul></section>
+<p class="how">Mise à jour : arrête le serveur, extrais le petit zip de ta version dans <code>resources/</code> en acceptant de remplacer, puis redémarre. Ta licence et <code>pb_panel/config.lua</code> ne bougent pas. Ton panel (module « Mises à jour ») te prévient tout seul et te donne le bon lien. Trop ancienne, ta version n'est plus listée : prends le zip complet, sans écraser ces deux fichiers.</p>
+<details class="card" open><summary><span class="n">184</span>coffres à 650 kg</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Les coffres de toutes les entreprises et de toutes les organisations passent à 650 kg, y compris ceux déjà posés.</li>
+</ul></div></details>
+<details class="card" open><summary><span class="n">183</span>mises à jour légères</summary><div class="b"><ul>
+<li><b>Amélioré</b> : Mises à jour : plus besoin de tout retélécharger. Chaque version publie un petit zip avec seulement les fichiers qui ont changé, et Panel › Mises à jour donne celui de ta version. Ta licence et pb_panel/config.lua ne bougent pas.</li>
+</ul></div></details>
 <details class="card" open><summary><span class="n">182</span>Builder, poser un autre</summary><div class="b"><ul>
 <li><b>Nouveau</b> : Builder : recliquer sur un type de point déjà posé propose « Poser un autre » ou de choisir celui à supprimer, avec le nombre déjà posé.</li>
 <li><b>Nouveau</b> : Builder, points d&#x27;une entreprise, d&#x27;un groupe ou d&#x27;une drogue : « Poser un autre ici » s&#x27;ajoute à Déplacer et Supprimer (coffre, prise de service, bureau, vestiaire, récolte…). Un nouveau coffre est vide. Les garages d&#x27;entreprise restent uniques.</li>
@@ -26,13 +33,13 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <li><b>Corrigé</b> : Téléportation sans hauteur connue (mappings, point GPS) : le sol est cherché par paliers au-dessus du lieu, le personnage n&#x27;arrive plus sous la carte ou en l&#x27;air.</li>
 <li><b>Corrigé</b> : Menu staff › Téléportation › Mappings : les fichiers sont lus correctement, et une liste de secours prend le relais si le serveur ne peut pas lire ses dossiers. Le résultat signale les fichiers de packs protégés, illisibles.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">180</span>plaques, boutique et repères du casino</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">180</span>plaques, boutique et repères du casino</summary><div class="b"><ul>
 <li><b>Corrigé</b> : Boutique : la plaque personnalisée fonctionne. L&#x27;écran n&#x27;envoyait pas le véhicule et le texte sous les noms attendus, l&#x27;achat était toujours refusé.</li>
 <li><b>Nouveau</b> : VIP : Changer de plaque dans le menu F5, gratuitement, pour un véhicule rangé au garage.</li>
 <li><b>Amélioré</b> : Boutique : les caisses mystère sont supprimées, tirage compris. Celles déjà en vente disparaissent à la mise à jour.</li>
 <li><b>Nouveau</b> : Staff : F10 › Téléportation › Casino regroupe la caisse, la salle, la roue, le podium, le bar, l&#x27;hôtel et les ascenseurs.</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">179</span>réglage de la boombox</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">179</span>réglage de la boombox</summary><div class="b"><ul>
 <li><b>Corrigé</b> : /boombox_regler : les trois rotations fonctionnent vraiment. En mode rotation, les flèches tournent et penchent la boombox, A et E l&#x27;inclinent (Page haut et bas aussi).</li>
 </ul></div></details>
 <details class="card"><summary><span class="n">178</span>tables de casino Molo</summary><div class="b"><ul>
