@@ -1,30 +1,15 @@
 {
  "v": 1,
- "version": "1.2.50",
+ "version": "1.2.51",
  "date": "2026-10-30",
- "title": "job casino, tables de casino Molo, réglage de la boombox, plaques, boutique et repères du casino, téléportation et mappi",
+ "title": "Builder, poser un autre",
  "notes": [
-  "— Patch notes 177 — job casino",
-  "Nouveau : Job casino : l'entreprise Casino a sa page Salle de jeux dans la tablette, avec bénéfices, jeux, plus gros gains et interdits. La direction relie le casino à sa caisse, ouvre ou ferme la salle et règle les mises.",
-  "Nouveau : Menu F6 du casino : vendre des jetons à un client, voir les joueurs en salle ; pour la direction, offrir des jetons et interdire de casino. Un joueur interdit, ou une salle fermée, peut toujours revendre ses jetons à la caisse.",
-  "Nouveau : Mapping molo_casino ajouté au serveur (nécessite la licence du pack sur le compte Cfx du serveur).",
-  "— Patch notes 178 — tables de casino Molo",
-  "Nouveau : Casino : les scripts Molo sont installés (poker à trois cartes, blackjack, roulette, machines à sous, roue, paris, hôtel). Leurs jetons passent par la caisse du serveur, qui débite le vrai argent du joueur et la caisse de l'entreprise.",
-  "Amélioré : Job casino : avec Molo, la tablette suit les jetons vendus et rachetés. Fermer la salle ou interdire un joueur arrête la vente de jetons, pas les tables.",
-  "— Patch notes 179 — réglage de la boombox",
-  "Corrigé : /boombox_regler : les trois rotations fonctionnent vraiment. En mode rotation, les flèches tournent et penchent la boombox, A et E l'inclinent (Page haut et bas aussi).",
-  "— Patch notes 180 — plaques, boutique et repères du casino",
-  "Corrigé : Boutique : la plaque personnalisée fonctionne. L'écran n'envoyait pas le véhicule et le texte sous les noms attendus, l'achat était toujours refusé.",
-  "Nouveau : VIP : Changer de plaque dans le menu F5, gratuitement, pour un véhicule rangé au garage.",
-  "Amélioré : Boutique : les caisses mystère sont supprimées, tirage compris. Celles déjà en vente disparaissent à la mise à jour.",
-  "Nouveau : Staff : F10 › Téléportation › Casino regroupe la caisse, la salle, la roue, le podium, le bar, l'hôtel et les ascenseurs.",
-  "— Patch notes 181 — téléportation et mappings",
-  "Corrigé : Noclip : la téléportation fonctionne aussi en plein vol. C'est maintenant le noclip qui applique le saut, sans attendre le sol.",
-  "Corrigé : Téléportation sans hauteur connue (mappings, point GPS) : le sol est cherché par paliers au-dessus du lieu, le personnage n'arrive plus sous la carte ou en l'air.",
-  "Corrigé : Menu staff › Téléportation › Mappings : les fichiers sont lus correctement, et une liste de secours prend le relais si le serveur ne peut pas lire ses dossiers. Le résultat signale les fichiers de packs protégés, illisibles."
+  "— Patch notes 182 — Builder, poser un autre",
+  "Nouveau : Builder : recliquer sur un type de point déjà posé propose « Poser un autre » ou de choisir celui à supprimer, avec le nombre déjà posé.",
+  "Nouveau : Builder, points d'une entreprise, d'un groupe ou d'une drogue : « Poser un autre ici » s'ajoute à Déplacer et Supprimer (coffre, prise de service, bureau, vestiaire, récolte…). Un nouveau coffre est vide. Les garages d'entreprise restent uniques."
  ],
- "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.50.zip",
- "sha256": "7f69662a521f3b9f3fc8da32bc3fb5b0f91fec674c08d5c80499be280869efb4",
+ "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.51.zip",
+ "sha256": "890e143d890864dd829d356b08effc3595a0ed0f02b28b1296fd6cc497122b88",
  "site": "https://noyzoupas.github.io/ShadowBase/",
- "sig": "da5061367cbf5b05e92a1c39cfe3499ff50b7484f01fa7a733d03aba896fd35ce961c31bd77b69755debc1335c48b1577a765621c14f242ca6d60ad518288f06"
+ "sig": "0059a7ad9ccdff9092c92ea7807314ae499a962db206d50bb1d074c9e11d3ff1a36650c5627bb1c9634d047813aeeaa78f0485ef83052d128c32cea5a959080c"
 }

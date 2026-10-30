@@ -15,8 +15,12 @@ summary{cursor:pointer;padding:14px 18px;font-weight:650;display:flex;gap:12px;a
 h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 </style></head><body><main>
 <h1>Shadow Base</h1><p class="sub">Patch notes et téléchargements — gratuits pour les serveurs licenciés.</p>
-<section class="hero"><div><b>Version 1.2.50</b> · 2026-10-30<br>job casino, tables de casino Molo, réglage de la boombox, plaques, boutique et repères du casino, téléportation et mappi<div class="sha">SHA-256 : 7f69662a521f3b9f3fc8da32bc3fb5b0f91fec674c08d5c80499be280869efb4</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.50.zip">Télécharger la mise à jour</a></section>
+<section class="hero"><div><b>Version 1.2.51</b> · 2026-10-30<br>Builder, poser un autre<div class="sha">SHA-256 : 890e143d890864dd829d356b08effc3595a0ed0f02b28b1296fd6cc497122b88</div></div><a class="btn" href="https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.51.zip">Télécharger la mise à jour</a></section>
 <p class="how">Mise à jour : arrête le serveur, sauvegarde <code>resources/[w-base]</code>, remplace les dossiers par ceux du zip sans écraser <code>pb_panel/config.lua</code> ni <code>pb_panel/license.key</code>, puis redémarre. Ton panel (module « Mises à jour ») te prévient tout seul des nouvelles versions.</p>
+<details class="card" open><summary><span class="n">182</span>Builder, poser un autre</summary><div class="b"><ul>
+<li><b>Nouveau</b> : Builder : recliquer sur un type de point déjà posé propose « Poser un autre » ou de choisir celui à supprimer, avec le nombre déjà posé.</li>
+<li><b>Nouveau</b> : Builder, points d&#x27;une entreprise, d&#x27;un groupe ou d&#x27;une drogue : « Poser un autre ici » s&#x27;ajoute à Déplacer et Supprimer (coffre, prise de service, bureau, vestiaire, récolte…). Un nouveau coffre est vide. Les garages d&#x27;entreprise restent uniques.</li>
+</ul></div></details>
 <details class="card" open><summary><span class="n">181</span>téléportation et mappings</summary><div class="b"><ul>
 <li><b>Corrigé</b> : Noclip : la téléportation fonctionne aussi en plein vol. C&#x27;est maintenant le noclip qui applique le saut, sans attendre le sol.</li>
 <li><b>Corrigé</b> : Téléportation sans hauteur connue (mappings, point GPS) : le sol est cherché par paliers au-dessus du lieu, le personnage n&#x27;arrive plus sous la carte ou en l&#x27;air.</li>
@@ -31,7 +35,7 @@ h4{margin:16px 0 4px}.how{color:var(--mut);font-size:14px}
 <details class="card" open><summary><span class="n">179</span>réglage de la boombox</summary><div class="b"><ul>
 <li><b>Corrigé</b> : /boombox_regler : les trois rotations fonctionnent vraiment. En mode rotation, les flèches tournent et penchent la boombox, A et E l&#x27;inclinent (Page haut et bas aussi).</li>
 </ul></div></details>
-<details class="card" open><summary><span class="n">178</span>tables de casino Molo</summary><div class="b"><ul>
+<details class="card"><summary><span class="n">178</span>tables de casino Molo</summary><div class="b"><ul>
 <li><b>Nouveau</b> : Casino : les scripts Molo sont installés (poker à trois cartes, blackjack, roulette, machines à sous, roue, paris, hôtel). Leurs jetons passent par la caisse du serveur, qui débite le vrai argent du joueur et la caisse de l&#x27;entreprise.</li>
 <li><b>Amélioré</b> : Job casino : avec Molo, la tablette suit les jetons vendus et rachetés. Fermer la salle ou interdire un joueur arrête la vente de jetons, pas les tables.</li>
 </ul></div></details>
