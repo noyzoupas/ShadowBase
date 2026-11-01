@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>Télévision</title>
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="noindex">
+<style>
+html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden}
+#v{position:absolute;inset:0;width:100%;height:100%;border:0}
+#msg{position:absolute;inset:0;display:none;place-items:center;text-align:center;padding:40px;color:#aab;font:600 28px 'Segoe UI',Arial,sans-serif}
+</style></head>
+<body><div id="v"></div><div id="msg"></div>
+<script>
+/* Lecteur YouTube des télévisions en jeu. Il est servi depuis un vrai site, car YouTube refuse (erreur 153) un lecteur qui n'envoie pas
+   d'adresse d'origine, ce qui est le cas des pages internes de FiveM. La page du jeu l'affiche en cadre et lui envoie seulement le volume.
+   Seul un identifiant de vidéo vérifié est utilisé ; le texte passe par textContent. */
+(function () {
+  'use strict';
+  var q = new URLSearchParams(location.search);
+  var id = q.get('id') || '', start = Math.max(0, Math.floor(Number(q.get('start')) || 0));
+  var vol = Math.max(0, Math.min(100, Math.round(Number(q.get('vol')) || 0)));
+  var player = null, msg = document.getElementById('msg');
+  function say(t) { msg.textContent = t; msg.style.display = 'grid'; }
+  if (!/^[A-Za-z0-9_-]{1,20}$/.test(id)) { say('Vidéo invalide'); return; }
+  var WHY = { 2: 'lien invalide', 5: 'lecture impossible', 100: 'vidéo supprimée ou privée', 101: "son auteur interdit l'intégration", 150: "son auteur interdit l'intégration", 153: 'lecteur refusé par YouTube' };
+  window.onYouTubeIframeAPIReady = function () {
+    player = new YT.Player('v', { videoId: id, playerVars: { autoplay: 1, controls: 0, disablekb: 1, modestbranding: 1, rel: 0, start: start, playsinline: 1, iv_load_policy: 3, origin: location.origin },
+      events: { onReady: function (e) { e.target.setVolume(vol); e.target.unMute(); e.target.playVideo(); },
+                onError: function (e) { say('Vidéo impossible : ' + (WHY[e.data] || 'erreur ' + e.data)); } } });
+  };
+  window.addEventListener('message', function (e) {
+    if (e.source !== window.parent) return;
+    var d = e.data;
+    if (!d || d.type !== 'vol') return;
+    vol = Math.max(0, Math.min(100, Math.round(Number(d.v) || 0)));
+    if (player && player.setVolume) { try { player.setVolume(vol); if (vol > 0) player.unMute(); } catch (err) { /* lecteur pas encore prêt */ } }
+  });
+  var s = document.createElement('script'); s.src = 'https://www.youtube.com/iframe_api'; document.head.appendChild(s);
+})();
+</script></body></html>
