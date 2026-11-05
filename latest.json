@@ -1,116 +1,116 @@
 {
  "v": 1,
- "version": "1.2.102",
+ "version": "1.2.103",
  "date": "2026-11-05",
- "title": "panel mobile, adresse corrigée",
+ "title": "adresse du panel mobile",
  "notes": [
-  "— Patch notes 306 — panel mobile, adresse corrigée",
-  "Corrigé : Panel mobile : la page s'ouvre aussi sans la barre « / » à la fin de l'adresse, et une adresse fausse affiche une explication au lieu d'une page vide. L'IP publique est cherchée auprès de plusieurs services ; la console affiche l'adresse seule sur sa ligne, facile à copier."
+  "— Patch notes 307 — adresse du panel mobile",
+  "Corrigé : Panel mobile : l'adresse « …users.cfx.re » donnée par FiveM est retirée par Cfx.re (elle commence par « deprecated ») et ne marchait pas. L'adresse affichée utilise maintenant l'IP publique du serveur et le port 30120."
  ],
- "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.102.zip",
- "sha256": "bbdcf87892c7771f570f839cbf6349bf1117476723a037ff2fc5339208147cdd",
+ "download": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-v1.2.103.zip",
+ "sha256": "7759c3f753e9e4228728124b48c3fba21b6b22e78814d673de814b46099f1928",
  "site": "https://noyzoupas.github.io/ShadowBase/",
- "sig": "a7f8dc2c6cddfb7ab3fc17b7d0c2779f140c06512474c0879842865026f39f02150bd8c43edafcf5d204c99a8c383509073666e2b4b193e0254ce9792cab7300",
+ "sig": "2b6fb3166348145769b472c09b02124bbbfd0e7ac953fde82571b798b326601ca2bd59c66e9197d02614f7f3419fa76cd11bdcafe25a40f6e6f911ead3c91d00",
  "deltas": [
   {
+   "from": "1.2.102",
+   "file": "Shadow-Base-maj-v1.2.102-vers-v1.2.103.zip",
+   "files": 3,
+   "removed": 0,
+   "size": 78942,
+   "sha256": "9a54d105851803cacf0820c6369afeedc005dcc9ba98277ebdbf8aad5718de52",
+   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.102-vers-v1.2.103.zip",
+   "sig": "b4ce0770edfdd95f9036374e9d50d5a65d92f8dc2839b1552d2c6c30faf55dc3548b958d11013f7f9b1b8529a379990f7705da68ebf35d5d546204def6c6aa0d"
+  },
+  {
    "from": "1.2.101",
-   "file": "Shadow-Base-maj-v1.2.101-vers-v1.2.102.zip",
+   "file": "Shadow-Base-maj-v1.2.101-vers-v1.2.103.zip",
    "files": 4,
    "removed": 0,
-   "size": 81046,
-   "sha256": "d98381258f2d85023d590df92d8302a45fd9376c5fe9a4df2c06c57440c3a1d7",
-   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.101-vers-v1.2.102.zip",
-   "sig": "12a45e0595e529ae70dd759cff931620f142d31e99382ae7a147bd62507d846f70e918b867a56c0549b6e108d930fd39227770ee49222474931db04a967ac403"
+   "size": 81250,
+   "sha256": "23afc56c2bdc46a102cce5415419407f7d94c7b87677ef7a387f1bba5b1a7c3a",
+   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.101-vers-v1.2.103.zip",
+   "sig": "9a42964214eb5fb0a2f20dbad4e2046902c37a2d6dcdea26f17ea3c510f278bdbefbfc1af9d1d5faed586a323ccaec351340bf4a2a8b9be1b23e0f1b102fbc07"
   },
   {
    "from": "1.2.100",
-   "file": "Shadow-Base-maj-v1.2.100-vers-v1.2.102.zip",
+   "file": "Shadow-Base-maj-v1.2.100-vers-v1.2.103.zip",
    "files": 5,
    "removed": 0,
-   "size": 90482,
-   "sha256": "ca104195e91b0b88bafaaf845572189e37464882fbf9e8bd3c0d1ad666eaa253",
-   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.100-vers-v1.2.102.zip",
-   "sig": "eccdcee23714fc983ec0c1827a80eb5d4fdea14c2a69f45cdc55a9bfbecbf157ca598f2c36a56aa0646d592fad78896580175296291cb371f6cdae33d2b5d306"
+   "size": 90686,
+   "sha256": "3b0fb5488e0f86c12d6e6ad8561e52f92c34cc5420fdd23b3341f1cd85d1ff04",
+   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.100-vers-v1.2.103.zip",
+   "sig": "4b7c27e943a4947b0bfbf33fdf9b0f1f0c9e781b293dc7c1d38bbae69d7d1c424325d133b99119a97aebcc19923c557f27a91edf4ee542c7445a850db17f9103"
   },
   {
    "from": "1.2.99",
-   "file": "Shadow-Base-maj-v1.2.99-vers-v1.2.102.zip",
+   "file": "Shadow-Base-maj-v1.2.99-vers-v1.2.103.zip",
    "files": 20,
    "removed": 0,
-   "size": 259160,
-   "sha256": "b6f14cab537aeeb68ce461346ec439e454a8dcb7f962d3d9935afaedff412e84",
-   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.99-vers-v1.2.102.zip",
-   "sig": "a09ad6a500e5a94017d28223c3cbfe065b577b72558b8b01354545af2b6f733b581e2ef938ef83197dddf7eebeb22e883cf6e57f0bc14b886b1fb110a14f6609"
+   "size": 259364,
+   "sha256": "72c9456272de78e7e2dca78b6eca39124debd3aa86ebac3bc162584265a776f0",
+   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.99-vers-v1.2.103.zip",
+   "sig": "d2dd51770a9d0dd0bbde4f28c75ac4f1bf61701fa0d9d317d5d609c5f209bce3ae5761965f884003ea003c6582cd13a975cb48240213f7902adb5003e9dce208"
   },
   {
    "from": "1.2.98",
-   "file": "Shadow-Base-maj-v1.2.98-vers-v1.2.102.zip",
+   "file": "Shadow-Base-maj-v1.2.98-vers-v1.2.103.zip",
    "files": 29,
    "removed": 0,
-   "size": 305126,
-   "sha256": "fcf6aff0bef3472ae71809d3200ebf25862ba3377b0eb2297a7a4e276a474548",
-   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.98-vers-v1.2.102.zip",
-   "sig": "7afae33baf2a0b1e445ba5998ab144e91d6ed1d0e7746790b0d30823b55a584fd316a5db493d0b457b9b44b76242d491f5eaddcdaf20d398512b605bb69edd0b"
+   "size": 305330,
+   "sha256": "3e1ca97e72b619975e9fd63a4cd7ecb1f5455a26e2d2691dc01e9c1c27a0b93e",
+   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.98-vers-v1.2.103.zip",
+   "sig": "f7e46d62492bf9285388d5a4b7046c0795b18eeca7c9297482d9340e3ccbedf152440c34d5dc687a608a7f58467bb98897a187e8deec2e43c8ad9d42e1692c01"
   },
   {
    "from": "1.2.97",
-   "file": "Shadow-Base-maj-v1.2.97-vers-v1.2.102.zip",
+   "file": "Shadow-Base-maj-v1.2.97-vers-v1.2.103.zip",
    "files": 36,
    "removed": 0,
-   "size": 395499,
-   "sha256": "fd72c67e3657b22123e94ec2a0e262aba099e05d034ba851fc6106c14d3ef6a0",
-   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.97-vers-v1.2.102.zip",
-   "sig": "6bc4662eb02f5231be5bf48ba8eb231acfebca499c3c9c90b815b1726e4101e11c7e233e6f0c3082b49cafdb2530b4dfff640b04445a811aec81c4331dd2dd01"
+   "size": 395703,
+   "sha256": "06b18600fdb57d18450fbc5b59375d7ad56d1f22930a878e88a2bfa144c274bf",
+   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.97-vers-v1.2.103.zip",
+   "sig": "def10efe3f15ff9eb1d33edf2f2cb6335b9f713d8de09997957e69d07b0858866b3ce5522e39acc610d4a0c07d64d9fc2272e60f71db5e994b42dfe2ab5d690f"
   },
   {
    "from": "1.2.96",
-   "file": "Shadow-Base-maj-v1.2.96-vers-v1.2.102.zip",
+   "file": "Shadow-Base-maj-v1.2.96-vers-v1.2.103.zip",
    "files": 38,
    "removed": 0,
-   "size": 411067,
-   "sha256": "5d6247938d568c1d980cdf9784fceee671fa138834c3e6c43d68938104da7b3e",
-   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.96-vers-v1.2.102.zip",
-   "sig": "2383f07a549663dda3cede3bbf907d29c9875e489f64638931f23f67239f12e7197fa45eed0ca7e49335638e107a709f7a2b05d0ee5ff2978c3e8a6684b4fa0b"
+   "size": 411271,
+   "sha256": "23acaba670b0ad377cb8569e1ec7c73a798d47c65c90765f9f61019933e6594a",
+   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.96-vers-v1.2.103.zip",
+   "sig": "ffcf8590a89ebb18258cba1a9e669049e549db39bf7a42ce321f214a86bed43305c3c1775b61add7bbd68c9d6912232aef39500d67e0da5fdb350652be0e9d0a"
   },
   {
    "from": "1.2.95",
-   "file": "Shadow-Base-maj-v1.2.95-vers-v1.2.102.zip",
+   "file": "Shadow-Base-maj-v1.2.95-vers-v1.2.103.zip",
    "files": 66,
    "removed": 0,
-   "size": 687540,
-   "sha256": "bf5cf8779df8baa8627121fd33518a111536816c3d10a5cd2a852ff66dd8fa20",
-   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.95-vers-v1.2.102.zip",
-   "sig": "850c23e130ac30092ddc8169359292af4b69990ddfa8c92f08abd6be43de5439c913c4a82be357c46c91b052fdc1bb805126a97875adb0d6b423e53e794b9703"
+   "size": 687744,
+   "sha256": "9ca56a140f1f88be4468b282dca2804d796049a86bc9bb0670ae2ff509095584",
+   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.95-vers-v1.2.103.zip",
+   "sig": "a954b12358d45811c577de8156a887f8faccbf8f3085a9f5ae8379832f5d00560c9e21cc49660da8d293eedbb5f15f0cbfd422f785d54cbbc28c8fc98e564a0b"
   },
   {
    "from": "1.2.94",
-   "file": "Shadow-Base-maj-v1.2.94-vers-v1.2.102.zip",
+   "file": "Shadow-Base-maj-v1.2.94-vers-v1.2.103.zip",
    "files": 67,
    "removed": 0,
-   "size": 691806,
-   "sha256": "53a35ed52ffc6abf1fb094749d29891fcee1a616fb8ade27fff4687f500556a9",
-   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.94-vers-v1.2.102.zip",
-   "sig": "01c54a9152f10c8b767fb8a74610ed431a02bb4ee3b9b9d7ee6db92e6ab46bce167f764cb64df8dc3bcdec2e019325dca6f0cf3cb7129921e51b5642f76fb90d"
+   "size": 692010,
+   "sha256": "52c2fc87c7ec0d51046cc1755cfa02fd54b36dfd09475f9fbe23cfc4f05a40b5",
+   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.94-vers-v1.2.103.zip",
+   "sig": "e1d5f6d7ced0ae06aaf1d8f3004c26527deafad0cd39fc92defb8f58faeeca712c0afd353f7de4bd8f718586eb0072f0790639532b6f11b375fb3df55844c10c"
   },
   {
    "from": "1.2.93",
-   "file": "Shadow-Base-maj-v1.2.93-vers-v1.2.102.zip",
+   "file": "Shadow-Base-maj-v1.2.93-vers-v1.2.103.zip",
    "files": 69,
    "removed": 0,
-   "size": 697180,
-   "sha256": "ac25a5c0779e2535174c1dad1871684d81a751267e5e6ddc06fa13b582f5ead2",
-   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.93-vers-v1.2.102.zip",
-   "sig": "f13dff5b06cb9366ed6479982dcdce54d3ac3aff67984dffe293e186067ddb2800970883e98411c8bc08abf9bc14343e2b30bcd5c45d84ad2e86db0cf21c5001"
-  },
-  {
-   "from": "1.2.92",
-   "file": "Shadow-Base-maj-v1.2.92-vers-v1.2.102.zip",
-   "files": 73,
-   "removed": 0,
-   "size": 717535,
-   "sha256": "a8209e3c7bf5708436ce560050ae0fcf6aa29b7164994800246b5f54634d517e",
-   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.92-vers-v1.2.102.zip",
-   "sig": "69082ab4bfc655879c53e636b8a8e30e1cd80bd97eef68907c141912fd6df94669a3598cbd2880432a079d7d980f6043b94a250a66f4ea682b8e18598f441a0f"
+   "size": 697384,
+   "sha256": "2f607cee358cf53820501d00aa27ecc6c9232426fb323d3d73a27ea5b9ca6f38",
+   "url": "https://noyzoupas.github.io/ShadowBase/Shadow-Base-maj-v1.2.93-vers-v1.2.103.zip",
+   "sig": "d45a20b3eebdbaad34f852df72590838e6f269d6f2bed4bb1234f63f4881f8869db1401e7b7bb227e91027130de4034da9931a854c4c25af891b4b1b7146520c"
   }
  ]
 }
